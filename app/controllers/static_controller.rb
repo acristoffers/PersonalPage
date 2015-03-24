@@ -5,6 +5,7 @@ class StaticController < ApplicationController
   
   def about
     @tab = 0
+    @mobile = mobile?
     
     respond_to do |format|
       format.html {
@@ -21,6 +22,7 @@ class StaticController < ApplicationController
   
   def pic
     @tab = 2
+    @mobile = mobile?
     
     respond_to do |format|
       format.html {

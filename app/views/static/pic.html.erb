@@ -1,4 +1,6 @@
+<% unless @mobile %>
 <core-drawer-panel>
+<% end %>
     <div drawer class="pad">
         <paper-input id="clock" label="External Clock" floatingLabel value="4000000"></paper-input>
         <paper-input id="label" label="Label" floatingLabel value="delay"></paper-input>
@@ -10,7 +12,9 @@
     
     <div main id="asm" class="pad code">
     </div>
+<% unless @mobile %>
 </core-drawer-panel>
+<% end %>
 <script type="text/javascript">
     register();
 </script>

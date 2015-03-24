@@ -1389,3 +1389,712 @@ Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2
 
 
 Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/" for ::1 at 2015-03-24 17:48:20 +0100
+Processing by StaticController#index as HTML
+Redirected to http://localhost:3000/about
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-24 17:48:21 +0100
+Processing by StaticController#index as HTML
+Redirected to http://localhost:3000/about
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:48:21 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 353ms (Views: 351.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-23b33ee290f56ba3790dfde5487562a9.css?body=1" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/application-214737f96df0706635c4bdee014fe660.css?body=1" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:48:22 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:48:39 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb (1.2ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-23b33ee290f56ba3790dfde5487562a9.css?body=1" for ::1 at 2015-03-24 17:48:43 +0100
+
+
+Started GET "/assets/application-214737f96df0706635c4bdee014fe660.css?body=1" for ::1 at 2015-03-24 17:48:43 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:48:47 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 120ms (Views: 119.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-214737f96df0706635c4bdee014fe660.css?body=1" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/assets/static-23b33ee290f56ba3790dfde5487562a9.css?body=1" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:48:48 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:49:56 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 212ms (Views: 211.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-481a9bcc032b2af08ff9501702b9e9ff.css?body=1" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/assets/application-91db4e898ce430c7e932605013cdc502.css?body=1" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:49:57 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:50:08 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 183ms (Views: 182.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-e38b651c00ccd1064c11bbe7f110b250.css?body=1" for ::1 at 2015-03-24 17:50:08 +0100
+
+
+Started GET "/assets/application-b485e56183a7228ec9c433c29a28ed1c.css?body=1" for ::1 at 2015-03-24 17:50:08 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:50:08 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:50:08 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:50:08 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:50:08 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:50:08 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:50:08 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:50:08 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:50:08 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:50:09 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:50:17 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 181ms (Views: 179.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-481a9bcc032b2af08ff9501702b9e9ff.css?body=1" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/assets/application-91db4e898ce430c7e932605013cdc502.css?body=1" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:50:18 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:51:10 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 179ms (Views: 177.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-492d28ff3a7bffb3571b7951044262ff.css?body=1" for ::1 at 2015-03-24 17:51:11 +0100
+
+
+Started GET "/assets/application-098971ac967459d20282213e0ad9890c.css?body=1" for ::1 at 2015-03-24 17:51:11 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:51:11 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:51:11 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:51:11 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:51:11 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:51:11 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:51:12 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:51:12 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:51:12 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:51:12 +0100
+
+
+Started GET "/" for ::1 at 2015-03-24 17:51:13 +0100
+Processing by StaticController#index as HTML
+Redirected to http://localhost:3000/about
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:51:13 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 400ms (Views: 399.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:51:14 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:51:48 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:52:00 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 127ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-492d28ff3a7bffb3571b7951044262ff.css?body=1" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/assets/application-098971ac967459d20282213e0ad9890c.css?body=1" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:52:00 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:52:13 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 119ms (Views: 117.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-492d28ff3a7bffb3571b7951044262ff.css?body=1" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/assets/application-098971ac967459d20282213e0ad9890c.css?body=1" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:52:14 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:52:17 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 111ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-492d28ff3a7bffb3571b7951044262ff.css?body=1" for ::1 at 2015-03-24 17:52:17 +0100
+
+
+Started GET "/assets/application-098971ac967459d20282213e0ad9890c.css?body=1" for ::1 at 2015-03-24 17:52:17 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:52:18 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:52:18 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:52:18 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:52:18 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:52:18 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:52:18 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:52:18 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:52:18 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:52:18 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:52:20 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:54:48 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-098971ac967459d20282213e0ad9890c.css?body=1" for ::1 at 2015-03-24 17:54:48 +0100
+
+
+Started GET "/assets/static-492d28ff3a7bffb3571b7951044262ff.css?body=1" for ::1 at 2015-03-24 17:54:48 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:54:49 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:54:49 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:54:49 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:54:49 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:54:49 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:54:49 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:54:49 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:54:49 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:54:49 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:54:54 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 113ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-098971ac967459d20282213e0ad9890c.css?body=1" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/assets/static-492d28ff3a7bffb3571b7951044262ff.css?body=1" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:54:54 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:57:31 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (21.3ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `mobile?' for #<#<Class:0x007f92d22ec090>:0x007f92d1ed71a8>):
+    1: <% unless mobile? %>
+    2: <core-drawer-panel>
+    3: <% end %>
+    4:     <div drawer class="pad">
+  app/views/static/pic.html.erb:1:in `_app_views_static_pic_html_erb___3454041902025280478_70134281957660'
+  app/controllers/static_controller.rb:30:in `block (2 levels) in pic'
+  app/controllers/static_controller.rb:25:in `pic'
+
+
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (119.2ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (95.0ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (229.9ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2015-03-24 17:57:32 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /opt/local/lib/ruby2.2/2.2.0/webrick/httpserver.rb:138:in `service'
+  /opt/local/lib/ruby2.2/2.2.0/webrick/httpserver.rb:94:in `run'
+  /opt/local/lib/ruby2.2/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.9ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (153.6ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (101.0ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /opt/local/lib/ruby2.2/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (229.6ms)
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:58:02 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 138ms (Views: 135.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-098971ac967459d20282213e0ad9890c.css?body=1" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/assets/static-492d28ff3a7bffb3571b7951044262ff.css?body=1" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:58:03 +0100
+
+
+Started GET "/pic.html" for ::1 at 2015-03-24 17:58:06 +0100
+Processing by StaticController#pic as HTML
+  Rendered static/pic.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 118ms (Views: 117.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-492d28ff3a7bffb3571b7951044262ff.css?body=1" for ::1 at 2015-03-24 17:58:06 +0100
+
+
+Started GET "/assets/application-098971ac967459d20282213e0ad9890c.css?body=1" for ::1 at 2015-03-24 17:58:06 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:58:06 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:58:06 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:58:06 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:58:06 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:58:06 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:58:06 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:58:06 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:58:06 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:58:06 +0100

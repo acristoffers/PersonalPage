@@ -88,7 +88,6 @@ body.mobile {
     }
     
     #content {
-        width: 100%;
         padding: 10px;
         
         #about {
@@ -111,6 +110,14 @@ body.mobile {
                 text-align: justify;
                 padding-right: 10px;
             }
+        }
+        
+        .pad {
+            padding: 10px;
+        }
+    
+        paper-button, paper-input {
+            width: 100%;
         }
     }
 }
