@@ -2,10 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#about-name {
-    font-size: 2em;
-}
-
 .profile-icon {
     position: relative;
     display: inline-block;
@@ -52,6 +48,10 @@ core-drawer-panel {
 }
 
 body.desktop {
+    #about-name {
+        font-size: 3em;
+    }
+    
     #content {
         width: 800px;
         margin: 20px auto;
@@ -83,12 +83,15 @@ body.desktop {
 }
 
 body.mobile {
+    #about-name {
+        font-size: 2em;
+    }
+    
     #content {
         width: 100%;
         padding: 10px;
         
         #about {
-            width: 100%;
             padding: 10px;
             text-align: center;
             
@@ -102,6 +105,11 @@ body.mobile {
             
             .clear {
                 margin-top: 20px;
+            }
+            
+            .text {
+                text-align: justify;
+                padding-right: 10px;
             }
         }
     }

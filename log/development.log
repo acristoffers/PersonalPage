@@ -393,3 +393,999 @@ Started GET "/assets/application-3439892677acc9f25e619b4e712317da.html" for ::1 
 
 
 Started GET "/assets/cef_logo-9780a7110814fff4e189174fb3719396.png" for ::1 at 2015-03-24 16:40:28 +0100
+
+
+Started GET "/" for ::1 at 2015-03-24 17:01:43 +0100
+Processing by StaticController#index as HTML
+Redirected to http://localhost:3000/about
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:01:43 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 485ms (Views: 484.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-0af644100c0b77b25bd7ee3997e2fb5c.css?body=1" for ::1 at 2015-03-24 17:01:44 +0100
+
+
+Started GET "/assets/application-3568992f2267a8b71f2dcc14fba7ccb8.css?body=1" for ::1 at 2015-03-24 17:01:44 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:01:45 +0100
+
+
+Started GET "/" for ::1 at 2015-03-24 17:01:54 +0100
+Processing by StaticController#index as HTML
+Redirected to http://localhost:3000/about
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:01:54 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 148ms (Views: 147.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:01:55 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:04:20 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 118ms (Views: 117.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-0af644100c0b77b25bd7ee3997e2fb5c.css?body=1" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/application-3568992f2267a8b71f2dcc14fba7ccb8.css?body=1" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:04:21 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:05:28 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 184ms (Views: 183.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-8ca9a12744b4608978bd2b94edb40971.css?body=1" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/application-da833189d17d95f03dfcf47f44fb1005.css?body=1" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:05:29 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:05:46 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 197ms (Views: 196.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-da833189d17d95f03dfcf47f44fb1005.css?body=1" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/static-8ca9a12744b4608978bd2b94edb40971.css?body=1" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:05:46 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:07:00 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 125ms (Views: 124.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-8ca9a12744b4608978bd2b94edb40971.css?body=1" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/application-da833189d17d95f03dfcf47f44fb1005.css?body=1" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:07:01 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:07:15 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 127ms (Views: 126.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-8ca9a12744b4608978bd2b94edb40971.css?body=1" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/application-da833189d17d95f03dfcf47f44fb1005.css?body=1" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:07:16 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:07:47 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 246ms (Views: 245.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-02d4dd605cec4b61eec71f976fe16470.css?body=1" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/application-9774183bcdbb01a056d11519a866e0fd.css?body=1" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:07:48 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:07:52 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 119ms (Views: 117.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-02d4dd605cec4b61eec71f976fe16470.css?body=1" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/application-9774183bcdbb01a056d11519a866e0fd.css?body=1" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:07:52 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:07:53 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:07:53 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:07:53 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:07:53 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:07:53 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:07:53 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:07:53 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:07:53 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:08:10 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 179ms (Views: 178.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-23b33ee290f56ba3790dfde5487562a9.css?body=1" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/application-214737f96df0706635c4bdee014fe660.css?body=1" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:08:11 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:08:12 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:08:16 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 129ms (Views: 128.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-23b33ee290f56ba3790dfde5487562a9.css?body=1" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/application-214737f96df0706635c4bdee014fe660.css?body=1" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:08:16 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:08:49 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 113ms (Views: 111.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-214737f96df0706635c4bdee014fe660.css?body=1" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/static-23b33ee290f56ba3790dfde5487562a9.css?body=1" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:08:50 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:08:56 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-23b33ee290f56ba3790dfde5487562a9.css?body=1" for ::1 at 2015-03-24 17:08:56 +0100
+
+
+Started GET "/assets/application-214737f96df0706635c4bdee014fe660.css?body=1" for ::1 at 2015-03-24 17:08:56 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:08:56 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:08:56 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:08:56 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:08:57 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:09:05 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 125ms (Views: 124.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-214737f96df0706635c4bdee014fe660.css?body=1" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/static-23b33ee290f56ba3790dfde5487562a9.css?body=1" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:09:05 +0100
+
+
+Started GET "/about" for ::1 at 2015-03-24 17:09:07 +0100
+Processing by StaticController#about as HTML
+  Rendered static/about.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 119ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static-23b33ee290f56ba3790dfde5487562a9.css?body=1" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/application-214737f96df0706635c4bdee014fe660.css?body=1" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/polymer/webcomponents-610923e389526b1ad10cb968022c6d63.js?body=1" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/jquery-migrate-min-01ec76cddce9f37a9cf2f7bce18ca1c6.js?body=1" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/detectmobilebrowser-bd2c2980922605e7ea3241de55541c13.js?body=1" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/static/pic-7ae43ffb88280d5210e079e2d72a3d3a.js?body=1" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/application-0c34078791955291aa88bd91506570db.js?body=1" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/me-588926a51ccbdc22437c7f271958306a.jpg" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/fb-873014e77d15fd95a177e2f15f973ae2.jpg" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/github-855ae6f578a2d9d1fd3005994c1e6b53.jpg" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/twitter-f161964b267a1aab57b496758987f333.jpg" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/void-fe1213b9d7bb11875a6ec505de21799c.svg" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/tracker-90aea18b9f9b4e7a5835e1fee3b5a4eb.png" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/gplus-4dc2d10cbf154f9a622e185c795380e7.jpg" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/tests-database-4ca8ecc11f4a794c28f0baf2da590631.png" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/cef_logo-86725ac03d4c31bf682ffbecdb374530.png" for ::1 at 2015-03-24 17:09:08 +0100
+
+
+Started GET "/assets/application-aa93869fd6046c27493dce031008c515.html" for ::1 at 2015-03-24 17:09:08 +0100
