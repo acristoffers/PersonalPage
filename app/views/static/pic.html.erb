@@ -1,0 +1,16 @@
+<core-drawer-panel>
+    <div drawer class="pad">
+        <paper-input id="clock" label="External Clock" floatingLabel value="4000000"></paper-input>
+        <paper-input id="label" label="Label" floatingLabel value="delay"></paper-input>
+        <paper-input id="value" label="Value" floatingLabel></paper-input>
+        <paper-button id="gen-freq" raised>Frequency</paper-button> <br><br>
+        <paper-button id="gen-secs" raised>Seconds</paper-button> <br><br>
+        <paper-button id="gen-inst" raised>Instructions</paper-button>
+    </div>
+    
+    <div main id="asm" class="pad code">
+    </div>
+</core-drawer-panel>
+<script type="text/javascript">
+    register();
+</script>

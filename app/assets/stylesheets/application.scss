@@ -1,0 +1,108 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+$darkPrimaryColor:   #00796B;
+$primaryColor:       #009688;
+$lightPrimaryColor:  #B2DFDB;
+$textPrimaryColor:   #FFFFFF;
+$accentColor:        #00BCD4;
+$primaryTextColor:   #212121;
+$secondaryTextColor: #727272;
+$dividerColor:       #B6B6B6;
+
+a {
+    color: inherit;
+    text-decoration: none;
+    
+    ::visited {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    ::hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+html, core-scaffold {
+    font-family: 'Roboto', sans-serif;
+}
+
+core-toolbar {
+    background: $primaryColor;
+    color: $textPrimaryColor;
+}
+
+core-header-panel {
+    background: white;
+    color: $primaryTextColor;
+}
+
+paper-tab::shadow #ink {
+    color: $accentColor;   
+}
+
+paper-tabs::shadow #selectionBar {
+    background-color: $accentColor;
+}
+
+paper-button {
+    background: $accentColor;
+    color: $textPrimaryColor;
+    
+    ::shadow #ripple {
+        color: $accentColor;
+    }
+}
+
+paper-input /deep/ {
+    .label-text, .error {
+        color: $accentColor;
+    }
+
+    #decorator[focused] .label-text {
+        color: $accentColor;
+    }
+
+    .focused-underline {
+        background-color: $accentColor;
+    }
+
+    color: $primaryTextColor;
+}
+
+* /deep/ paper-input-decorator[focuse]
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+body.desktop {
+    #tabbar {
+        width: 400px;
+    }
+}
+
+body.mobile {
+    #tabbar {
+        width: 100%;
+    }
+}
