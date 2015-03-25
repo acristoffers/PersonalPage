@@ -19,6 +19,7 @@
 
 $ ->
     $('body').addClass( if $.browser.mobile then 'mobile' else 'desktop' )
+    $.ajaxSetup({cache: false})
     
     $('a[data-remote]').on 'ajax:success', (e, data, status, xhr) ->
         $('#content').html(data)
