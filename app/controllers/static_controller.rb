@@ -10,6 +10,7 @@ class StaticController < ApplicationController
     respond_to do |format|
       format.html {
         if request.xhr?
+          response.headers["Cache-Control"] = "no-cache"
           render layout: false
         else
           render layout: true
@@ -27,6 +28,7 @@ class StaticController < ApplicationController
     respond_to do |format|
       format.html {
         if request.xhr?
+          response.headers["Cache-Control"] = "no-cache"
           render layout: false
         else
           render layout: true
