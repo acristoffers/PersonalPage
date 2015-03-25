@@ -7,10 +7,11 @@ class StaticController < ApplicationController
     @tab = 0
     @mobile = mobile?
     
+    response.headers["Vary"] = "X-Requested-With"
+    
     respond_to do |format|
       format.html {
         if request.xhr?
-          response.headers["Cache-Control"] = "no-cache no-store"
           render layout: false
         else
           render layout: true
@@ -25,10 +26,11 @@ class StaticController < ApplicationController
     @tab = 2
     @mobile = mobile?
     
+    response.headers["Vary"] = "X-Requested-With"
+    
     respond_to do |format|
       format.html {
         if request.xhr?
-          response.headers["Cache-Control"] = "no-cache"
           render layout: false
         else
           render layout: true
