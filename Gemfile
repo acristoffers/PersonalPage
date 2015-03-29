@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
+# Fixes GitHub to use HTTPS:// instead of GIT://
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.1'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 # Use SCSS for stylesheets
@@ -44,6 +47,7 @@ end
 
 gem 'jquery-migrate-rails'
 
-gem 'polymer-rails', :git => 'https://github.com/alchapone/polymer-rails.git'
-gem 'polymer-core-rails', :git => 'https://github.com/alchapone/polymer-core-rails.git'
-gem 'polymer-paper-rails', :git => 'https://github.com/alchapone/polymer-paper-rails.git'
+gem 'polymer-rails'       , :github => 'alchapone/polymer-rails'
+gem 'polymer-core-rails'  , :github => 'alchapone/polymer-core-rails'
+gem 'polymer-paper-rails' , :github => 'alchapone/polymer-paper-rails'
+gem 'http_accept_language', :github => 'iain/http_accept_language'
