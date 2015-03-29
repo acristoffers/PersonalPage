@@ -40,4 +40,9 @@ class StaticController < ApplicationController
       format.js
     end
   end
+  
+  def localized_links
+    @url_params = Rails.application.routes.recognize_path(request.referrer)
+    render layout: false
+  end
 end

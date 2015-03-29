@@ -1,0 +1,47 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+de:
+  title: 'Álan Crístoffer'
+  public: 'Öffentlich'
+  
+# static#home
+  gpg_public_key: 'GPG Öffentliches Schlüßeln'
+  pt: 'Portugiesisch'
+  en: 'Englisch'
+  fr: 'Französisch'
+  de: 'Deutsch'
+  native: 'Muttersprache'
+  about_me: 'Ich bin einen Mechatonikingenieur Student bei CEFET-MG, Brasilien. Ich liebe Programmierung und die Idee, große Strukturen mit kleinen Schaltungen zu steuern. Ich liebe auch Sprachen zu lernen und interessiere mich sehr im kryptographie.'
+  some_projects: 'Einige Projekte'
+  void_desc: 'Verschlüsseln von Dateien mit GnuPG asymmetrische Verschlüsselung in einem Ordner struktur.'
+  correios_tracker_desc: 'Correios (Brasilienische Post) Paket verfolgen.'
+  tests_database_desc: 'Verwalten Fragen und Prüfungen drucken.'
+  cefss_desc: 'Einfaches Beispiel mit CEF Framework loszulegen. Nur das Nötigste.'
+  cef3ss_desc: 'Einfaches Beispiel mit CEF 3 Framework loszulegen. Nur das Nötigste.'
+  
+# static#pic
+  external_clock: 'Externe Clock'
+  label: 'Label'
+  value: 'Wert'
+  frequency: 'Frequenz'
+  seconds: 'Seconde'
+  instructions: 'Anleitungen'

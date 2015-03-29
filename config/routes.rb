@@ -4,8 +4,14 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static#index'
-  get 'pic' => 'static#pic'
-  get 'about' => 'static#about'
+  
+  scope "(:locale)" do
+    get 'pic' => 'static#pic'
+    get 'about' => 'static#about'
+    get 'll' => 'static#localized_links'
+  end
+  
+  get '/:locale' => 'static#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -20,4 +20,28 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title: 'Álan Crístoffer'
+  public: 'Public'
+  
+# static#home
+  gpg_public_key: 'GPG Public Key'
+  pt: 'Portuguese'
+  en: 'English'
+  fr: 'French'
+  de: 'German'
+  native: 'Native'
+  about_me: "I'm a mechatronics engineering student at CEFET-MG, Brazil. I love programming and the idea of controlling big structures with small circuits. I'm also passionate with languages and in love with cryptography."
+  some_projects: 'Some Projects'
+  void_desc: 'Encrypt files using GnuPG asymetric encryption in a folder-like manner.'
+  correios_tracker_desc: 'Track a Correios (Brazilian Post) package.'
+  tests_database_desc: 'Manage questions and print tests.'
+  cefss_desc: 'Simple example to get started with CEF Framework. Only the bare minimum.'
+  cef3ss_desc: 'Simple example to get started with CEF 3 Framework. Only the bare minimum.'
+  
+# static#pic
+  external_clock: 'External Clock'
+  label: 'Label'
+  value: 'Value'
+  frequency: 'Frequency'
+  seconds: 'Seconds'
+  instructions: 'Instructions'

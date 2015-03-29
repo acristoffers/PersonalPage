@@ -24,6 +24,11 @@ $ ->
         $('#content').html(data)
         uri = this['href']
         window.history.pushState({ 'url': uri }, '', uri)
+        $.ajax
+            url: '/ll'
+            dataType: 'html'
+            success: (data, status, xhr) ->
+                $('#languages-dropdown div').html(data)
     
     window.onpopstate = (event) ->
         uri = window.location.href
@@ -37,3 +42,8 @@ $ ->
                     dataType: 'json'
                     success: (data, status, xhr) ->
                         $('#tabbar').prop('selected', data.tab)
+                $.ajax
+                    url: '/ll'
+                    dataType: 'html'
+                    success: (data, status, xhr) ->
+                        $('#languages-dropdown div').html(data)

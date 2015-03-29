@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require_tree ../components
  */
 
 $darkPrimaryColor:   #00796B;
@@ -39,7 +40,7 @@ a {
 }
 
 html, core-scaffold {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
 }
 
 core-toolbar {
@@ -106,3 +107,26 @@ body.mobile {
         width: 100%;
     }
 }
+
+// BEGIN FIX core-icon-button in toolbar
+core-icon-button {
+  -moz-user-select: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 2px;
+  padding: 7px;
+  vertical-align: middle;
+}
+html core-icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+  fill: currentcolor;
+  height: 24px;
+  position: relative;
+  vertical-align: middle;
+  width: 24px;
+}
+// END FIX core-icon-button in toolbar

@@ -20,7 +20,7 @@
             <br><br>
             
             <core-icon class="profile-icon" icon="lock"></core-icon>
-            <a href="https://acristoffers.me/public/PublicKey.asc" target="_blank">GPG Public Key</a>
+            <a href="https://acristoffers.me/public/PublicKey.asc" target="_blank"><%= t :gpg_public_key %></a>
             
             <br><br>
         </span>
@@ -39,18 +39,18 @@
         </div>
         <br>
         <div class='float-right'>
-            <core-icon class="profile-icon" icon="translate"></core-icon> Portuguese (Native) <br>
-            <core-icon class="profile-icon" icon="translate"></core-icon> English (C1) <br>
-            <core-icon class="profile-icon" icon="translate"></core-icon> German (B1) <br>
-            <core-icon class="profile-icon" icon="translate"></core-icon> French (A2)
+            <core-icon class="profile-icon" icon="translate"></core-icon> <%= t :pt %> (<%= t :native %>) <br>
+            <core-icon class="profile-icon" icon="translate"></core-icon> <%= t :en %> (C1) <br>
+            <core-icon class="profile-icon" icon="translate"></core-icon> <%= t :de %> (B1) <br>
+            <core-icon class="profile-icon" icon="translate"></core-icon> <%= t :fr %> (A2)
         </div>
     </div>
     
     <div class="clear text">
-        I'm a mechatronics engineering student by <a href="http://www.cefetmg.br/" target="_blank">CEFET-MG</a>, Brazil. I love programming and the idea of controlling big structures with small circuits. I'm also passionate with languages and in love with cryptography.
+        <%= t :about_me %>
         
         <br><br>
-        <h2>Some Projects</h2>
+        <h2><%= t :some_projects %></h2>
         <br>
         
         <div class="application-card">
@@ -59,7 +59,7 @@
                     <%= image_tag 'void.svg', size: '64' %>
                     <span class="title">Void</span>
                 </div>
-                <div class="desc"><br>Encrypt files using GnuPG asymetric encryption in a folder-like manner</div>
+                <div class="desc"><br><%= t :void_desc %></div>
             </a>
         </div>
         <br><br>
@@ -69,7 +69,7 @@
                     <%= image_tag 'tracker.png', size: '64' %>
                     <span class="title">Correios Tracker</span>
                 </div>
-                <div class="desc"><br>Verifica o status de encomendas dos Correios</div>
+                <div class="desc"><br><%= t :correios_tracker_desc %></div>
             </a>
         </div>
         <br><br>
@@ -79,7 +79,7 @@
                     <%= image_tag 'tests-database.png', size: '64' %>
                     <span class="title">TestsDatabase</span>
                 </div>
-                <div class="desc"><br>Aplicativo que fiz para o Corpo de Bombeiros Militar de Minas Gerais. Gerencia um banco de questões e facilita a geração e correção de provas.</div>
+                <div class="desc"><br><%= t :tests_database_desc %></div>
             </a>
         </div>
         <br><br>
@@ -89,7 +89,7 @@
                     <%= image_tag 'cef_logo.png', size: '64' %>
                     <span class="title">CEFSimpleSample</span>
                 </div>
-                <div class="desc"><br>Simple sample on how to use Chromium Embedded Framework. More like a Hello World.</div>
+                <div class="desc"><br><%= t :cefss_desc %></div>
             </a>
         </div>
         <br><br>
@@ -99,7 +99,7 @@
                     <%= image_tag 'cef_logo.png', size: '64' %>
                     <span class="title">CEF3SimpleSample</span>
                 </div>
-                <div class="desc"><br>Simple example to get started with CEF 3</div>
+                <div class="desc"><br><%= t :cef3ss_desc %></div>
             </a>
         </div>
     <div>

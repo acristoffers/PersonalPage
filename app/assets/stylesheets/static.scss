@@ -55,31 +55,30 @@ body.desktop {
     #content {
         width: 800px;
         margin: 20px auto;
-    }
 
-    #beside-image {
-        display: inline-block;
-        vertical-align: top;
-        height: 200px;
-        padding: 10px;
-    }
+        #beside-image {
+            display: inline-block;
+            vertical-align: top;
+            height: 200px;
+            padding: 10px;
+        }
 
-    .float-left {
-        float: left;
-    }
+        .float-left {
+            float: left;
+        }
 
-    .float-right {
-        float: right;
-    }
+        .float-right {
+            float: right;
+        }
 
-    .clear {
-        clear: both;
-    }
+        .clear {
+            clear: both;
+        }
 
-    #about .social {
-        height: 140px;
+        #about .social {
+            height: 140px;
+        }
     }
-
 }
 
 body.mobile {
