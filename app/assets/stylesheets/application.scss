@@ -108,7 +108,7 @@ paper-input /deep/ {
     text-transform: none;
 }
 
-#languages-dropdown {
+html /deep/ #languages-dropdown {
     height: auto !important;
 }
 
