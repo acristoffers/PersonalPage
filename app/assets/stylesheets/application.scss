@@ -46,6 +46,18 @@ html, core-scaffold {
 core-toolbar {
     background: $primaryColor;
     color: $textPrimaryColor;
+    
+    #toolbar-brand {
+        opacity: 0.0;
+        transition: opacity 0.25s ease-in-out;
+        pointer-events: none;
+    }
+}
+
+core-toolbar.tall {
+    #toolbar-brand {
+        opacity: 1.0;
+    }
 }
 
 core-header-panel {
