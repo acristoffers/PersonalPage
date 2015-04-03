@@ -6,8 +6,8 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
  
   def set_locale
-    available = %w(en de fr pt)
-    http_preferred_lang = http_accept_language.preferred_language_from(available)
+    available = I18n.available_locales
+    http_preferred_lang = http_accept_language.preferred_language_from available
     
     I18n.locale = params[:locale] || http_preferred_lang
     
