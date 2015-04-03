@@ -108,6 +108,10 @@ paper-input /deep/ {
     text-transform: none;
 }
 
+#languages-dropdown {
+    height: auto !important;
+}
+
 body.desktop {
     #tabbar {
         width: 400px;
