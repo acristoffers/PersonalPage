@@ -46,6 +46,7 @@ group :development, :test do
 end
 
 gem 'jquery-migrate-rails'
+gem 'htmlcompressor'
 
 gem 'polymer-rails'       , :github => 'alchapone/polymer-rails'
 gem 'polymer-core-rails'  , :github => 'alchapone/polymer-core-rails'
