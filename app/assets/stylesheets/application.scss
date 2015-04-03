@@ -118,6 +118,23 @@ body.mobile {
     #tabbar {
         width: 100%;
     }
+    
+    core-toolbar.tall {
+        languages-menu {
+            visibility: visible;
+            opacity: 1.0;
+            pointer-events: auto;
+        }
+    }
+    
+    core-toolbar {
+        languages-menu {
+            visibility: hidden;
+            opacity: 0.0;
+            transition: opacity 0.25s ease-in-out;
+            pointer-events: none;
+        }
+    }
 }
 
 // BEGIN FIX core-icon-button in toolbar
