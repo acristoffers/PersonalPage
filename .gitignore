@@ -189,3 +189,4 @@ Release/
 # Editors temporary files
 *~
 *.autosave
+*.lock
