@@ -190,3 +190,5 @@ Release/
 *~
 *.autosave
 *.lock
+
+Gemfile.lock

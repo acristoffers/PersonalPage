@@ -24,9 +24,10 @@ module PersonalPage
     config.active_record.raise_in_transactional_callbacks = true
 
     config.serve_static_files    = true
+    uglifier                     = Uglifier.new output: { comments: :copyright }
     config.assets.compile        = true
     config.assets.debug          = false
-    config.assets.js_compressor  = :uglifier
+    config.assets.js_compressor  = uglifier
     config.assets.css_compressor = :sass
     config.middleware.use Rack::Deflater
     config.middleware.insert_before ActionDispatch::Static, Rack::Deflater
@@ -34,7 +35,7 @@ module PersonalPage
       compress_css: true,
       css_compressor: :sass,
       compress_javascript: true,
-      javascript_compressor: :uglifier,
+      javascript_compressor: uglifier,
       enabled: true,
       preserve_line_breaks: false,
       remove_comments: true,
