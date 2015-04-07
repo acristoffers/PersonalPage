@@ -30,7 +30,7 @@ fr:
   fr: 'Français'
   de: 'Allemand'
   native: 'Maternelle'
-  about_me: "Je suis un étudiant de ingenieur mécatronique à CEFET-MG, Brèsil. J'aime bien la programmation et le idée de contrôler grandes structures avec petites circuits. Je suis aussi passionné avec langues et amoureux avec cryptographie."
+  about_me: "Je suis un étudiant de ingenieur mécatronique à CEFET-MG, Brèsil. J'aime bien la programmation et l'idée de contrôler grandes structures avec petites circuits. Je suis aussi passionné avec langues et amoureux avec cryptographie."
   some_projects: 'Certains Projets'
   void_desc: 'Crypter les fichiers en utilisant le cryptage asymétrique GnuPG de manière à preserver la structure de dossier.'
   correios_tracker_desc: 'Suivi de colis de Correios (Courrier brèsilien)'
