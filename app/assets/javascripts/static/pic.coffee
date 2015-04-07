@@ -156,7 +156,7 @@ generateASM = (inst) ->
     asm += '\n\treturn\n'
     $('#asm').html(asm.replace(/\n/g, '<br>').replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;'))
 
-register = ->
+window.register = ->
     $('#gen-freq').click ->
         freq = $('#value').val()
         freq = parseFloat(freq)
