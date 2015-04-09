@@ -43,20 +43,20 @@ class Exp
             else undefined
     
     print: ->
-        if @name? then return @name
+        return @name if @name?
         pl = if @l.print? then @l.print() else @l
         pr = if @r.print? then @r.print() else @r
-        return "(#{pl}#{@o}#{pr})"
+        "(#{pl}#{@o}#{pr})"
 
 replaceNode = (tree, nodeName, value) ->
-    if tree?.name? and tree.name is nodeName then return value
-    if tree?.l? then tree.l = replaceNode(tree.l, nodeName, value)
-    if tree?.r? then tree.r = replaceNode(tree.r, nodeName, value)
+    return value if tree?.name? and tree.name == nodeName
+    tree.l = replaceNode(tree.l, nodeName, value) if tree?.l?
+    tree.r = replaceNode(tree.r, nodeName, value) if tree?.r?
     tree
 
 # return the max value that the n'th iteration can count to
 max = (n) ->
-    if n is 1 then return 3 * 256 - 1
+    return 3 * 256 - 1 if n is 1
     f = formula(n)
     for i in [1..n] by 1
         f = replaceNode(f, "d#{i}", 256)
@@ -65,14 +65,14 @@ max = (n) ->
 # find the formula for n variables
 formula = (n) ->
     node = new Exp()
-    node.name =  "d#{n}"
-    if n is 1 then return new Exp(-1, '+', new Exp(3, '*', node))
+    node.name = "d#{n}"
+    return new Exp(-1, '+', new Exp(3, '*', node)) if n is 1
     new Exp( new Exp( formula(n-1), '+', 2 ), '+', new Exp( new Exp( max(n-1), '+', 3 ), '*', new Exp( node, '-', 1 ) ) )
 
 # find the constant multiplying the variable
 constantBeforeVariable = (j,n,exp,c) ->
     for i in [1..n] by 1
-        if i isnt j then replaceNode(exp, "d#{i}", 0)
+        replaceNode(exp, "d#{i}", 0) unless i == j
     replaceNode(exp, "d#{j}", 1)
     new Exp(exp, '-', c).evaluate()
 
@@ -117,7 +117,7 @@ generateASM = (inst) ->
     consumed_instructions = number_of_variables * 2 + 2 + 2 # var initialization + return + call
     need_to_consume       = inst - consumed_instructions
     constants             = constantsForNVars(number_of_variables, need_to_consume)
-    func_name             = $('#label').val() + '_' + inst
+    func_name             = $('#label').val() + "_#{inst}"
     asm                   = "#{func_name}:\n\t"
     
     asm += 'cblock 0x20\n'
@@ -168,7 +168,7 @@ window.register = ->
     
     $('#gen-inst').click ->
         cycles = $('#value').val()
-        cycles = parseInt cycles
+        cycles = parseInt(cycles)
         generateASM(cycles)
 
 $ ->
