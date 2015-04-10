@@ -65,11 +65,11 @@ core-header-panel {
     color: $primaryTextColor;
 }
 
-paper-tab::shadow #ink {
+paper-tab /deep/ #ink {
     color: $accentColor;   
 }
 
-paper-tabs::shadow #selectionBar {
+paper-tabs /deep/ #selectionBar {
     background-color: $accentColor;
 }
 
@@ -77,7 +77,7 @@ paper-button {
     background: $accentColor;
     color: $textPrimaryColor;
     
-    ::shadow #ripple {
+    /deep/ #ripple {
         color: $accentColor;
     }
 }
@@ -87,18 +87,18 @@ paper-input /deep/ {
         color: $accentColor;
     }
 
-    #decorator[focused] .label-text {
-        color: $accentColor;
-    }
+    #decorator[focused] /deep/ {
+        .label-text {
+            color: $accentColor;
+        }
 
-    .focused-underline {
-        background-color: $accentColor;
+        .focused-underline {
+            background-color: $accentColor;
+        }
     }
 
     color: $primaryTextColor;
 }
-
-* /deep/ paper-input-decorator[focuse]
 
 .text {
     font-family: 'Roboto', sans-serif;
