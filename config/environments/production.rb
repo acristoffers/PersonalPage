@@ -77,6 +77,8 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   
+  config.action_mailer.default_url_options = { host: 'acristoffers.me', port: 80 }
+  
   config.serve_static_files = true
   uglifier                     = Uglifier.new output: { comments: :copyright }
   config.assets.compile        = true
