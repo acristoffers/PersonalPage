@@ -40,7 +40,14 @@ body.mobile {
             }
             
             .social {
-                margin: 1em 0;
+                width: 2em*4.5;
+                margin: 1em auto;
+                
+                img {
+                    height: 2em;
+                    width: auto;
+                    margin-right: 5px auto;
+                }
             }
             
             #about-text {
@@ -90,15 +97,6 @@ body.mobile {
                 .screenshot-text {
                     margin: 1em 0;
                 }
-            }
-        }
-    }
-    
-    footer {
-        #languages-mobile {
-            img {
-                height: 2em;
-                width: auto;
             }
         }
     }

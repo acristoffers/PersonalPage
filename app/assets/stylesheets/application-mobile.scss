@@ -27,4 +27,14 @@ body.mobile {
             display: none;
         }
     }
+    
+    footer {
+        #languages-mobile {
+            img {
+                height: 2em;
+                width: auto;
+                margin-right: 5px;
+            }
+        }
+    }
 }
