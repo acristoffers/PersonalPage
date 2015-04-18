@@ -98,7 +98,7 @@ Rails.application.configure do
     remove_form_attributes: false,
     remove_http_protocol: false,
     remove_https_protocol: false,
-    remove_input_attributes: true,
+    remove_input_attributes: false,
     remove_intertag_spaces: true,
     remove_javascript_protocol: true,
     remove_link_attributes: true,
