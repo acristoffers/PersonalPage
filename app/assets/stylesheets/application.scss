@@ -12,154 +12,68 @@
  *
  *= require_tree .
  *= require_self
- *= require_tree ../components
  */
 
-$darkPrimaryColor:   #00796B;
-$primaryColor:       #009688;
-$lightPrimaryColor:  #B2DFDB;
-$textPrimaryColor:   #FFFFFF;
-$accentColor:        #00BCD4;
-$primaryTextColor:   #212121;
-$secondaryTextColor: #727272;
-$dividerColor:       #B6B6B6;
+@import "variables";
 
-a {
-    color: inherit;
-    text-decoration: none;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font: normal $text_size Helvetica, Sans-Serif;
+    line-height: $line_height;
     
-    ::visited {
-        color: inherit;
-        text-decoration: none;
-    }
-    
-    ::hover {
-        color: inherit;
+    a, a:link, a:hover, a:visited, a:active {
+        color: black;
         text-decoration: none;
     }
 }
 
-html, core-scaffold {
-    font-family: 'Helvetica Neue', Helvetica, Arial;
+html, body {
+    height: 100%;
 }
 
-core-toolbar {
-    background: $primaryColor;
-    color: $textPrimaryColor;
+header.shadow {
+    background-color: white;
+    box-shadow: 0 2px 5px #888888;
+    opacity: 0.9;
+}
+
+header {
+    opacity: 1.0;
+    box-shadow: none;
+    transition: opacity 0.25s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+#content {
+    min-height: 100%;
+    margin: 0 auto (-10 * $text_size);
+}
+
+footer, .push {
+    height: 10 * $text_size;
+}
+
+footer {
+    background-color: #333;
+    color: white;
     
-    #toolbar-brand {
-        opacity: 0.0;
-        transition: opacity 0.25s ease-in-out;
-        pointer-events: none;
+    div {
+        height: 10 * $text_size;
     }
-}
-
-core-toolbar.tall {
-    #toolbar-brand {
-        opacity: 1.0;
-    }
-}
-
-core-header-panel {
-    background: white;
-    color: $primaryTextColor;
-}
-
-paper-tab /deep/ #ink {
-    color: $accentColor;   
-}
-
-paper-tabs /deep/ #selectionBar {
-    background-color: $accentColor;
-}
-
-paper-button {
-    background: $accentColor;
-    color: $textPrimaryColor;
     
-    /deep/ #ripple {
-        color: $accentColor;
-    }
-}
-
-paper-input /deep/ {
-    .label-text, .error {
-        color: $accentColor;
-    }
-
-    #decorator[focused] /deep/ {
-        .label-text {
-            color: $accentColor;
-        }
-
-        .focused-underline {
-            background-color: $accentColor;
-        }
-    }
-
-    color: $primaryTextColor;
-}
-
-.text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    line-height: 1.2em;
-    text-decoration: none;
-    text-transform: none;
-}
-
-html /deep/ #languages-dropdown {
-    height: auto !important;
-}
-
-body.desktop {
-    #tabbar {
-        width: 400px;
-    }
-}
-
-body.mobile {
-    #tabbar {
+    span {
+        display: inline-block;
+        margin: ((10 * $text_size - $line_height) / 2) 0;
+        height: $line_height;
         width: 100%;
-    }
-    
-    core-toolbar.tall {
-        languages-menu {
-            visibility: visible;
-            opacity: 1.0;
-            pointer-events: auto;
-        }
-    }
-    
-    core-toolbar {
-        languages-menu {
-            visibility: hidden;
-            opacity: 0.0;
-            transition: opacity 0.25s ease-in-out;
-            pointer-events: none;
+        text-align: center;
+        
+        a, a:link, a:hover, a:visited, a:active {
+            color: white;
         }
     }
 }
-
-// BEGIN FIX core-icon-button in toolbar
-core-icon-button {
-  -moz-user-select: none;
-  border-radius: 2px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1rem;
-  margin: 2px;
-  padding: 7px;
-  vertical-align: middle;
-}
-html core-icon {
-  background-repeat: no-repeat;
-  display: inline-block;
-  fill: currentcolor;
-  height: 24px;
-  position: relative;
-  vertical-align: middle;
-  width: 24px;
-}
-// END FIX core-icon-button in toolbar

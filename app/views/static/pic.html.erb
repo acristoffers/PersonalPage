@@ -1,20 +1,22 @@
-<% unless @mobile %>
-<core-drawer-panel>
-<% end %>
-    <div drawer class="pad">
-        <paper-input id="clock" label="<%= t :external_clock %>" floatingLabel value="4000000"></paper-input>
-        <paper-input id="label" label="<%= t :label %>" floatingLabel value="delay"></paper-input>
-        <paper-input id="value" label="<%= t :value %>" floatingLabel></paper-input>
-        <paper-button id="gen-freq" raised><%= t :frequency %></paper-button> <br><br>
-        <paper-button id="gen-secs" raised><%= t :seconds %></paper-button> <br><br>
-        <paper-button id="gen-inst" raised><%= t :instructions %></paper-button>
-    </div>
+<div id="pic">
+    <div container>
+        <div id="fields">
+            <label for="label"><%= t :label %>:</label>
+            <input id="label" type="text" value="delay">
+            <label for="clock"><%= t :external_clock %>:</label>
+            <input id="clock" type="number" value="4000000">
+            <label for="value"><%= t :value %>:</label>
+            <input id="value" type="number">
+            
+            <br>
+            
+            <input type="button" id="gen-freq" value="<%= t :frequency %>">
+            <input type="button" id="gen-secs" value="<%= t :seconds %>">
+            <input type="button" id="gen-inst" value="<%= t :instructions %>">
+        </div>
     
-    <div main id="asm" class="pad code">
+        <div id="asm">
+        
+        </div>
     </div>
-<% unless @mobile %>
-</core-drawer-panel>
-<% end %>
-<script type="text/javascript">
-    register();
-</script>
+</div>

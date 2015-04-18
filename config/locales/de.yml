@@ -31,12 +31,21 @@ de:
   de: 'Deutsch'
   native: 'Muttersprache'
   about_me: 'Ich bin einen Mechatonikingenieur Student bei CEFET-MG, Brasilien. Ich liebe Programmierung und die Idee, große Strukturen mit kleinen Schaltungen zu steuern. Ich liebe auch Sprachen zu lernen und interessiere mich sehr im kryptographie.'
+  i_can_speak: 'Ich spreche:'
   some_projects: 'Einige Projekte'
-  void_desc: 'Verschlüsseln von Dateien mit GnuPG asymmetrische Verschlüsselung in einem Ordner struktur.'
-  correios_tracker_desc: 'Correios (Brasilienische Post) Paket verfolgen.'
+  void_desc: 'Verschlüsseln von Dateien mit GnuPG asymmetrische Verschlüsselung in einem Ordnerstruktur.'
+  void_ss1_desc: 'Die Bilder werden mit einer Vorschau angezeigt und können ohne Speichern auf der Festplatte geöffnet werden.'
+  void_ss2_desc: 'Textdateien können an Ort und Stelle bearbeitet werden, in einem eingebetteten Text-Editor.'
+  void_ss3_desc: 'Sehen Sie sich Videos an Ort und Stelle. Das Video wird in eine temporäre Datei entschlüsselt, die später zerstört werden. System-Codecs sind verwendet.'
+  correios_tracker_desc: 'Correios (Brasilienische Post) Pakete verfolgen.'
+  tracker_ss1_desc: 'Zeigt eine Liste der verfolgte Pakete mit ihrem aktuellen Status für einfache Kontrolle.'
+  tracker_ss2_desc: 'Tastatur wechselt automatisch zwischen alphabetischen und numerischen nach Bedarf.'
   tests_database_desc: 'Verwalten Fragen und Prüfungen drucken.'
-  cefss_desc: 'Einfaches Beispiel mit CEF Framework loszulegen. Nur das Nötigste.'
-  cef3ss_desc: 'Einfaches Beispiel mit CEF 3 Framework loszulegen. Nur das Nötigste.'
+  tb_ss1_desc: "Diese Anwendung wurde für den Feuerwehrmann Aktiengesellschaft des Bundesstaates Minas Gerais, Brasilien entwickelt, um die Tests zu den Newcomern angewendet, sowie jährliche Tests zu verwalten."
+  tb_ss2_desc: "Es lässt sie erzeugen die Tests über eine einfache Schnittstelle, die Erzeugung von Tests bei Frageniveau, Multiple Choice oder diskursiven und können Tests mit Fragen und Antworten in zufälliger Reihenfolge erzeugen, unter Beibehaltung es einfach zu korrigieren."
+  tb_ss3_desc: 'Fragen können mit einem WYSIWYG-Textfeld hinzugefügt werden, das die Erstellung von Tests mit reichen Styling können.'
+  and: und
+  cefss_desc: "Der Quellcode für Minimalen Anwendungen mit Chromium Embedded Framework-Versionen 1 und 3 zu beginnen. Setzt sich ein Fenster, lädt eine HTML-Datei und erstellt eine bidirektionale Verbindung zwischen Javascript und C ++ zu zeigen, die Grundlagen von einem C ++ Anwendung mit HTML-UI."
   
 # static#pic
   external_clock: 'Externe Clock'

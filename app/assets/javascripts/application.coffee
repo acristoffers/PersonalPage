@@ -10,7 +10,6 @@
 # Read Sprockets README (https:#github.com/sstephenson/sprockets#sprockets-directives) for details
 # about supported directives.
 #
-#= require polymer/webcomponents
 #= require jquery
 #= require jquery_ujs
 #= require jquery-migrate-min
@@ -20,30 +19,9 @@
 $ ->
     $('body').addClass( if $.browser.mobile then 'mobile' else 'desktop' )
     
-    $('a[data-remote]').on 'ajax:success', (e, data, status, xhr) ->
-        $('#content').html(data)
-        uri = this['href']
-        window.history.pushState({ 'url': uri }, '', uri)
-        $.ajax
-            url: '/ll'
-            dataType: 'html'
-            success: (data, status, xhr) ->
-                $('#languages-dropdown div').html(data)
-    
-    window.onpopstate = (event) ->
-        uri = window.location.href
-        $.ajax
-            url: uri
-            dataType: 'html'
-            success: (data, status, xhr) ->
-                $('#content').html(data)
-                $.ajax
-                    url: uri.replace('.html', '') + '.js'
-                    dataType: 'json'
-                    success: (data, status, xhr) ->
-                        $('#tabbar').prop('selected', data.tab)
-                $.ajax
-                    url: '/ll'
-                    dataType: 'html'
-                    success: (data, status, xhr) ->
-                        $('#languages-dropdown div').html(data)
+    $(document).scroll () ->
+        if $(document).scrollTop() > 0
+            $('header').addClass('shadow')
+        else
+            $('header').removeClass('shadow')
+            

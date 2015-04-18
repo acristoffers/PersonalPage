@@ -1,0 +1,30 @@
+
+@import "variables";
+
+body.mobile {
+    header {
+        height: $header_height;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        
+        nav {
+            display: inline-block;
+            margin: ($header_height - $line_height) / 2 1em;
+        }
+        
+        #links {
+            display: flex;
+            
+            a {
+                flex: 1;
+                text-align: center;
+            }
+        }
+        
+        #languages {
+            display: none;
+        }
+    }
+}

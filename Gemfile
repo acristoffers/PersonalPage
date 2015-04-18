@@ -47,8 +47,4 @@ end
 
 gem 'jquery-migrate-rails'
 gem 'htmlcompressor'
-
-gem 'polymer-rails'       , :github => 'alchapone/polymer-rails'
-gem 'polymer-core-rails'  , :github => 'alchapone/polymer-core-rails'
-gem 'polymer-paper-rails' , :github => 'alchapone/polymer-paper-rails'
 gem 'http_accept_language', :github => 'iain/http_accept_language'

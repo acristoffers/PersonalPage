@@ -31,12 +31,21 @@ fr:
   de: 'Allemand'
   native: 'Maternelle'
   about_me: "Je suis un étudiant de ingenieur mécatronique à CEFET-MG, Brèsil. J'aime bien la programmation et l'idée de contrôler grandes structures avec petites circuits. Je suis aussi passionné avec langues et amoureux avec cryptographie."
+  i_can_speak: 'Je parle:'
   some_projects: 'Certains Projets'
   void_desc: 'Crypter les fichiers en utilisant le cryptage asymétrique GnuPG de manière à preserver la structure de dossier.'
+  void_ss1_desc: 'Les images sont affichées avec un aperçu, et peuvent être ouverts sans enregistrer sur le disque.'
+  void_ss2_desc: 'Les fichiers texte peuvent être éditées en place, dans un éditeur de texte intégré.'
+  void_ss3_desc: 'Regarder des vidéos en place. La vidéo est decrypté dans un fichier temporaire qui est ensuite détruit. Tire parti des codecs du système.'
   correios_tracker_desc: 'Suivi de colis de Correios (Courrier brèsilien)'
+  tracker_ss1_desc: 'Affiche une liste des paquets suivis avec leur dernier état pour une vérification facile.'
+  tracker_ss2_desc: 'Clavier change automatiquement entre alphabétique et numérique au besoin.'
   tests_database_desc: 'Gérer les quéstions et imprimer les tests.'
-  cefss_desc: 'Exemple simple pour débuter avec CEF Framework. Seul le strict minimum.'
-  cef3ss_desc: 'Exemple simple pour débuter avec CEF 3 Framework. Seul le strict minimum.'
+  tb_ss1_desc: "Cette application a été développé pour la société de pompier de l'état de Minas Gerais, au Brésil, pour gérer les tests appliqués aux nouveaux arrivants, ainsi que des tests annuels."
+  tb_ss2_desc: "Il leur permet de générer les essais utilisant une interface simple, générer des tests de niveau de question, à choix multiples ou discursive et peuvent générer des tests avec questions et réponses dans un ordre aléatoire, tout en gardant il est facile de grade."
+  tb_ss3_desc: 'Les questions peuvent être ajoutés avec un champ de texte WYSIWYG, qui permet la création de tests avec style riche.'
+  and: et
+  cefss_desc: "Le code source des applications nus minimum pour commencer avec les versions de Chromium Embedded Framework 1 et 3. Met en place une fenêtre, charge un fichier HTML et crée liaison entre Javascript et C++ bidirectionnel pour montrer la très basique d'une application C++ avec HTML UI."
   
 # static#pic
   external_clock: 'Clock externe'

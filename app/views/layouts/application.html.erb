@@ -6,29 +6,38 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true, 'shim-shadowdom' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= html_import_tag 'application' %>
     <%= csrf_meta_tags %>
     <%= render 'partials/favicon' %>
 </head>
-<body fullbleed vertical layout unresolved>
-    <core-header-panel mode="waterfall-tall" flex>
-        <core-toolbar>
-            <span id="toolbar-brand" horizontal flex><%= t :title %></span>
-            
-            <paper-tabs id="tabbar" selected="<%= @tab %>" class="bottom fit" links noink flex>
-                <paper-tab><%= link_to "Home", {controller: "static", action: "about", :format => "html", remote: true}, horizontal:'', 'center-center':'',  layout:'' %></paper-tab>
-                <paper-tab> <a horizontal center-center layout href="/public"><%= t :public %></a></paper-tab>
-                <paper-tab><%= link_to "PIC", {controller: "static", action: "pic", :format => "html", remote: true}, horizontal:'', 'center-center':'',  layout:'' %></paper-tab>
-            </paper-tabs>
-            
-            <languages-menu icon="language" relative>
-                <%= render 'partials/languages_menu' %>
-            </languages-menu>
-        </core-toolbar>
+<body>
+    <header>
+        <div container>
+            <nav id="links">
+                <%= link_to "Home", {controller: "static", action: "about", :format => "html"} %>
+                <a href="/public"><%= t :public %></a>
+                <%= link_to "PIC", {controller: "static", action: "pic", :format => "html"} %>
+            </nav>
         
-        <div id="content">
-            <%= yield %>
+            <nav id="languages">
+                <%= render 'partials/languages_menu' %>
+            </nav>
         </div>
-    </core-header-panel>
+    </header>
+    
+    <div id="content">
+        <%= yield %>
+        <div class="push"></div>
+    </div>
+    
+    <footer>
+        <div container>
+            <span>
+                &copy; 2015 <a href="mailto:acristoffers@gmail.com">Álan Crístoffer</a>
+                <nav id="languages-mobile">
+                    <%= render 'partials/languages_menu' %>
+                </nav>
+            </span>
+        </div>
+    </footer>
 </body>
 </html>

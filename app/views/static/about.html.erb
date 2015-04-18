@@ -1,106 +1,113 @@
-<div id="about">
-    <%= image_tag 'me.jpg', size: '200', id: 'photo' %>
-    
-    <div id="beside-image">
-        <span id='about-name'>Álan Crístoffer e Sousa</span>
-        <br><br>
-        <span>
-            <core-icon class="profile-icon" icon="mail"></core-icon>
-            <a href="mailto:acristoffers@gmail.com">acristoffers@gmail.com</a> <br>
+<div id="about-me">
+    <div container>
+        <%= image_tag 'me.jpg', size: '200', id: 'photo' %>
+        
+        <div layout inline vertical>
+            <h1>Álan Crístoffer e Sousa</h1>
             
-            <core-icon class="profile-icon" icon="mail"></core-icon>
-            <a href="mailto:acristoffers@me.com">acristoffers@me.com</a> <br>
+            <span layout inline horizontal>
+                <span class="emails">
+                    <br>
+                    <a href="mailto:acristoffers@gmail.com">acristoffers@gmail.com</a>
+                    <a href="mailto:acristoffers@me.com">acristoffers@me.com</a>
+                    <a href="mailto:acristoffers@live.com">acristoffers@live.com</a>
+                    <a href="mailto:alan@acristoffers.me">alan@acristoffers.me</a>
+                </span>
             
-            <core-icon class="profile-icon" icon="mail"></core-icon>
-            <a href="mailto:acristoffers@live.com">acristoffers@live.com</a> <br>
+                <span class="languages">
+                    <strong><%= t :i_can_speak %></strong> <br>
+                    <%= t :pt %> (<%= t :native %>) <br>
+                    <%= t :en %> (C1) <br>
+                    <%= t :de %> (B1) <br>
+                    <%= t :fr %> (A2)
+                </span>
+            </span>
             
-            <core-icon class="profile-icon" icon="mail"></core-icon>
-            <a href="mailto:alan@acristoffers.me">alan@acristoffers.me</a>
-            
-            <br><br>
-            
-            <core-icon class="profile-icon" icon="lock"></core-icon>
-            <a href="https://acristoffers.me/public/PublicKey.asc" target="_blank"><%= t :gpg_public_key %></a>
-            
-            <br><br>
+            <a href="https://acristoffers.me/public/PublicKey.asc"><%= t :gpg_public_key %></a>
+        </div>
+        
+        <span class="social">
+            <a href="https://facebook.com/acristoffers" target="_blank"><%= image_tag 'fb.jpg', size: '24', class: 'profile-icon' %></a>
+            <a href="https://plus.google.com/+AlanCristoffer" target="_blank"><%= image_tag 'gplus.jpg', size: '24', class: 'profile-icon' %></a>
+            <a href="https://twitter.com/acristoffers" target="_blank"><%= image_tag 'twitter.jpg', size: '24', class: 'profile-icon' %></a>
+            <a href="https://github.com/acristoffers" target="_blank"><%= image_tag 'github.jpg', size: '24', class: 'profile-icon' %></a>
         </span>
+        
+        <div id="about-text">
+            <%= t :about_me %>
+        </div>
+        
+        <h1><%= t :some_projects %></h1>
     </div>
     
-    <div class="social">
-        <div class='float-left'>    
-            <%= image_tag 'fb.jpg', size: '24', class: 'profile-icon' %>
-            <a href="https://facebook.com/acristoffers" target="_blank">@acristoffers</a> <br>
-            <%= image_tag 'gplus.jpg', size: '24', class: 'profile-icon' %>
-            <a href="https://plus.google.com/+AlanCristoffer" target="_blank">+AlanCristoffer</a> <br>
-            <%= image_tag 'twitter.jpg', size: '24', class: 'profile-icon' %>
-            <a href="https://twitter.com/acristoffers" target="_blank">@acristoffers</a> <br>
-            <%= image_tag 'github.jpg', size: '24', class: 'profile-icon' %>
-            <a href="https://github.com/acristoffers" target="_blank">@acristoffers</a>
-        </div>
-        <br>
-        <div class='float-right'>
-            <core-icon class="profile-icon" icon="translate"></core-icon> <%= t :pt %> (<%= t :native %>) <br>
-            <core-icon class="profile-icon" icon="translate"></core-icon> <%= t :en %> (C1) <br>
-            <core-icon class="profile-icon" icon="translate"></core-icon> <%= t :de %> (B1) <br>
-            <core-icon class="profile-icon" icon="translate"></core-icon> <%= t :fr %> (A2)
+    <div id="void" class="application">
+        <div container>
+            <div>
+                <a href="https://github.com/acristoffers/Void" target="_blank">
+                    <%= image_tag 'void.svg', :class => 'icon' %>
+                    <div class="title">Void</div>
+                </a>
+                <div class="desc"><%= t :void_desc %></div>
+                
+                <span class="screenshot-text"><%= t :void_ss1_desc %></span>
+                <%= image_tag 'screenshots/Void 1.png', class: 'screenshot' %>
+                
+                <%= image_tag 'screenshots/Void 2.png', class: 'screenshot' %>
+                <span class="screenshot-text"><%= t :void_ss2_desc %></span>
+                
+                <span class="screenshot-text"><%= t :void_ss3_desc %></span>
+                <%= image_tag 'screenshots/Void 3.png', class: 'screenshot' %>
+            </div>
         </div>
     </div>
     
-    <div class="clear text">
-        <%= t :about_me %>
-        
-        <br><br>
-        <h2><%= t :some_projects %></h2>
-        <br>
-        
-        <div class="application-card">
-            <a href="https://github.com/acristoffers/Void" target="_blank">
-                <div>
-                    <%= image_tag 'void.svg', size: '64' %>
-                    <span class="title">Void</span>
-                </div>
-                <div class="desc"><br><%= t :void_desc %></div>
-            </a>
-        </div>
-        <br><br>
-        <div class="application-card">
+    <div id="tracker" class="application">
+        <div container>
             <a href="http://goo.gl/QrEwYK" target="_blank">
-                <div>
-                    <%= image_tag 'tracker.png', size: '64' %>
-                    <span class="title">Correios Tracker</span>
-                </div>
-                <div class="desc"><br><%= t :correios_tracker_desc %></div>
+                <%= image_tag 'tracker.svg', :class => 'icon' %>
+                <div class="title">Correios Tracker</div>
             </a>
+            <div class="desc"><br><%= t :correios_tracker_desc %></div>
+            
+            <span class="screenshot-text"><%= t :tracker_ss1_desc %></span>
+            <%= image_tag 'screenshots/Tracker 1.png', class: 'screenshot' %>
+            
+            <%= image_tag 'screenshots/Tracker 2.png', class: 'screenshot' %>
+            <span class="screenshot-text"><%= t :tracker_ss2_desc %></span>
         </div>
-        <br><br>
-        <div class="application-card">
+    </div>
+    
+    <div id="testsdatabase" class="application">
+        <div container>
             <a href="https://github.com/acristoffers/TestsDatabase" target="_blank">
-                <div>
-                    <%= image_tag 'tests-database.png', size: '64' %>
-                    <span class="title">TestsDatabase</span>
-                </div>
-                <div class="desc"><br><%= t :tests_database_desc %></div>
+                <%= image_tag 'tests-database.png', :class => 'icon' %>
+                <div class="title">TestsDatabase</div>
             </a>
+            <div class="desc"><br><%= t :tests_database_desc %></div>
+            
+            <span class="screenshot-text"><%= t :tb_ss1_desc %></span>
+            <%= image_tag 'screenshots/TestsDatabase 1.png', class: 'screenshot' %>
+            
+            <%= image_tag 'screenshots/TestsDatabase 2.png', class: 'screenshot' %>
+            <span class="screenshot-text"><%= t :tb_ss2_desc %></span>
+            
+            <span class="screenshot-text"><%= t :tb_ss3_desc %></span>
+            <%= image_tag 'screenshots/TestsDatabase 3.png', class: 'screenshot' %>
         </div>
-        <br><br>
-        <div class="application-card">
+    </div>
+    
+    <div id="cef" class="application">
+        <div container>
             <a href="https://github.com/acristoffers/CEFSimpleSample" target="_blank">
-                <div>
-                    <%= image_tag 'cef_logo.png', size: '64' %>
-                    <span class="title">CEFSimpleSample</span>
-                </div>
-                <div class="desc"><br><%= t :cefss_desc %></div>
+                <%= image_tag 'cef_logo.png', :class => 'icon' %>
+                <div class="title">CEFSimpleSample</div>
             </a>
-        </div>
-        <br><br>
-        <div class="application-card">
+            <%= t :and %>
             <a href="https://github.com/acristoffers/CEF3SimpleSample" target="_blank">
-                <div>
-                    <%= image_tag 'cef_logo.png', size: '64' %>
-                    <span class="title">CEF3SimpleSample</span>
-                </div>
-                <div class="desc"><br><%= t :cef3ss_desc %></div>
+                <%= image_tag 'cef_logo.png', :class => 'icon' %>
+                <div class="title">CEF3SimpleSample</div>
             </a>
+            <div class="desc"><br><%= t :cefss_desc %></div>
         </div>
-    <div>
+    </div>
 </div>

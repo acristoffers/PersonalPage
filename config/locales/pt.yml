@@ -32,12 +32,21 @@ pt:
   de: 'Alemão'
   native: 'Nativo'
   about_me: "Sou um estudante de engenharia mecatrônica no CEFET-MG, Brasil. Amo programar e a idéia de controlar grandes estruturas com pequenos circuitos. Também sou apaixonados com idiomas e interessado em criptografia."
+  i_can_speak: 'Eu falo:'
   some_projects: 'Alguns Projetos'
-  void_desc: 'Encripta arquivos usando cripotgrafia assimétrica GPG mantendo a estrutura de diretórios.'
+  void_desc: 'Criptografa arquivos usando cripotgrafia assimétrica GPG mantendo a estrutura de diretórios.'
+  void_ss1_desc: 'Imagens são exibidas com preview, e podem ser visualisadas no aplicativo, sem salvar no disco.'
+  void_ss2_desc: 'Arquivos de texto podem ser editados no aplicativo, em um editor embutido.'
+  void_ss3_desc: 'Assista vídeos no aplicativo. O vídeo é extraído para um arquivo temporário, que é destrúido no final. Usa os codecs do sistema.'
   correios_tracker_desc: 'Verifica o status de encomendas dos Correios'
+  tracker_ss1_desc: 'Mostra uma lista uníficada de pacotes seguidos e seus último status, para rápida localização.'
+  tracker_ss2_desc: 'Automaticamente troca entre os teclados númerico e alfabético quando necessário.'
   tests_database_desc: 'Gerencia um banco de questões e facilita a geração e correção de provas.'
-  cefss_desc: 'Exemplo simples para começar a usar o Framework CEF. Somente o mínimo necessário.'
-  cef3ss_desc: 'Exemplo simples para começar a usar o Framework CEF 3. Somente o mínimo necessário.'
+  tb_ss1_desc: "Este aplicativo foi desenvolvido para o estado de Minas Gerais, para gerenciar as provas aplicadas aos recrutas bem como provas anuais."
+  tb_ss2_desc: "Ele permite que eles gerem as provas fácilmente, usando uma interface simples, que permite gerar testes personalizados, escolhendo o número e níveis de dificuldade das questões, se serão de múltipla escolha ou discursivas e pode embaralhar as questões e respostas, enquanto mantém o gabarito fácil de conferir."
+  tb_ss3_desc: 'As questões podem ser adicionas em um editor de texto rico, que permite a criação de questões estilizadas.'
+  and: e
+  cefss_desc: "Código fonte do mínimo necessário para usar o Chromium Embedded Framework versões 1 e 3. Cria uma janela, carrega um arquivo HTML e cria ligações bidirecionais entre Javascript e C++ para mostrar o básico de um aplicativo C++ com interface HTML."
   
 # static#pic
   external_clock: 'Clock Externo'

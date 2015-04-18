@@ -1,27 +1,4 @@
 GIT
-  remote: https://github.com/alchapone/polymer-core-rails.git
-  revision: 79b21337d5b8d8d00b744372e9738b459da2c574
-  specs:
-    polymer-core-rails (0.2.6)
-      polymer-rails (~> 0.2.2)
-
-GIT
-  remote: https://github.com/alchapone/polymer-paper-rails.git
-  revision: ccf8dbd92fb277389b22cc7592aac695c3b6437e
-  specs:
-    polymer-paper-rails (0.2.6)
-      polymer-rails (~> 0.2.5)
-
-GIT
-  remote: https://github.com/alchapone/polymer-rails.git
-  revision: cf7ff059ba8992fdd6085cfd9636cda546a801db
-  specs:
-    polymer-rails (0.2.8)
-      nokogiri (~> 1.6)
-      nokogumbo (~> 1.1)
-      rails (>= 3.1.0)
-
-GIT
   remote: https://github.com/iain/http_accept_language.git
   revision: 38890b400e3c7bdd348a386f4460632eb42fc7a8
   specs:
@@ -107,8 +84,6 @@ GEM
     mysql2 (0.3.18)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    nokogumbo (1.4.1)
-      nokogiri
     rack (1.6.0)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -186,9 +161,6 @@ DEPENDENCIES
   jquery-migrate-rails
   jquery-rails
   mysql2
-  polymer-core-rails!
-  polymer-paper-rails!
-  polymer-rails!
   rails (= 4.2.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
