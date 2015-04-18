@@ -40,13 +40,13 @@ body.mobile {
             }
             
             .social {
-                width: 2em*4.5;
+                width: 3em*4+1em;
                 margin: 1em auto;
                 
                 img {
-                    height: 2em;
-                    width: auto;
-                    margin-right: 5px auto;
+                    height: auto;
+                    width:  2em;
+                    margin: 0 0.5em;
                 }
             }
             
