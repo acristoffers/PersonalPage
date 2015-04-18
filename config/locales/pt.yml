@@ -31,7 +31,7 @@ pt:
   fr: 'Francês'
   de: 'Alemão'
   native: 'Nativo'
-  about_me: "Sou um estudante de engenharia mecatrônica no CEFET-MG, Brasil. Amo programar e a idéia de controlar grandes estruturas com pequenos circuitos. Também sou apaixonados com idiomas e interessado em criptografia."
+  about_me: "Sou um estudante de engenharia mecatrônica no CEFET-MG, Brasil. Amo programar e a idéia de controlar grandes estruturas com pequenos circuitos. Também sou apaixonado com idiomas e interessado em criptografia."
   i_can_speak: 'Eu falo:'
   some_projects: 'Alguns Projetos'
   void_desc: 'Criptografa arquivos usando cripotgrafia assimétrica GPG mantendo a estrutura de diretórios.'
