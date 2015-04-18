@@ -35,6 +35,10 @@ html, body {
     height: 100%;
 }
 
+body[unresolved] {
+    display: none;
+}
+
 header.shadow {
     background-color: white;
     box-shadow: 0 2px 5px #888888;

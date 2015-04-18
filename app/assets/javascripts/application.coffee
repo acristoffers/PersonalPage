@@ -18,10 +18,10 @@
 
 $ ->
     $('body').addClass( if $.browser.mobile then 'mobile' else 'desktop' )
+    $('body').removeAttr('unresolved')
     
     $(document).scroll () ->
         if $(document).scrollTop() > 0
             $('header').addClass('shadow')
         else
             $('header').removeClass('shadow')
-            
