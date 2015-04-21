@@ -1,0 +1,28 @@
+
+@import "variables";
+
+$font-size-desktop: 10rem;
+$font-size-mobile:  2rem;
+
+#countdown {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+body.desktop {
+    #countdown {
+        margin-top: 0 - $font-size-desktop + $header_height;
+        font-size: $font-size-desktop;
+    }
+}
+
+body.mobile {
+    #countdown {
+        margin-top: 0 - $font-size-mobile - $header_height;
+        font-size: $font-size-mobile;
+    }
+}

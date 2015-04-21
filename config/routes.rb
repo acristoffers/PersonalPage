@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   scope "(:locale)" do
     get 'pic' => 'static#pic'
     get 'about' => 'static#about'
+    get 'countdown' => 'static#countdown'
     get 'll' => 'static#localized_links'
   end
   

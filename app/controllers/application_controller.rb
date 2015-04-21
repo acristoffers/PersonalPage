@@ -3,8 +3,8 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   
-  before_action :set_locale
- 
+  before_action :set_locale, :set_mobile
+  
   def set_locale
     available = I18n.available_locales
     http_preferred_lang = http_accept_language.preferred_language_from available
@@ -16,6 +16,10 @@ class ApplicationController < ActionController::Base
     end
     
     params[:locale] = I18n.locale
+  end
+  
+  def set_mobile
+    @mobile = mobile?
   end
   
   def mobile?
