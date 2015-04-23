@@ -1,3 +1,3 @@
 <% I18n.available_locales.each do |locale| %>
-    <%= link_to image_tag(locale.to_s + '.svg', :title => t(locale)), :locale => locale %>
+    <%= link_to image_tag(locale.to_s + '.svg', :title => t(locale)), :locale => locale, :format => :html %>
 <% end %>

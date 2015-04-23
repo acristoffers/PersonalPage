@@ -17,8 +17,7 @@ secondsToUnits = (s) ->
     s -= hours(thours)
     tminutes = s // minutes(1)
     s -= minutes(tminutes)
-    tseconds = s // seconds(1)
-    s -= seconds(tseconds)
+    tseconds = s
     t =
         years: tyears,
         months: tmonths,

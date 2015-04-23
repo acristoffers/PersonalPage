@@ -1,6 +1,6 @@
 class StaticController < ApplicationController
   def index
-    redirect_to about_url
+    redirect_to about_url :format => :html
   end
   
   def about
