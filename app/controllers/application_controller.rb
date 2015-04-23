@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
     
     I18n.locale = params[:locale] || http_preferred_lang
     
-    if I18n.locale == [] then
+    if I18n.locale.empty? then
       I18n.locale = I18n.default_locale
     end
     

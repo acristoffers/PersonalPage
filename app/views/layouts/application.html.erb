@@ -20,7 +20,8 @@
             </nav>
         
             <nav id="languages">
-                <%= render 'partials/languages_menu' %>
+                <% @partials_language_menu = render 'partials/languages_menu' %>
+                <%= @partials_language_menu %>
             </nav>
         </div>
     </header>
@@ -35,7 +36,7 @@
             <span>
                 &copy; 2015 <a href="mailto:acristoffers@gmail.com">Álan Crístoffer</a>
                 <nav id="languages-mobile">
-                    <%= render 'partials/languages_menu' %>
+                    <%= @partials_language_menu %>
                 </nav>
             </span>
         </div>
