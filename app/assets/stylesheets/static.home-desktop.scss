@@ -44,7 +44,7 @@ body.desktop {
         #about-text {
             margin: 5rem auto;
             width: 700px;
-            font: normal 1.5rem/#{$line_height} $font_name;
+            @include resize-font(1.5rem);
         }
     
         #void {
@@ -75,7 +75,7 @@ body.desktop {
         
             .desc {
                 margin: 1rem 0;
-                font: normal 1.5rem/#{$line_height} $font_name;
+                @include resize-font(1.5rem);
             }
         
             .screenshot {

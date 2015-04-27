@@ -22,7 +22,7 @@
 }
 
 html {
-    font: normal 12pt Sans-Serif;
+    @include resize-font(12pt);
     line-height: $line_height;
     
     a, a:link, a:hover, a:visited, a:active {

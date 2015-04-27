@@ -62,7 +62,7 @@ body.desktop{
             display: inline-block;
             width: $content_width*1/3;
             margin-left: 2rem;
-            font: auto 1.5rem/#{$line_height} monospace;
+            @include resize-named-font(1.5rem, monospace);
             font-weight: bold;
         }
     }

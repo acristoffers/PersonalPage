@@ -64,7 +64,7 @@ body.mobile {
         }
     
         #asm {
-            font: 1rem monospace;
+            @include resize-named-font(1.5rem, monospace);
             font-weight: bold;
             overflow: scroll;
         }
