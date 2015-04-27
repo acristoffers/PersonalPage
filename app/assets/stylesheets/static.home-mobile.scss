@@ -57,6 +57,7 @@ body.mobile {
             
             #about-text {
                 margin-bottom: 2rem;
+                font: normal 1.5rem/#{$line_height} $font_name;
             }
             
             #void {
@@ -91,7 +92,7 @@ body.mobile {
         
                 .desc {
                     margin: 1rem 0;
-                    font: normal 1.5rem/#{$line_height} Sans-serif;
+                    font: normal 1.5rem/#{$line_height} $font_name;
                 }
         
                 .screenshot {
