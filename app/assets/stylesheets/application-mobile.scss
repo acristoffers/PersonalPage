@@ -11,7 +11,7 @@ body.mobile {
         
         nav {
             display: inline-block;
-            margin: ($header_height - $line_height) / 2 1em;
+            margin: ($header_height - $text_size) / 2 1rem;
         }
         
         #links {
@@ -31,7 +31,7 @@ body.mobile {
     footer {
         #languages-mobile {
             img {
-                height: 2em;
+                height: 2rem;
                 width: auto;
                 margin-right: 5px;
             }

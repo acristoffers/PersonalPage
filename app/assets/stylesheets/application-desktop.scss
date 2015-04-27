@@ -11,14 +11,14 @@ body.desktop {
         
         nav {
             display: inline-block;
-            margin: ($header_height - $line_height) / 2 0;
+            margin: (($header_height - $text_size) / 2) 0;
         }
     
         #links {
             float: left;
             
             a {
-                margin: 1em;
+                margin: 1rem;
             }
                     
             a:hover {
@@ -45,7 +45,7 @@ body.desktop {
     [container] {
         width: $content_width;
         margin: 0 auto;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }

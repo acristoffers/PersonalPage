@@ -24,11 +24,12 @@ body.mobile {
             #photo {
                 width: 100%;
                 height: auto;
-                margin-bottom: 1em;
+                margin-bottom: 1rem;
             }
             
             .emails {
-                margin-bottom: 1em;
+                margin: 1rem 0;
+                line-height: 2rem;
                 
                 a {
                     display: block;
@@ -36,22 +37,26 @@ body.mobile {
             }
             
             .languages {
-                margin-bottom: 1em;
+                margin-bottom: 1rem;
             }
             
             .social {
-                width: 3em*4+1em;
-                margin: 1em auto;
+                width: 13rem;
+                margin: 1rem auto;
                 
-                img {
-                    height: auto;
-                    width:  2em;
-                    margin: 0 0.5em;
+                a {
+                    display: inline-block;
+                    
+                    img {
+                        height: auto;
+                        width:  2rem;
+                        margin: 0 0.5rem;
+                    }
                 }
             }
             
             #about-text {
-                margin-bottom: 2em;
+                margin-bottom: 2rem;
             }
             
             #void {
@@ -81,12 +86,12 @@ body.mobile {
                 .title {
                     display: inline-block;
                     vertical-align: middle;
-                    font-size: 2em;
+                    font-size: 2rem;
                 }
         
                 .desc {
-                    margin: 1em 0;
-                    font-size: 1.5em;
+                    margin: 1rem 0;
+                    font: normal 1.5rem/#{$line_height} Sans-serif;
                 }
         
                 .screenshot {
@@ -95,7 +100,7 @@ body.mobile {
                 }
                 
                 .screenshot-text {
-                    margin: 1em 0;
+                    margin: 1rem 0;
                 }
             }
         }

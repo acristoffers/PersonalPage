@@ -15,7 +15,7 @@ body.desktop{
                 width: 100%;
                 border: 0;
                 border-bottom: 1px solid gray;
-                font-size: 1.5em;
+                font-size: 1.5rem;
                 color: #333;
             }
         
@@ -35,12 +35,12 @@ body.desktop{
         
             input[type=button] {
                 display: block;
-                font-size: 1.5em;
+                font-size: 1.5rem;
                 text-transform: uppercase;
                 border: none;
                 background: transparent;
                 cursor: pointer;
-                margin-bottom: 1em;
+                margin-bottom: 1rem;
             }
         
             input[type=button]:focus {
@@ -54,15 +54,15 @@ body.desktop{
             label {
                 display: block;
                 font-weight: bold;
-                margin-top: 2em;
+                margin-top: 2rem;
             }
         }
     
         #asm {
             display: inline-block;
             width: $content_width*1/3;
-            margin-left: 2em;
-            font: 1.5em monospace;
+            margin-left: 2rem;
+            font: auto 1.5rem/#{$line_height} monospace;
             font-weight: bold;
         }
     }

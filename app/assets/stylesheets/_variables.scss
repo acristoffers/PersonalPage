@@ -1,6 +1,7 @@
 
 $content_width: 900px;
 $header_height: 3rem;
+// Used as base for math. The actual font size is defined in PT, in the file application.scss
 $text_size: 1rem;
-$line_height: 1.5rem;
+$line_height: 1.5em;
 $screenshot_width: 480px;

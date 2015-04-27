@@ -20,7 +20,7 @@ body.mobile {
                 width: 100%;
                 border: 0;
                 border-bottom: 1px solid gray;
-                font-size: 1.5em;
+                font-size: 1.5rem;
                 color: #333;
             }
         
@@ -40,12 +40,12 @@ body.mobile {
         
             input[type=button] {
                 display: block;
-                font-size: 1.5em;
+                font-size: 1.5rem;
                 text-transform: uppercase;
                 border: none;
                 background: transparent;
                 cursor: pointer;
-                margin-bottom: 1em;
+                margin-bottom: 1rem;
             }
         
             input[type=button]:focus {
@@ -59,12 +59,12 @@ body.mobile {
             label {
                 display: block;
                 font-weight: bold;
-                margin-top: 2em;
+                margin-top: 2rem;
             }
         }
     
         #asm {
-            font: 1em monospace;
+            font: 1rem monospace;
             font-weight: bold;
             overflow: scroll;
         }

@@ -22,7 +22,7 @@
 }
 
 html {
-    font: normal $text_size Helvetica, Sans-Serif;
+    font: normal 12pt Sans-Serif;
     line-height: $line_height;
     
     a, a:link, a:hover, a:visited, a:active {
@@ -52,27 +52,38 @@ header {
     transition: box-shadow 0.25s ease-in-out;
 }
 
+/*
+ * I can't use variables because one is EM and the other REM
+ * So I redefine this here, to make sure I don't break the layout by
+ * changing the font size
+ */
+$footer_font_size: 1 * $text_size;
+$footer_line_height: 1.5 * $footer_font_size;
+
 #content {
     min-height: 100%;
-    margin: 0 auto (-10 * $text_size);
+    margin: 0 auto (-10 * $footer_font_size);
 }
 
 footer, .push {
-    height: 10 * $text_size;
+    height: 10 * $footer_font_size;
 }
 
 footer {
     background-color: #333;
     color: white;
     
+    line-height: $footer_line_height;
+    font-size: $footer_font_size;
+    
     div {
-        height: 10 * $text_size;
+        height: 10 * $footer_font_size;
     }
     
     span {
         display: inline-block;
-        margin: ((10 * $text_size - $line_height) / 2) 0;
-        height: $line_height;
+        margin: ((10 * $footer_font_size - $footer_line_height)/2) 0;
+        height: $footer_line_height;
         width: 100%;
         text-align: center;
         

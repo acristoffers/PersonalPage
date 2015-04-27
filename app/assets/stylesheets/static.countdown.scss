@@ -1,7 +1,7 @@
 
 @import "variables";
 
-$font-size-desktop: 10rem;
+$font-size-desktop: 8rem;
 $font-size-mobile:  2rem;
 
 #countdown {
@@ -16,13 +16,13 @@ $font-size-mobile:  2rem;
 body.desktop {
     #countdown {
         margin-top: 0 - $font-size-desktop + $header_height;
-        font-size: $font-size-desktop;
+        font: normal $font-size-desktop Monospace;
     }
 }
 
 body.mobile {
     #countdown {
         margin-top: 0 - $font-size-mobile - $header_height;
-        font-size: $font-size-mobile;
+        font: normal $font-size-mobile Monospace;
     }
 }
