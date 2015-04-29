@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   end
   
   get '/:locale' => 'static#index'
-
+  
+  match '*path' => redirect('/'), via: :get unless Rails.env.development?
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
