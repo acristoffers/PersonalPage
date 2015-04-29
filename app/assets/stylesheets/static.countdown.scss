@@ -15,14 +15,14 @@ $font-size-mobile:  2rem;
 
 body.desktop {
     #countdown {
-        margin-top: 0 - $font-size-desktop + $header_height;
+        margin-top: (0 - ($font-size-desktop + $header_height));
         @include resize-named-font($font-size-desktop, Monospace)
     }
 }
 
 body.mobile {
     #countdown {
-        margin-top: 0 - $font-size-mobile - $header_height;
+        margin-top: (0 - ($font-size-mobile + $header_height));
         @include resize-named-font($font-size-mobile, Monospace)
     }
 }
