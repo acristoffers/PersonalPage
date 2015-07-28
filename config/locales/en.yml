@@ -42,7 +42,7 @@ en:
   tracker_ss2_desc: 'Keyboard automatically changes between alphabetic and numeric as needed.'
   tests_database_desc: 'Manage questions and print tests.'
   tb_ss1_desc: "This application was developed for the firefighter corporation of the state of Minas Gerais, Brazil, to manage the tests applied to the newcomers, as well as anual tests."
-  tb_ss2_desc: "It lets them generate the tests using a simple interface, generating tests by question level, multiple choice or discursive and can generate tests with question and answers in a random order, while keeping it easy to grade."
+  tb_ss2_desc: "It lets them generate the tests using a simple interface, generating tests by question level or manual selection, objective or discursive, and can generate tests with question and answers in a random order, while keeping it easy to grade."
   tb_ss3_desc: 'Questions can be added with a WYSIWYG text field, which allows the creation of tests with rich styling.'
   and: and
   cefss_desc: "Source code for bare-minimum applications to get started with Chromium Embedded Framework versions 1 and 3. Sets up a window, loads a HTML file and creates bidirectional binding between Javascript and C++ to show the very basic of a C++ application with HTML UI."
