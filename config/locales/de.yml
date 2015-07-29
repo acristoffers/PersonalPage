@@ -41,7 +41,7 @@ de:
   tracker_ss1_desc: 'Zeigt eine Liste der verfolgten Pakete mit ihrem aktuellen Status für einfache Kontrolle.'
   tracker_ss2_desc: 'Tastatur wechselt automatisch zwischen alphabetischen und numerischen Tasten nach Bedarf.'
   tests_database_desc: 'Fragen verwalten und Prüfungen drucken.'
-  tb_ss1_desc: "Diese Anwendung wurde für den Feuerwehrmann des Bundesstaates Minas Gerais/Brasilien entwickelt, um die Tests der Newcomern und die jährlichen Tests zu verwalten."
+  tb_ss1_desc: "Diese Anwendung wurde für den Feuerwehrmänner des Bundesstaates Minas Gerais/Brasilien entwickelt, um die Tests der Newcomern und die jährlichen Tests zu verwalten."
   tb_ss2_desc: "Sie können die Prüfungen uber ein einfaches Interface vorbereiten. Die Antworten können diskursiven oder objektiven sein. Die Auswahl der Fragen kann automatiziert werden oder von Hand gemacht. Und die Bewertung ist natürlich einfach gemacht."
   tb_ss3_desc: 'Fragen können mit einem WYSIWYG-Textfeld hinzugefügt werden, das die Erzeugung der reichstylische Prüfungen ermöglicht.'
   and: und
