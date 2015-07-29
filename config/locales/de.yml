@@ -30,7 +30,7 @@ de:
   fr: 'Französisch'
   de: 'Deutsch'
   native: 'Muttersprache'
-  about_me: 'Ich bin einer Mechatonikingenieur Student bei CEFET-MG, Brasilien. Ich liebe Programmierung und die Idee, große Strukturen mit kleinen Schaltungen zu steuern. Ich interessiere mich auch für Sprachen und Kryptographie.'
+  about_me: 'Ich bin einer Mechatronikingenieur Student bei CEFET-MG, Brasilien. Ich liebe Programmierung und die Idee, große Strukturen mit kleinen Schaltungen zu steuern. Ich interessiere mich auch für Sprachen und Kryptographie.'
   i_can_speak: 'Ich spreche:'
   some_projects: 'Einige Projekte'
   void_desc: 'Verschlüsseln von Dateien mit GnuPG asymmetrischen Verschlüsselung in einem Ordnerstruktur.'
