@@ -24,7 +24,7 @@ de:
   public: 'Öffentlich'
   
 # static#home
-  gpg_public_key: 'GPG Öffentliches Schlüßeln'
+  gpg_public_key: 'GPG öffentlicher Schlüßel'
   pt: 'Portugiesisch'
   en: 'Englisch'
   fr: 'Französisch'
