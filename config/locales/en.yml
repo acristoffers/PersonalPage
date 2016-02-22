@@ -22,7 +22,7 @@
 en:
   title: 'Álan Crístoffer'
   public: 'Public'
-  
+
 # static#home
   gpg_public_key: 'GPG Public Key'
   pt: 'Portuguese'
@@ -46,11 +46,11 @@ en:
   tb_ss3_desc: 'Questions can be added with a WYSIWYG text field, which allows the creation of tests with rich styling.'
   and: and
   cefss_desc: "Source code for bare-minimum applications to get started with Chromium Embedded Framework versions 1 and 3. Sets up a window, loads a HTML file and creates bidirectional binding between Javascript and C++ to show the very basic of a C++ application with HTML UI."
-  
+
 # static#pic
   external_clock: 'External Clock'
   label: 'Label'
   value: 'Value'
-  frequency: 'Frequency'
+  frequency: 'Hz'
   seconds: 'Seconds'
   instructions: 'Instructions'

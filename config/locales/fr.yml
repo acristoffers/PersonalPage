@@ -22,7 +22,7 @@
 fr:
   title: 'Álan Crístoffer'
   public: 'Public'
-  
+
   # static#home
   gpg_public_key: 'Clè GPG publique'
   pt: 'Portugais'
@@ -46,11 +46,11 @@ fr:
   tb_ss3_desc: 'Les questions peuvent être ajoutés avec un champ de texte WYSIWYG, qui permet la création de tests avec style riche.'
   and: et
   cefss_desc: "Le code source des applications nus minimum pour commencer avec les versions de Chromium Embedded Framework 1 et 3. Met en place une fenêtre, charge un fichier HTML et crée liaison entre Javascript et C++ bidirectionnel pour montrer la très basique d'une application C++ avec HTML UI."
-  
+
 # static#pic
   external_clock: 'Clock externe'
   label: 'Label'
   value: 'Valeur'
-  frequency: 'Fréquence'
+  frequency: 'Hz'
   seconds: 'Secondes'
   instructions: 'Instructions'

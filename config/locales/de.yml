@@ -22,7 +22,7 @@
 de:
   title: 'Álan Crístoffer'
   public: 'Öffentlich'
-  
+
 # static#home
   gpg_public_key: 'GPG öffentlicher Schlüßel'
   pt: 'Portugiesisch'
@@ -46,11 +46,11 @@ de:
   tb_ss3_desc: 'Fragen können mit einem WYSIWYG-Textfeld hinzugefügt werden, das die Erzeugung der reichstylische Prüfungen ermöglicht.'
   and: und
   cefss_desc: "Der Quellcode für Minimalen Anwendungen, damit Sie mit Chromium Embedded Framework-Versionen 1 und 3 beginnen können. Setzt sich ein Fenster, lädt eine HTML-Datei und erstellt eine bidirektionale Verbindung zwischen Javascript und C ++ zu zeigen, die Grundlagen von einem C ++ Anwendung mit HTML-UI."
-  
+
 # static#pic
   external_clock: 'Externe Clock'
   label: 'Label'
   value: 'Wert'
-  frequency: 'Frequenz'
-  seconds: 'Seconde'
-  instructions: 'Anleitungen'
+  frequency: 'Hz'
+  seconds: 'Sekunde'
+  instructions: 'Befehle'
