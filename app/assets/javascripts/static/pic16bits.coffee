@@ -38,15 +38,29 @@ class @PIC16bits extends PIC
         new Exp( new Exp( @formula(n-1), '+', new Exp( new Exp(4, '+', @max(n-1)), '*', new Exp(node, '-', 1) ) ), '+', 4 )
 
     generateASM: (inst, clk, func_name = "delay") ->
-        if inst < 5
-            return "do it yourself!"
+        if inst < 0
+            return ''
 
-        if inst < 11
-            inst = inst - 5
-            nop  = (inst % 2)
+        if inst < 5
+            nop = inst % 2
             bra = (inst - nop) / 2
 
             asm  = "#{func_name}:\n"
+            while bra > 0
+                asm += "\tbra $+2\n"
+                bra -= 1
+
+            asm += "\tnop\n" if nop == 1
+            asm += "\treturn\n"
+
+            return asm
+
+        if inst < 11
+            inst -= 5
+            nop   = inst % 2
+            bra   = (inst - nop) / 2
+
+            asm = "#{func_name}:\n"
             while bra > 0
                 asm += "\tbra $+2\n"
                 bra -= 1

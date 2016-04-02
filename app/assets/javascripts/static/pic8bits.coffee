@@ -38,17 +38,31 @@ class @PIC8bits extends PIC
         new Exp( new Exp( @formula(n-1), '+', 2 ), '+', new Exp( new Exp( @max(n-1), '+', 3 ), '*', new Exp( node, '-', 1 ) ) )
 
     generateASM: (inst, clk, func_name) ->
-        if inst < 4
-            return "do it yourself!"
+        if inst < 0
+            return ''
 
-        if inst < 11
-            inst = inst - 4
-            nop  = (inst % 2)
+        if inst < 4
+            nop  = inst % 2
             goto = (inst - nop) / 2
 
-            asm  = "#{func_name}:\n"
+            asm  = ""
             while goto > 0
                 asm += "\tgoto $+1\n"
+                goto -= 1
+
+            asm += "\tnop\n" if nop == 1
+            asm += "\treturn\n"
+
+            return asm
+
+        if inst < 11
+            inst -= 4
+            nop   = (inst % 2)
+            goto  = (inst - nop) / 2
+
+            asm = "#{func_name}:\n"
+            while goto > 0
+                asm  += "\tgoto $+1\n"
                 goto -= 1
 
             asm += "\tnop\n" if nop == 1
