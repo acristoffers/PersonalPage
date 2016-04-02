@@ -1,22 +1,40 @@
 <div id="pic">
     <div container>
         <div id="fields">
-            <label for="label"><%= t :label %>:</label>
-            <input id="label" type="text" value="delay">
-            <label for="clock"><%= t :external_clock %>:</label>
+            <label for="label" class="strong"><%= t :label %>:</label>
+            <input id="label" type="text" value="_delay">
+            <label for="clock" class="strong"><%= t :external_clock %>:</label>
             <input id="clock" type="number" value="4000000">
-            <label for="value"><%= t :value %>:</label>
-            <input id="value" type="number">
-            
+            <label for="value" class="strong"><%= t :value %>:</label>
+            <input id="value" type="number" step="0.001">
+
             <br>
-            
-            <input type="button" id="gen-freq" value="<%= t :frequency %>">
-            <input type="button" id="gen-secs" value="<%= t :seconds %>">
-            <input type="button" id="gen-inst" value="<%= t :instructions %>">
+
+            <div id="radio">
+              <input type="radio" id="gen-freq" name="type" value="f" checked>
+              <label for="gen-freq"><%= t :frequency %></label>
+              <br>
+              <input type="radio" id="gen-secs" name="type" value="s">
+              <label for="gen-secs"><%= t :seconds %></label>
+              <br>
+              <input type="radio" id="gen-inst" name="type" value="i">
+              <label for="gen-inst"><%= t :instructions %></label>
+              <br>
+              <br>
+              <input type="radio" id="pic8bits" name="bits" value="8" checked>
+              <label for="pic8bits"><%= t :pic8bits %></label>
+              <br>
+              <input type="radio" id="pic16bits" name="bits" value="16">
+              <label for="pic16bits"><%= t :pic16bits %></label>
+            </div>
+
+            <br>
+
+            <input type="button" id="generate" value="<%= t :generate %>">
         </div>
-    
+
         <div id="asm">
-        
+
         </div>
     </div>
 </div>

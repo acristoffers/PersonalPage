@@ -54,3 +54,6 @@ de:
   frequency: 'Hz'
   seconds: 'Sekunden'
   instructions: 'Befehle'
+  pic8bits: 'PIC 8 bits (MPASM)'
+  pic16bits: 'PIC 16 bits (XC16)'
+  generate: 'generieren'

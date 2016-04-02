@@ -18,7 +18,8 @@ default: &default
   host: localhost
 
 development:
-  <<: *default
+  adapter: sqlite3
+  encoding: utf8
   database: PersonalPage_development
 
 # Warning: The database defined as "test" will be erased and
