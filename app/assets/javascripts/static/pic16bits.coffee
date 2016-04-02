@@ -45,6 +45,7 @@ class @PIC16bits extends PIC
             nop = inst % 2
             bra = (inst - nop) / 2
 
+            asm = ''
             while bra > 0
                 asm += "\tbra $+2\n"
                 bra -= 1
