@@ -45,13 +45,11 @@ class @PIC16bits extends PIC
             nop = inst % 2
             bra = (inst - nop) / 2
 
-            asm  = "#{func_name}:\n"
             while bra > 0
                 asm += "\tbra $+2\n"
                 bra -= 1
 
             asm += "\tnop\n" if nop == 1
-            asm += "\treturn\n"
 
             return asm
 

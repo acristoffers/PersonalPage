@@ -51,7 +51,6 @@ class @PIC8bits extends PIC
                 goto -= 1
 
             asm += "\tnop\n" if nop == 1
-            asm += "\treturn\n"
 
             return asm
 
