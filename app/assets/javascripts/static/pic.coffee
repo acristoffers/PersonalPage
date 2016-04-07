@@ -100,7 +100,7 @@ class @PIC
 @getClk = (pic)->
     clk = $('#clock').val()
     clk = parseInt(clk)
-    if isNaN(clk) then undefined else pic.clock(clk)
+    if isNaN(clk) then undefined else clk
 
 window.register = ->
     $('#gen-inst').click ->

@@ -27,9 +27,6 @@
 class @PIC16bits extends PIC
     bits: 16
 
-    clock: (external_clock) ->
-      external_clock
-
     # find the formula for n variables
     formula: (n) ->
         node = new Exp()

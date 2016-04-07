@@ -49,7 +49,7 @@ pt:
   cefss_desc: "Código fonte do mínimo necessário para usar o Chromium Embedded Framework versões 1 e 3. Cria uma janela, carrega um arquivo HTML e cria ligações bidirecionais entre Javascript e C++ para mostrar o básico de um aplicativo C++ com interface HTML."
 
 # static#pic
-  external_clock: 'Clock Externo'
+  external_clock: 'Clock interno'
   label: 'Label'
   value: 'Valor'
   frequency: 'Hz'

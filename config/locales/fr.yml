@@ -48,7 +48,7 @@ fr:
   cefss_desc: "Le code source des applications nus minimum pour commencer avec les versions de Chromium Embedded Framework 1 et 3. Met en place une fenêtre, charge un fichier HTML et crée liaison entre Javascript et C++ bidirectionnel pour montrer la très basique d'une application C++ avec HTML UI."
 
 # static#pic
-  external_clock: 'Clock externe'
+  external_clock: 'Clock interne'
   label: 'Label'
   value: 'Valeur'
   frequency: 'Hz'

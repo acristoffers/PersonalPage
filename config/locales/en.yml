@@ -48,7 +48,7 @@ en:
   cefss_desc: "Source code for bare-minimum applications to get started with Chromium Embedded Framework versions 1 and 3. Sets up a window, loads a HTML file and creates bidirectional binding between Javascript and C++ to show the very basic of a C++ application with HTML UI."
 
 # static#pic
-  external_clock: 'External Clock'
+  external_clock: 'Internal Clock'
   label: 'Label'
   value: 'Value'
   frequency: 'Hz'
