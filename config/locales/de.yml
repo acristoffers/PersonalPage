@@ -45,7 +45,7 @@ de:
   tb_ss2_desc: "Sie können die Prüfungen uber ein einfaches Interface vorbereiten. Die Antworten können diskursiven oder objektiven sein. Die Auswahl der Fragen kann automatiziert werden oder von Hand gemacht. Und die Bewertung ist natürlich einfach gemacht."
   tb_ss3_desc: 'Fragen können mit einem WYSIWYG-Textfeld hinzugefügt werden, das die Erzeugung der reichstylische Prüfungen ermöglicht.'
   and: und
-  cefss_desc: "Der Quellcode einer minimalen Anwendung, damit Sie mit Chromium Embedded Framework-Versionen 1 und 3 beginnen können. Setzt sich ein Fenster, lädt eine HTML-Datei und erstellt eine bidirektionale Verbindung zwischen Javascript und C++, um die Grundlagen von einem C ++ Anwendung mit HTML-UI zu zeigen."
+  cefss_desc: "Der Quellcode einer minimalen Anwendung, damit Sie mit Chromium Embedded Framework-Versionen 1 und 3 beginnen können. Setzt sich ein Fenster, lädt eine HTML-Datei und erstellt eine bidirektionale Verbindung zwischen Javascript und C++, um die Grundlagen von einem C++ Anwendung mit HTML-UI zu zeigen."
 
 # static#pic
   external_clock: 'Interne Clock'
