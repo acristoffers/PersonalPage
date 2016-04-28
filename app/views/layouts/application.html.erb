@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title><%= t :title %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="theme-color" content="#FFFFFF">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true, 'shim-shadowdom' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -18,19 +19,19 @@
                 <%= link_to "PIC", {controller: "static", action: "pic", :format => "html"} %>
                 <%= link_to "Countdown", {controller: "static", action: "countdown", :format => "html"} %>
             </nav>
-        
+
             <nav id="languages">
                 <% @partials_language_menu = render 'partials/languages_menu' %>
                 <%= @partials_language_menu %>
             </nav>
         </div>
     </header>
-    
+
     <div id="content">
         <%= yield %>
         <div class="push"></div>
     </div>
-    
+
     <footer>
         <div container>
             <span>
