@@ -1,6 +1,4 @@
-
 @import "variables";
-
 body.desktop {
     header {
         height: $header_height;
@@ -8,40 +6,32 @@ body.desktop {
         top: 0;
         left: 0;
         right: 0;
-        
         nav {
             display: inline-block;
             margin: (($header_height - $text_size) / 2) 0;
         }
-    
         #links {
             float: left;
-            
             a {
                 margin: 1rem;
             }
-                    
             a:hover {
                 text-decoration: underline;
             }
         }
-    
         #languages {
             float: right;
         }
-    
         img {
             width: auto;
             height: ($header_height - $text_size) / 2;
             vertical-align: middle;
             margin-right: 5px;
         }
-    
         img:hover {
             border-bottom: 2px solid white;
         }
     }
-    
     [container] {
         width: $content_width;
         margin: 0 auto;

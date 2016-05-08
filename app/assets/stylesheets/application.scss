@@ -13,45 +13,41 @@
  *= require_tree .
  *= require_self
  */
-
 @import "variables";
-
 * {
     padding: 0;
     margin: 0;
 }
-
 html {
     @include resize-font(12pt);
     line-height: $line_height;
-    
-    a, a:link, a:hover, a:visited, a:active {
+    a,
+    a:active,
+    a:hover,
+    a:link,
+    a:visited {
         color: black;
         text-decoration: none;
     }
 }
-
-html, body {
+body,
+html {
     height: 100%;
 }
-
 body[unresolved] {
     display: none;
 }
-
 header.shadow {
     background-color: white;
     box-shadow: 0 2px 5px #888888;
     opacity: 0.9;
 }
-
 header {
     opacity: 1.0;
     box-shadow: none;
     transition: opacity 0.25s ease-in-out;
     transition: box-shadow 0.25s ease-in-out;
 }
-
 /*
  * I can't use variables because one is EM and the other REM
  * So I redefine this here, to make sure I don't break the layout by
@@ -59,35 +55,33 @@ header {
  */
 $footer_font_size: 1 * $text_size;
 $footer_line_height: 1.5 * $footer_font_size;
-
 #content {
     min-height: 100%;
     margin: 0 auto (-10 * $footer_font_size);
 }
-
-footer, .push {
+.push,
+footer {
     height: 10 * $footer_font_size;
 }
-
 footer {
     background-color: #333;
     color: white;
-    
     line-height: $footer_line_height;
     font-size: $footer_font_size;
-    
     div {
         height: 10 * $footer_font_size;
     }
-    
     span {
         display: inline-block;
         margin: ((10 * $footer_font_size - $footer_line_height)/2) 0;
         height: $footer_line_height;
         width: 100%;
         text-align: center;
-        
-        a, a:link, a:hover, a:visited, a:active {
+        a,
+        a:active,
+        a:hover,
+        a:link,
+        a:visited {
             color: white;
         }
     }

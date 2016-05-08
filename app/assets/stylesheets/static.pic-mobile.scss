@@ -1,62 +1,62 @@
 @import "variables";
 body.mobile {
-  #pic {
-    [container] {
-      width         : 80%;
-      margin        : 0 auto;
-      padding-top   : $header_height;
-      padding-bottom: $header_height;
+    #pic {
+        [container] {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: $header_height;
+            padding-bottom: $header_height;
+        }
+        #fields {
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+            input[type=number],
+            input[type=text] {
+                display: block;
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid gray;
+                font-size: 1.5rem;
+                color: #333;
+            }
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
+            input[type=number]:focus,
+            input[type=text]:focus {
+                outline: 0;
+            }
+            input[type=button] {
+                display: block;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                border: none;
+                background: transparent;
+                cursor: pointer;
+                margin-bottom: 1rem;
+            }
+            input[type=button]:focus {
+                outline: none;
+            }
+            input[type=button]:hover {
+                text-decoration: underline;
+            }
+            label.strong {
+                display: block;
+                font-weight: bold;
+                margin-top: 2rem;
+            }
+        }
+        #asm {
+            @include resize-named-font(1rem, monospace);
+            font-weight: bold;
+            overflow: scroll;
+        }
     }
-    #fields {
-      display       : inline-block;
-      width         : 100%;
-      vertical-align: top;
-      input[type=number],
-      input[type=text] {
-        display      : block;
-        width        : 100%;
-        border       : 0;
-        border-bottom: 1px solid gray;
-        font-size    : 1.5rem;
-        color        : #333;
-      }
-      input[type="number"]::-webkit-inner-spin-button,
-      input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin            : 0;
-      }
-      input[type="number"] {
-        -moz-appearance: textfield;
-      }
-      input[type=number]:focus,
-      input[type=text]:focus {
-        outline: 0;
-      }
-      input[type=button] {
-        display       : block;
-        font-size     : 1.5rem;
-        text-transform: uppercase;
-        border        : none;
-        background    : transparent;
-        cursor        : pointer;
-        margin-bottom : 1rem;
-      }
-      input[type=button]:focus {
-        outline: none;
-      }
-      input[type=button]:hover {
-        text-decoration: underline;
-      }
-      label.strong {
-        display    : block;
-        font-weight: bold;
-        margin-top : 2rem;
-      }
-    }
-    #asm {
-      @include resize-named-font(1rem, monospace);
-      font-weight: bold;
-      overflow   : scroll;
-    }
-  }
 }
