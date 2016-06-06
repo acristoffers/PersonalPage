@@ -17,7 +17,10 @@ class StaticController < ApplicationController
 
     emails = {
       '0' => 'Álan',
-      '1' => 'Heider'
+      '1' => 'Heider',
+      '2' => 'Hudson',
+      '3' => 'Bruno',
+      '4' => 'Mariana'
     }
 
     url = URI.parse('https://api.pushover.net/1/messages.json')
