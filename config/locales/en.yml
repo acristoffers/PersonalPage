@@ -31,7 +31,7 @@ en:
   de: 'German'
   native: 'Native'
   about_me: "I'm a mechatronics engineering student at CEFET-MG, Brazil. I love programming and the idea of controlling big structures with small circuits. I'm also passionate with languages and in love with cryptography."
-  i_can_speak: 'I can speak:'
+  i_can_speak: 'I speak:'
   some_projects: 'Some Projects'
   void_desc: 'Encrypt files using GnuPG asymetric encryption in a folder-like manner.'
   void_ss1_desc: 'Images are shown with a preview, and can be opened without decrypting to disk.'
