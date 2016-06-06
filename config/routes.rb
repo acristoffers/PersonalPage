@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   end
 
   get '/:locale' => 'static#index'
-  get '/p/:email' => 'static#confirm'
 
   match '*path' => redirect('/'), via: :get unless Rails.env.development?
 
