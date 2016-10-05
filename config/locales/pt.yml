@@ -38,15 +38,13 @@ pt:
   void_ss1_desc: 'Imagens são exibidas com preview, e podem ser visualisadas no aplicativo, sem salvar no disco.'
   void_ss2_desc: 'Arquivos de texto podem ser editados no aplicativo, em um editor embutido.'
   void_ss3_desc: 'Assista vídeos no aplicativo. O vídeo é extraído para um arquivo temporário, que é destrúido no final. Usa os codecs do sistema.'
-  correios_tracker_desc: 'Verifica o status de encomendas dos Correios'
-  tracker_ss1_desc: 'Mostra uma lista uníficada de pacotes seguidos e seus último status, para rápida localização.'
-  tracker_ss2_desc: 'Automaticamente troca entre os teclados númerico e alfabético quando necessário.'
   tests_database_desc: 'Gerencia um banco de questões e facilita a geração e correção de provas.'
   tb_ss1_desc: "Este aplicativo foi desenvolvido para o estado de Minas Gerais, para gerenciar as provas aplicadas aos recrutas bem como provas anuais."
   tb_ss2_desc: "Ele permite que eles gerem as provas fácilmente, usando uma interface simples, que permite gerar testes personalizados, escolhendo o número e níveis de dificuldade das questões, se serão objetivas ou discursivas e pode embaralhar as questões e respostas, enquanto mantém o gabarito fácil de conferir."
   tb_ss3_desc: 'As questões podem ser adicionas em um editor de texto rico, que permite a criação de questões estilizadas.'
   and: e
   cefss_desc: "Código fonte do mínimo necessário para usar o Chromium Embedded Framework versões 1 e 3. Cria uma janela, carrega um arquivo HTML e cria ligações bidirecionais entre Javascript e C++ para mostrar o básico de um aplicativo C++ com interface HTML."
+  ahio_desc: 'ahio é uma biblioteca de comunicação cujo objetivo é facilitar a conexão com vários hardwares de I/O de forma a possibilitar a mudança de hardware com mudanças mínimas de código.'
 
 # static#pic
   external_clock: 'Clock interno'

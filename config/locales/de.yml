@@ -37,15 +37,13 @@ de:
   void_ss1_desc: 'Die Bilder werden mit einer Vorschau angezeigt und sie können geöffnet werden, ohne auf der Festplatte gespeichert zu sein.'
   void_ss2_desc: 'Textdateien können an Ort und Stelle bearbeitet werden, in einem eingebetteten Text-Editor.'
   void_ss3_desc: 'Sehen Sie Ihre Videos mit dem integrierten Player. Das Video wird in eine temporäre Datei entschlüsselt, die später zerstört wird. System-Codecs sind verwendet.'
-  correios_tracker_desc: 'Correios (Brasilienische Post) Pakete verfolgen.'
-  tracker_ss1_desc: 'Zeigt eine Liste der verfolgten Pakete mit ihrem aktuellen Status für einfache Kontrolle.'
-  tracker_ss2_desc: 'Tastatur wechselt automatisch zwischen alphabetischen und numerischen Tasten nach Bedarf.'
   tests_database_desc: 'Fragen verwalten und Prüfungen drucken.'
   tb_ss1_desc: "Diese Anwendung wurde für den Feuerwehrmänner des Bundesstaates Minas Gerais/Brasilien entwickelt, um die Tests der Newcomern und die jährlichen Tests zu verwalten."
   tb_ss2_desc: "Sie können die Prüfungen uber ein einfaches Interface vorbereiten. Die Antworten können diskursiven oder objektiven sein. Die Auswahl der Fragen kann automatiziert werden oder von Hand gemacht. Und die Bewertung ist natürlich einfach gemacht."
   tb_ss3_desc: 'Fragen können mit einem WYSIWYG-Textfeld hinzugefügt werden, das die Erzeugung der reichstylische Prüfungen ermöglicht.'
   and: und
   cefss_desc: "Der Quellcode einer minimalen Anwendung, damit Sie mit Chromium Embedded Framework-Versionen 1 und 3 beginnen können. Setzt sich ein Fenster, lädt eine HTML-Datei und erstellt eine bidirektionale Verbindung zwischen Javascript und C++, um die Grundlagen von einem C++ Anwendung mit HTML-UI zu zeigen."
+  ahio_desc: 'ahio ist eine Kommunikation-Bibliothek, deren Ziel die Verbindung mit verschiedener I/O Hardwares einfacherer zu machen ist, um Hardware-Veränderungen mit minimaler Code Änderung möglich zu machen.'
 
 # static#pic
   external_clock: 'Interne Clock'
