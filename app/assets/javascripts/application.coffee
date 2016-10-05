@@ -12,14 +12,13 @@
 #
 #= require jquery
 #= require jquery_ujs
-#= require jquery-migrate-min
 #= require_tree .
 #= require_tree ./static
 
 $ ->
     $('body').addClass( if $.browser.mobile then 'mobile' else 'desktop' )
     $('body').removeAttr('unresolved')
-    
+
     $(document).scroll () ->
         if $(document).scrollTop() > 0
             $('header').addClass('shadow')
