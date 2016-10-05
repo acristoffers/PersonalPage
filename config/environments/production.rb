@@ -20,10 +20,6 @@ Rails.application.configure do
   # NGINX, varnish or squid.
   # config.action_dispatch.rack_cache = true
 
-  # Disable serving static files from the `/public` folder by default since
-  # Apache or NGINX already handles this.
-  config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
-
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
@@ -76,10 +72,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  
+
   config.action_mailer.default_url_options = { host: 'acristoffers.me', port: 80 }
-  
-  config.serve_static_files = true
+
+  config.public_file_server.enabled = true
   uglifier                     = Uglifier.new output: { comments: :copyright }
   config.assets.compile        = true
   config.assets.debug          = false
@@ -88,24 +84,24 @@ Rails.application.configure do
   config.middleware.use Rack::Deflater
   config.middleware.insert_before ActionDispatch::Static, Rack::Deflater
   config.middleware.use HtmlCompressor::Rack,
-    compress_css: true,
-    css_compressor: :sass,
-    compress_javascript: true,
-    javascript_compressor: uglifier,
-    enabled: true,
-    preserve_line_breaks: false,
-    remove_comments: true,
-    remove_form_attributes: false,
-    remove_http_protocol: false,
-    remove_https_protocol: false,
-    remove_input_attributes: false,
-    remove_intertag_spaces: true,
-    remove_javascript_protocol: true,
-    remove_link_attributes: true,
-    remove_multi_spaces: true,
-    remove_quotes: true,
-    remove_script_attributes: true,
-    remove_style_attributes: true,
-    simple_boolean_attributes: false, # causes attr="0" to become attr=""
-    simple_doctype: true
+                        compress_css: true,
+                        css_compressor: :sass,
+                        compress_javascript: true,
+                        javascript_compressor: uglifier,
+                        enabled: true,
+                        preserve_line_breaks: false,
+                        remove_comments: true,
+                        remove_form_attributes: false,
+                        remove_http_protocol: false,
+                        remove_https_protocol: false,
+                        remove_input_attributes: false,
+                        remove_intertag_spaces: true,
+                        remove_javascript_protocol: true,
+                        remove_link_attributes: true,
+                        remove_multi_spaces: true,
+                        remove_quotes: true,
+                        remove_script_attributes: true,
+                        remove_style_attributes: true,
+                        simple_boolean_attributes: false, # causes attr="0" to become attr=""
+                        simple_doctype: true
 end
