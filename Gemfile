@@ -23,8 +23,6 @@ gem 'turbolinks'
 gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc'
-# jQuery Migrate reimplements jQuery's deprecated API
-# gem 'jquery-migrate-rails'
 # Compresses HTML files
 gem 'htmlcompressor'
 # Detects browser preferred language
