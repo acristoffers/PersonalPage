@@ -30,7 +30,7 @@ fr:
   fr: 'Français'
   de: 'Allemand'
   native: 'Maternelle'
-  about_me: "Je suis un étudiant en génie mécatronique au CEFET-MG, Brésil. J’ai une grande passion pour la programmation ainsi que pour la commande de grandes structures avec des circuits simples . J’aime bien aussi les langues et la cryptographie."
+  about_me: "Je suis un étudiant en génie mécatronique au CEFET-MG, Brésil. J’ai une grande passion pour la programmation ainsi que pour la commande de grandes structures avec des circuits simples. J’aime bien aussi les langues et la cryptographie."
   i_can_speak: 'Je parle:'
   some_projects: 'Certains Projets'
   void_desc: 'Crypter les fichiers en utilisant le cryptage asymétrique GnuPG de manière à preserver la structure de dossier.'
