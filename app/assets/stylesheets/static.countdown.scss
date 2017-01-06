@@ -1,6 +1,7 @@
 @import "variables";
 $font-size-desktop: 8rem;
 $font-size-mobile: 2rem;
+
 #countdown {
     position: absolute;
     top: 50%;
@@ -9,12 +10,14 @@ $font-size-mobile: 2rem;
     bottom: 10rem;
     text-align: center;
 }
+
 body.desktop {
     #countdown {
         margin-top: (0 - ($font-size-desktop + $header_height));
         @include resize-named-font($font-size-desktop, Monospace)
     }
 }
+
 body.mobile {
     #countdown {
         margin-top: (0 - ($font-size-mobile + $header_height));

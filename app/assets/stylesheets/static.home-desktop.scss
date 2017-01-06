@@ -1,44 +1,55 @@
 @import "variables";
+
 body.desktop {
     #about-me {
         [container] {
             padding-top: 2*$header_height;
             padding-bottom: 2*$header_height;
         }
+
         img {
             vertical-align: top;
             margin-right: 1rem;
         }
+
         h1 {
             display: inline-block;
         }
+
         .emails {
             margin: 1rem 0;
             line-height: 2rem;
+
             a {
                 display: block;
             }
         }
+
         .social {
             a {
                 display: inline-block;
+
                 img {
                     vertical-align: middle;
                 }
             }
         }
+
         .languages {
             margin-top: 1rem;
             margin-left: 5rem;
         }
+
         #about-text {
             margin: 5rem auto;
             width: 700px;
             @include resize-font(1.5rem);
         }
+
         #void {
             background-color: #252525;
             color: white;
+
             a,
             a:active,
             a:hover,
@@ -47,24 +58,29 @@ body.desktop {
                 color: white;
             }
         }
+
         #testsdatabase {
             background-color: #DDD;
         }
+
         .application {
             img.icon {
                 width: 128px;
                 height: 128px;
                 vertical-align: middle;
             }
+
             .title {
                 display: inline-block;
                 vertical-align: middle;
                 font-size: 5rem;
             }
+
             .desc {
                 margin: 1rem 0;
                 @include resize-font(1.5rem);
             }
+
             .screenshot {
                 width: $screenshot_width;
                 height: auto;
@@ -72,12 +88,14 @@ body.desktop {
                 margin: 0;
                 padding: 0;
             }
+
             .screenshot-text {
                 width: ($content_width - $screenshot_width - 5px);
                 display: inline-block;
             }
         }
     }
+
     footer {
         #languages-mobile {
             display: none;

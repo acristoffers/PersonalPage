@@ -1,39 +1,51 @@
 @import "variables";
+
 body.mobile {
     width: 100%;
+
     #content {
         width: 100%;
+
         #about-me {
             width: 100%;
+
             [container] {
                 width: 80%;
                 margin: 0 auto;
                 padding-top: $header_height;
                 padding-bottom: $header_height;
             }
+
             span {
                 display: block;
             }
+
             #photo {
                 width: 100%;
                 height: auto;
                 margin-bottom: 1rem;
             }
+
             .emails {
                 margin: 1rem 0;
                 line-height: 2rem;
+
                 a {
                     display: block;
                 }
             }
+
             .languages {
                 margin-bottom: 1rem;
             }
+
             .social {
                 width: 15rem;
                 margin: 1rem auto;
+
                 a {
                     display: inline-block;
+
                     img {
                         height: auto;
                         width: 2rem;
@@ -41,13 +53,16 @@ body.mobile {
                     }
                 }
             }
+
             #about-text {
                 margin-bottom: 2rem;
                 @include resize-font(1.5rem);
             }
+
             #void {
                 background-color: #252525;
                 color: white;
+
                 a,
                 a:active,
                 a:hover,
@@ -56,31 +71,38 @@ body.mobile {
                     color: white;
                 }
             }
+
             #testsdatabase {
                 background-color: #DDD;
             }
+
             .application {
                 span {
                     display: inline-block;
                 }
+
                 img.icon {
                     width: 64px;
                     height: 64px;
                     vertical-align: middle;
                 }
+
                 .title {
                     display: inline-block;
                     vertical-align: middle;
                     font-size: 2rem;
                 }
+
                 .desc {
                     margin: 1rem 0;
                     @include resize-font(1.5rem);
                 }
+
                 .screenshot {
                     width: 100%;
                     height: auto;
                 }
+
                 .screenshot-text {
                     margin: 1rem 0;
                 }

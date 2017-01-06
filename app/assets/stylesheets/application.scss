@@ -14,13 +14,16 @@
  *= require_self
  */
 @import "variables";
+
 * {
     padding: 0;
     margin: 0;
 }
+
 html {
     @include resize-font(12pt);
     line-height: $line_height;
+
     a,
     a:active,
     a:hover,
@@ -30,18 +33,22 @@ html {
         text-decoration: none;
     }
 }
+
 body,
 html {
     height: 100%;
 }
+
 body[unresolved] {
     display: none;
 }
+
 header.shadow {
     background-color: white;
     box-shadow: 0 2px 5px #888888;
     opacity: 0.9;
 }
+
 header {
     opacity: 1.0;
     box-shadow: none;
@@ -55,28 +62,34 @@ header {
  */
 $footer_font_size: 1 * $text_size;
 $footer_line_height: 1.5 * $footer_font_size;
+
 #content {
     min-height: 100%;
     margin: 0 auto (-10 * $footer_font_size);
 }
+
 .push,
 footer {
     height: 10 * $footer_font_size;
 }
+
 footer {
     background-color: #333;
     color: white;
     line-height: $footer_line_height;
     font-size: $footer_font_size;
+
     div {
         height: 10 * $footer_font_size;
     }
+
     span {
         display: inline-block;
         margin: ((10 * $footer_font_size - $footer_line_height)/2) 0;
         height: $footer_line_height;
         width: 100%;
         text-align: center;
+
         a,
         a:active,
         a:hover,

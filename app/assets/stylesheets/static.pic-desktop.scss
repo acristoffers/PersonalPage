@@ -1,11 +1,14 @@
 @import "variables";
+
 body.desktop {
     #pic {
         padding: 2*$header_height 0;
+
         #fields {
             display: inline-block;
             width: $content_width*1/3;
             vertical-align: top;
+
             input[type=number],
             input[type=text] {
                 display: block;
@@ -15,18 +18,22 @@ body.desktop {
                 font-size: 1.5rem;
                 color: #333;
             }
+
             input[type="number"]::-webkit-inner-spin-button,
             input[type="number"]::-webkit-outer-spin-button {
                 -webkit-appearance: none;
                 margin: 0;
             }
+
             input[type="number"] {
                 -moz-appearance: textfield;
             }
+
             input[type=number]:focus,
             input[type=text]:focus {
                 outline: 0;
             }
+
             input[type=button] {
                 display: block;
                 font-size: 1.5rem;
@@ -36,18 +43,22 @@ body.desktop {
                 cursor: pointer;
                 margin-bottom: 1rem;
             }
+
             input[type=button]:focus {
                 outline: none;
             }
+
             input[type=button]:hover {
                 text-decoration: underline;
             }
+
             label.strong {
                 display: block;
                 font-weight: bold;
                 margin-top: 2rem;
             }
         }
+
         #asm {
             display: inline-block;
             width: $content_width*1/3;
