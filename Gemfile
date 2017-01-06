@@ -21,12 +21,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease.
 gem 'jbuilder'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc'
 # Compresses HTML files
 gem 'htmlcompressor'
 # Detects browser preferred language
-gem 'http_accept_language', github: 'iain/http_accept_language'
+gem 'http_accept_language'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
