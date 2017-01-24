@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale.to_s %>">
-<head>
-    <meta charset="utf-8">
-    <title><%= t :title %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <meta name="theme-color" content="#FFFFFF">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true, 'shim-shadowdom' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-    <%= render 'partials/favicon' %>
-</head>
-<body unresolved>
-    <header>
-        <div container>
-            <nav id="links">
-                <%= link_to "Home", {controller: "static", action: "about", :format => "html"} %>
-                <a href="/public"><%= t :public %></a>
-                <%= link_to "PIC", {controller: "static", action: "pic", :format => "html"} %>
-            </nav>
+    <head>
+        <meta charset="utf-8">
+        <title><%= t :title %></title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <meta name="theme-color" content="#FFFFFF">
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true, 'shim-shadowdom' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+        <%= render 'partials/favicon' %>
+    </head>
+    <body unresolved>
+        <header>
+            <div container>
+                <nav id="links">
+                    <%= link_to "Home", {controller: "static", action: "about", :format => "html"} %>
+                    <!-- <a href="/public"><%= t :public %></a> -->
+                    <%= link_to "PIC", {controller: "static", action: "pic", :format => "html"} %>
+                </nav>
 
-            <nav id="languages">
-                <% @partials_language_menu = render 'partials/languages_menu' %>
-                <%= @partials_language_menu %>
-            </nav>
-        </div>
-    </header>
-
-    <div id="content">
-        <%= yield %>
-        <div class="push"></div>
-    </div>
-
-    <footer>
-        <div container>
-            <span>
-                &copy; 2015 <a href="mailto:acristoffers@gmail.com">Álan Crístoffer</a>
-                <nav id="languages-mobile">
+                <nav id="languages">
+                    <% @partials_language_menu = render 'partials/languages_menu' %>
                     <%= @partials_language_menu %>
                 </nav>
-            </span>
+            </div>
+        </header>
+
+        <div id="content">
+            <%= yield %>
+            <div class="push"></div>
         </div>
-    </footer>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-85169136-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-</body>
+
+        <footer>
+            <div container>
+                <span>
+                    &copy; 2015
+                    <a href="mailto:acristoffers@gmail.com">Álan Crístoffer</a>
+                    <nav id="languages-mobile">
+                        <%= @partials_language_menu %>
+                    </nav>
+                </span>
+            </div>
+        </footer>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                },
+                i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-85169136-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
 </html>

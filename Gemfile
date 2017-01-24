@@ -5,10 +5,6 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
-# Use MySQL as the database for Active Record
-gem 'mysql2'
-# Use SQLite3 as database for development
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
