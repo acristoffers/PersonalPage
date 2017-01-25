@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: personal-page
-          image: gcr.io/acristoffers-me/personal-page:v1
+          image: gcr.io/acristoffers-me/personal-page:v7
           ports:
             - containerPort: 80
             - containerPort: 443

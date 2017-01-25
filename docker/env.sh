@@ -3,7 +3,7 @@
 export PROJECT_ID=acristoffers-me
 export CLUSTER_ID=acristoffers-me
 export IMAGE_ID=personal-page
-export IMAGE_VERSION=v3
+export IMAGE_VERSION=v$(cat docker/version)
 export STATIC_IP=130.211.132.98
 
 export IMAGE_TAG=gcr.io/$PROJECT_ID/$IMAGE_ID:$IMAGE_VERSION

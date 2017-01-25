@@ -1,5 +1,4 @@
 FROM phusion/passenger-ruby24
-CMD ["/sbin/my_init"]
 
 EXPOSE 80
 EXPOSE 443
@@ -39,5 +38,8 @@ USER root
 
 COPY . /home/app/PersonalPage
 
+RUN bundle exec rake assets:precompile
 RUN chown -R app:app /home/app/PersonalPage
 RUN chmod -R 775 /home/app/PersonalPage
+
+CMD ["/sbin/my_init"]

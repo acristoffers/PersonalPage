@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
         - name: $IMAGE_ID
-          image: gcr.io/acristoffers-me/personal-page:v1
+          image: gcr.io/$PROJECT_ID/$IMAGE_ID:$IMAGE_VERSION
           ports:
             - containerPort: 80
             - containerPort: 443
