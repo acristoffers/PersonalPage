@@ -23,7 +23,7 @@ kind: Deployment
 metadata:
   name: $IMAGE_ID-deployment
 spec:
-  replicas: 3
+  replicas: 1
   revisionHistoryLimit: 3
   template:
     metadata:

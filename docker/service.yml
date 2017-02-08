@@ -18,7 +18,7 @@ kind: Deployment
 metadata:
   name: personal-page-deployment
 spec:
-  replicas: 3
+  replicas: 1
   revisionHistoryLimit: 3
   template:
     metadata:
@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: personal-page
-          image: gcr.io/acristoffers-me/personal-page:v7
+          image: gcr.io/acristoffers-me/personal-page:v8
           ports:
             - containerPort: 80
             - containerPort: 443
