@@ -5,6 +5,8 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
+# Rake
+gem 'rake'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -21,6 +23,8 @@ gem 'jbuilder'
 gem 'htmlcompressor'
 # Detects browser preferred language
 gem 'http_accept_language'
+# Timezones
+gem 'tzinfo-data'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
