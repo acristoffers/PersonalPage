@@ -20,6 +20,8 @@ export class AppComponent {
 
   @HostListener('window:scroll', ['$event'])
   scroll(event) {
-    this.headerClass = document.documentElement.scrollTop > 0 ? 'shadow' : ''
+    // for Safari
+    const y = document.documentElement.scrollTop || document.body.scrollTop
+    this.headerClass = y > 0 ? 'shadow' : ''
   }
 }
