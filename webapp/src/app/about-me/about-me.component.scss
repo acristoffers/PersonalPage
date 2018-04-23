@@ -1,0 +1,27 @@
+img {
+  vertical-align: top;
+  margin-right: 1rem;
+}
+
+.emails {
+  margin: 1rem 0;
+  line-height: 2rem;
+  a {
+    display: block;
+  }
+}
+
+.social a {
+  display: inline-block;
+}
+
+.languages {
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+#about-text {
+  margin: 5rem auto;
+  width: 700px;
+  font: normal 1.5rem/1.5em Sans-serif;
+}

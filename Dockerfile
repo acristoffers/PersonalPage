@@ -8,7 +8,6 @@ RUN rm -f /etc/service/nginx/down
 
 # Add nginx configuration
 COPY docker/nginx.conf /etc/nginx/nginx.conf
-COPY docker/nginx-secret.conf /etc/nginx/main.d/nginx-secret.conf
 
 RUN mkdir /home/app/public /home/app/.ssl /home/app/PersonalPage
 
@@ -19,26 +18,25 @@ COPY docker/PublicKey.asc /home/app/public/PublicKey.asc
 COPY docker/ssl-chained.crt /home/app/.ssl/ssl-chained.crt
 COPY docker/ssl.key /home/app/.ssl/ssl.key
 
-# Add Gemfile so we can run bundle before updating the app tree
-# This will speed up the image generation in future runs
-COPY Gemfile /home/app/PersonalPage/Gemfile
-COPY Gemfile.lock /home/app/PersonalPage/Gemfile.lock
-
 RUN chown -R app:app /home/app
 RUN chmod -R 775 /home/app
 RUN chmod -R 700 /home/app/.ssl
 
-USER app
-
-WORKDIR /home/app/PersonalPage
-RUN gem install bundler
-RUN bundle
-
-USER root
-
 COPY . /home/app/PersonalPage
 
-RUN bundle exec rake assets:precompile
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN curl -sS https://deb.nodesource.com/setup_9.x | bash -
+RUN apt-get update && apt-get install yarn nodejs -y
+
+WORKDIR /home/app/PersonalPage/webapp
+RUN yarn
+RUN yarn global add @angular/cli
+RUN ng build --prod --aot --build-optimizer
+WORKDIR /home/app/PersonalPage
+RUN cp -r webapp/dist/* .
+RUN rm -r docker webapp Dockerfile
+
 RUN chown -R app:app /home/app/PersonalPage
 RUN chmod -R 775 /home/app/PersonalPage
 

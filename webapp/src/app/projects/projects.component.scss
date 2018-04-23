@@ -1,0 +1,39 @@
+.icon {
+  width: 128px;
+  height: 128px;
+  vertical-align: middle;
+}
+
+.title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 5rem;
+}
+
+.desc {
+  margin: 1rem 0;
+  font: normal 1.5rem/1.5em Sans-serif;
+}
+
+.screenshot-text {
+  width: 415px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.screenshot {
+  width: 480px;
+  height: auto;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.application {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#testsdatabase {
+  background-color: #DDD;
+}

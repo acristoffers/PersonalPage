@@ -1,0 +1,29 @@
+<header [class]="headerClass">
+  <div container>
+    <nav id="links">
+      <a routerLink="home">Home</a>
+      <!-- <a routerLink="pic">PIC</a> -->
+    </nav>
+
+    <nav id="languages">
+      <app-languages></app-languages>
+    </nav>
+  </div>
+</header>
+
+<div id="content">
+  <router-outlet></router-outlet>
+  <div class="push"></div>
+</div>
+
+<footer>
+  <div container>
+    <span>
+      &copy; 2015
+      <a href="mailto:acristoffers@gmail.com">Álan Crístoffer</a>
+      <nav id="languages-mobile">
+        <!-- <app-languages></app-languages> -->
+      </nav>
+    </span>
+  </div>
+</footer>
