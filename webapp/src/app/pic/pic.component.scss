@@ -1,0 +1,51 @@
+[container] {
+  padding-top: 5rem;
+}
+
+#fields {
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+}
+
+#asm {
+  display: inline-block;
+  width: 300px;
+  margin-left: 2rem;
+  font: normal 1rem/1.5em monospace;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+label.strong {
+  display: block;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+input[type=text],
+input[type=number] {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom-width: 0px;
+  border-bottom-style: none;
+  border-bottom-color: currentcolor;
+  border-bottom: 1px solid gray;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+input[type=button] {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+input[type=button]:hover {
+  text-decoration: underline;
+}

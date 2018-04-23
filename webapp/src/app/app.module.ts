@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component'
 import { LanguagesComponent } from './languages/languages.component'
 import { AboutMeComponent } from './about-me/about-me.component'
 import { ProjectsComponent } from './projects/projects.component'
+import { PicComponent } from './pic/pic.component'
 
 @NgModule({
     declarations: [
@@ -29,6 +30,7 @@ import { ProjectsComponent } from './projects/projects.component'
         LanguagesComponent,
         AboutMeComponent,
         ProjectsComponent,
+        PicComponent,
     ],
     imports: [
         CommonModule,

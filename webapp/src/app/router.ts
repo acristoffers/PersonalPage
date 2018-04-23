@@ -8,6 +8,7 @@
 import { RouterModule } from '@angular/router'
 import { ModuleWithProviders } from '@angular/core'
 import { HomeComponent } from './home/home.component'
+import { PicComponent } from './pic/pic.component'
 
 export class Router {
     static module(): ModuleWithProviders {
@@ -20,6 +21,10 @@ export class Router {
             {
                 path: 'home',
                 component: HomeComponent
+            },
+            {
+                path: 'pic',
+                component: PicComponent
             }
         ])
     }

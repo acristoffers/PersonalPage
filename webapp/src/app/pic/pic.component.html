@@ -1,0 +1,26 @@
+<div container>
+  <div id="fields">
+    <label for="label" class="strong">{{ 'label' | translate }}:</label>
+    <input id="label" type="text" [(ngModel)]="label">
+    <label for="clock" class="strong">{{ 'external_clock' | translate }}:</label>
+    <input id="clock" type="number" [(ngModel)]="clock">
+    <label for="value" class="strong">{{ 'value' | translate }}:</label>
+    <input id="value" step="0.001" type="number" [(ngModel)]="value">
+    <br>
+    <div id="radio">
+      <div *ngFor="let t of types">
+        <input [id]="t" name="type" [value]="t" type="radio" [(ngModel)]="type">
+        <label [for]="t"> {{ t | translate }}</label>
+      </div>
+      <br>
+      <br>
+      <div *ngFor="let t of ucs">
+        <input [id]="t" name="bits" [value]="t" type="radio" [(ngModel)]="uc">
+        <label [for]="t"> {{ t | translate }}</label>
+      </div>
+    </div>
+    <br>
+    <input id="generate" [value]="'generate' | translate" type="button" (click)="generate()">
+  </div>
+  <div id="asm" [innerHtml]="asmHtml"></div>
+</div>

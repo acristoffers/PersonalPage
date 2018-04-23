@@ -20,6 +20,6 @@ export class AppComponent {
 
   @HostListener('window:scroll', ['$event'])
   scroll(event) {
-    this.headerClass = event.pageY > 0 ? 'shadow' : ''
+    this.headerClass = document.documentElement.scrollTop > 0 ? 'shadow' : ''
   }
 }
