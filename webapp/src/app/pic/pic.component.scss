@@ -13,7 +13,6 @@
   width: 300px;
   margin-left: 2rem;
   font: normal 1rem/1.5em monospace;
-  font-weight: normal;
   font-weight: bold;
 }
 
@@ -28,9 +27,6 @@ input[type=number] {
   display: block;
   width: 100%;
   border: 0;
-  border-bottom-width: 0px;
-  border-bottom-style: none;
-  border-bottom-color: currentcolor;
   border-bottom: 1px solid gray;
   font-size: 1.5rem;
   color: #333;
