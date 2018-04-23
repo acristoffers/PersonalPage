@@ -1,3 +1,15 @@
+@media only screen and (min-device-width: 800px) {
+  footer app-languages {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 800px) {
+  header app-languages {
+    display: none;
+  }
+}
+
 header {
   height: 3rem;
   position: fixed;
