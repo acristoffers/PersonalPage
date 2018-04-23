@@ -3,6 +3,11 @@ FROM phusion/passenger-ruby24
 EXPOSE 80
 EXPOSE 443
 
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN curl -sS https://deb.nodesource.com/setup_9.x | bash -
+RUN apt-get update && apt-get dist-upgrade -y && apt-get install yarn nodejs -y
+
 # Enables nginx
 RUN rm -f /etc/service/nginx/down
 
@@ -23,11 +28,6 @@ RUN chmod -R 775 /home/app
 RUN chmod -R 700 /home/app/.ssl
 
 COPY . /home/app/PersonalPage
-
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-RUN curl -sS https://deb.nodesource.com/setup_9.x | bash -
-RUN apt-get update && apt-get install yarn nodejs -y
 
 WORKDIR /home/app/PersonalPage/webapp
 RUN yarn
