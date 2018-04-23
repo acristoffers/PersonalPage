@@ -25,6 +25,19 @@
     display: inline-block;
     vertical-align: middle;
   }
+  #tracker {
+    background-color: #00968880;
+    color: white;
+    a {
+      color: white;
+    }
+    .imgs {
+      text-align: center;
+    }
+    .screenshot {
+      width: 30%;
+    }
+  }
 }
 
 @media only screen and (max-device-width: 800px) {
@@ -66,4 +79,23 @@
 
 #testsdatabase {
   background-color: #DDD;
+}
+
+#moirai {
+  background-color: #366a96e6;
+  color: white;
+  a {
+    color: white;
+  }
+}
+
+#lachesis {
+  background-color: #4a2825;
+  color: white;
+  a {
+    color: white;
+  }
+  img {
+    padding-bottom: 1rem;
+  }
 }
