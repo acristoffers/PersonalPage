@@ -1,3 +1,7 @@
+:host {
+  text-align: justify;
+}
+
 @media only screen and (min-device-width: 800px) {
   .application {
     padding-top: 6rem;
@@ -14,16 +18,17 @@
     font-size: 5rem;
   }
   .screenshot {
-    width: 480px;
+    width: 60%;
     height: auto;
     vertical-align: middle;
     margin: 0;
     padding: 0;
   }
   .screenshot-text {
-    width: 415px;
+    width: 35%;
     display: inline-block;
     vertical-align: middle;
+    padding: 1rem;
   }
   #tracker {
     background-color: #00968880;
@@ -36,6 +41,7 @@
     }
     .screenshot {
       width: 30%;
+      margin-right: 1rem;
     }
   }
 }
