@@ -35,6 +35,7 @@ RUN yarn run webpack
 WORKDIR /home/app/PersonalPage
 RUN cp -r webapp/assets assets
 RUN cp -r webapp/dist/* .
+RUN cp -r webapp/index.html .
 RUN rm -r docker webapp Dockerfile
 
 RUN chown -R app:app /home/app/PersonalPage
