@@ -31,9 +31,9 @@ COPY . /home/app/PersonalPage
 
 WORKDIR /home/app/PersonalPage/webapp
 RUN yarn
-RUN yarn global add @angular/cli
-RUN ng build --prod --aot --build-optimizer
+RUN yarn run webpack
 WORKDIR /home/app/PersonalPage
+RUN cp -r webapp/assets assets
 RUN cp -r webapp/dist/* .
 RUN rm -r docker webapp Dockerfile
 

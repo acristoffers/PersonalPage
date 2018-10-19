@@ -1,0 +1,93 @@
+@media only screen and (max-device-width: 900px) {
+    #content {
+        .section {
+            .project {
+                .desc {
+                    display: block !important;
+
+                    h1 {
+                        display: block !important;
+                        text-align: center !important;
+                    }
+                }
+
+                .screenshots {
+                    .screenshot {
+                        width: 90% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#content {
+    max-width: 800px;
+    flex: 1 1 auto;
+    margin: 2rem 1rem 2rem 1rem;
+    text-align: justify;
+
+    .section {
+        margin-bottom: 1rem;
+
+        h1 {
+            font-family: 'Roboto Condensed Bold';
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .project {
+            margin-top: 1rem;
+
+            .desc {
+                display: flex;
+
+                h1 {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    font-family: 'Roboto Thin';
+                    text-align: center;
+                    white-space: nowrap;
+                    flex: 0 1 0;
+
+                    img {
+                        width: 50%;
+                        height: auto;
+                    }
+                }
+
+                span {
+                    display: inline-block;
+                    flex: 1 0 0;
+                }
+            }
+
+            .screenshots {
+                margin-top: 1rem;
+                text-align: center;
+
+                .screenshot {
+                    width: 40%;
+                    text-align: center;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 1rem 5%;
+
+                    img {
+                        width: 100%;
+                        display: block;
+                        cursor: pointer;
+                    }
+
+                    span {
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
