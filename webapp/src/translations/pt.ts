@@ -43,7 +43,7 @@ export const LANG_PT_TRANS = {
     'contacts': 'Contatos',
     'skills': 'Competências',
     'site_languages': 'Idioma da página',
-    '$skills': 'Análise e Controle de Sistemas, C/C++, Python, Kotlin, Montagem, MATLAB, Desenvolvimento Android, Frontend, Backend, Embutido, Automação, Robótica',
+    '$skills': 'Análise e Controle de Sistemas, C/C++, Python, Kotlin, Montagem, MATLAB, Desenvolvimento Android, Frontend, Backend, Embarcado, Automação, Robótica',
     'about': 'Sobre',
     'resume': 'Currículo',
     'projects': 'Projetos'
