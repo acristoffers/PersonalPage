@@ -25,12 +25,16 @@ export class Sidebar extends React.Component<SidebarProps, {}> {
             [i18n.translate('fr')]: 'B1'
         }
 
+        let birthday = new Date(1990, 2, 17).getTime()
+        let today = Date.now()
+        let age = Math.floor((today - birthday) / (1000 * 3600 * 24 * 365))
+
         return (
             <div id='sidebar'>
                 <div id="photo">
                     <img src='assets/me.jpg' />
                     <h1>Álan Crístoffer <b>e Sousa</b></h1>
-                    <h2>{i18n.translate('%d years old, Brazilian').replace('%d', ((new Date()).getFullYear() - 1990).toString())}</h2>
+                    <h2>{i18n.translate('%d years old, Brazilian').replace('%d', age.toString())}</h2>
 
                     <a target='_blank' href='https://acristoffers.me/assets/PublicKey.asc'>{i18n.translate('gpg_public_key')}</a>
                     <a target='_blank' href='https://acristoffers.me/assets/Python3.pdf'>Apostila de Python 3</a>
