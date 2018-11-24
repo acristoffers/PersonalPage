@@ -27,7 +27,7 @@ export class Content extends React.Component<ContentProps, {}> {
                         {
                             _.map([1, 2, 3, 4], i =>
                                 <div className='screenshot'>
-                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/Lachesis${i}.png`)} src={`assets/screenshots/Lachesis${i}.png`}></img>
+                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/Lachesis${i}.png`)} src={`assets/screenshots/Lachesis${i}.jpg`}></img>
                                     <span>{i18n.translate(`lachesis${i}_desc`)}</span>
                                 </div>
                             )
@@ -51,14 +51,14 @@ export class Content extends React.Component<ContentProps, {}> {
 
                 <div className='project'>
                     <div className='desc'>
-                        <h1><a target='_blank' href='https://github.com/acristoffers/testsdatabase'>Tests Database<br /><img src='assets/tests-database.png' /></a></h1>
+                        <h1><a target='_blank' href='https://github.com/acristoffers/testsdatabase'>Tests Database<br /><img src='assets/tests-database.jpg' /></a></h1>
                         <span>{i18n.translate('tests_database_desc')}</span>
                     </div>
                     <div className='screenshots'>
                         {
                             _.map([1, 2, 3], i =>
                                 <div className='screenshot'>
-                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/TestsDatabase${i}.png`)} src={`assets/screenshots/TestsDatabase${i}.png`}></img>
+                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/TestsDatabase${i}.png`)} src={`assets/screenshots/TestsDatabase${i}.jpg`}></img>
                                     <span>{i18n.translate(`tb_ss${i}_desc`)}</span>
                                 </div>
                             )
@@ -75,7 +75,7 @@ export class Content extends React.Component<ContentProps, {}> {
                         {
                             _.map([1, 2, 3], i =>
                                 <div className='screenshot'>
-                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/Tracker${i}.png`)} src={`assets/screenshots/Tracker${i}.png`}></img>
+                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/Tracker${i}.png`)} src={`assets/screenshots/Tracker${i}.jpg`}></img>
                                 </div>
                             )
                         }
@@ -84,7 +84,7 @@ export class Content extends React.Component<ContentProps, {}> {
 
                 <div className='project'>
                     <div className='desc'>
-                        <h1><a target='_blank' href='https://github.com/acristoffers/CEF3SimpleSample'>CEF3SimpleSample<br /><img src='assets/cef_logo.png' /></a></h1>
+                        <h1><a target='_blank' href='https://github.com/acristoffers/CEF3SimpleSample'>CEF3SimpleSample<br /><img src='assets/cef_logo.jpg' /></a></h1>
                         <span>{i18n.translate('cefss_desc')}</span>
                     </div>
                 </div>
