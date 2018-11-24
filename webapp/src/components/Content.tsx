@@ -51,7 +51,7 @@ export class Content extends React.Component<ContentProps, {}> {
 
                 <div className='project'>
                     <div className='desc'>
-                        <h1><a target='_blank' href='https://github.com/acristoffers/testsdatabase'>Tests Database<br /><img src='assets/tests-database.jpg' /></a></h1>
+                        <h1><a target='_blank' href='https://github.com/acristoffers/testsdatabase'>Tests Database<br /><img src='assets/tests-database.png' /></a></h1>
                         <span>{i18n.translate('tests_database_desc')}</span>
                     </div>
                     <div className='screenshots'>
@@ -84,7 +84,7 @@ export class Content extends React.Component<ContentProps, {}> {
 
                 <div className='project'>
                     <div className='desc'>
-                        <h1><a target='_blank' href='https://github.com/acristoffers/CEF3SimpleSample'>CEF3SimpleSample<br /><img src='assets/cef_logo.jpg' /></a></h1>
+                        <h1><a target='_blank' href='https://github.com/acristoffers/CEF3SimpleSample'>CEF3SimpleSample<br /><img src='assets/cef_logo.png' /></a></h1>
                         <span>{i18n.translate('cefss_desc')}</span>
                     </div>
                 </div>
