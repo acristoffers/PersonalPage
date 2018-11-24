@@ -58,7 +58,7 @@ export class Content extends React.Component<ContentProps, {}> {
                         {
                             _.map([1, 2, 3], i =>
                                 <div className='screenshot'>
-                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/TestsDatabase${i}.png`)} src={`assets/screenshots/TestsDatabase${i}.jpg`}></img>
+                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/TestsDatabase${i}.png`)} src={`assets/screenshots/TestsDatabase${i}.png`}></img>
                                     <span>{i18n.translate(`tb_ss${i}_desc`)}</span>
                                 </div>
                             )
@@ -75,7 +75,7 @@ export class Content extends React.Component<ContentProps, {}> {
                         {
                             _.map([1, 2, 3], i =>
                                 <div className='screenshot'>
-                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/Tracker${i}.png`)} src={`assets/screenshots/Tracker${i}.jpg`}></img>
+                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/Tracker${i}.png`)} src={`assets/screenshots/Tracker${i}.png`}></img>
                                 </div>
                             )
                         }
