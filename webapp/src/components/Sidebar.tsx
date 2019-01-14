@@ -39,6 +39,7 @@ export class Sidebar extends React.Component<SidebarProps, {}> {
                     <a target='_blank' href='https://acristoffers.me/assets/PublicKey.asc'>{i18n.translate('gpg_public_key')}</a>
                     <a target='_blank' href='https://acristoffers.me/assets/Python3.pdf'>Apostila de Python 3</a>
                     <a target='_blank' href='https://acristoffers.me/assets/resume.pdf'>{i18n.translate('resume')}</a>
+                    <a target='_blank' href='https://github.com/acristoffers/Monografia/raw/20b935b0f9da9f59dd8e4deca33707775518c028/document.pdf'>{i18n.translate('TCC')}</a>
                 </div>
 
                 <div className='section'>
