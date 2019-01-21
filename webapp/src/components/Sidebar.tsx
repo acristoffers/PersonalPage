@@ -1,14 +1,12 @@
-import * as React from 'react'
-import './Sidebar.scss'
-
-import * as _ from 'lodash'
-
-import { i18n } from '../translations/index'
+import * as _ from 'lodash';
+import * as React from 'react';
+import { i18n } from '../translations/index';
+import './Sidebar.scss';
 
 export interface SidebarProps { }
 
 export class Sidebar extends React.Component<SidebarProps, {}> {
-    render() {
+    render(): JSX.Element {
         let contacts = {
             Email: 'mailto:acristoffers@gmail.com',
             Facebook: 'https://www.facebook.com/acristoffers',

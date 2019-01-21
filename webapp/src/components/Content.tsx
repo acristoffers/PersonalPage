@@ -1,14 +1,12 @@
-import * as React from 'react'
-import './Content.scss'
-
-import { i18n } from '../translations/index'
-
-import * as _ from 'lodash'
+import * as _ from 'lodash';
+import * as React from 'react';
+import { i18n } from '../translations/index';
+import './Content.scss';
 
 export interface ContentProps { openImageHandler: (path: string) => void }
 
 export class Content extends React.Component<ContentProps, {}> {
-    render() {
+    render(): JSX.Element {
         return <div id='content'>
             <div className='section'>
                 <h1>{i18n.translate('about')}</h1>
@@ -46,6 +44,23 @@ export class Content extends React.Component<ContentProps, {}> {
                     <div className='desc'>
                         <h1><a target='_blank' href='https://github.com/acristoffers/ahio'>AHIO</a></h1>
                         <span>{i18n.translate('ahio_desc')}</span>
+                    </div>
+                </div>
+
+                <div className='project'>
+                    <div className='desc'>
+                        <h1><a target='_blank' href='https://github.com/acristoffers/void'>Void<br /><img src='assets/void.svg' /></a></h1>
+                        <span>{i18n.translate('void_desc')}</span>
+                    </div>
+                    <div className='screenshots'>
+                        {
+                            _.map([1, 2, 3, 4], i =>
+                                <div className='screenshot'>
+                                    <img onClick={this.props.openImageHandler.bind(this, `assets/screenshots/Void${i}.png`)} src={`assets/screenshots/Void${i}.jpg`}></img>
+                                    <span>{i18n.translate(`void${i}_desc`)}</span>
+                                </div>
+                            )
+                        }
                     </div>
                 </div>
 

@@ -1,12 +1,10 @@
-import * as React from 'react'
-import './Home.scss'
-
-import { Sidebar } from './Sidebar'
-import { Content } from './Content'
-import { i18n } from '../translations/index'
-
-import * as _ from 'lodash'
+import * as _ from 'lodash';
+import * as React from 'react';
+import { i18n } from '../translations/index';
+import { Content } from './Content';
+import './Home.scss';
 import { ImageView } from './ImageView';
+import { Sidebar } from './Sidebar';
 
 export interface HomeProps { }
 export interface HomeState { lang: string, imageUrl: string }
@@ -21,7 +19,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
         }
     }
 
-    render() {
+    render(): JSX.Element {
         return (
             <div id='home'>
                 <Sidebar />

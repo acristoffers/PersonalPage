@@ -1,12 +1,10 @@
-import * as React from 'react'
-import './ImageView.scss'
-
-import * as _ from 'lodash'
+import * as React from 'react';
+import './ImageView.scss';
 
 export interface ImageViewProps { url: string, close: () => void }
 
 export class ImageView extends React.Component<ImageViewProps, {}> {
-    render() {
+    render(): JSX.Element {
         if (this.props.url !== null) {
             return (
                 <div id='imageviewer'>
