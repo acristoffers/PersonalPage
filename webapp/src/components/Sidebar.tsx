@@ -23,9 +23,8 @@ export class Sidebar extends React.Component<SidebarProps, {}> {
             [i18n.translate('fr')]: 'B1'
         }
 
-        let birthday = new Date(1990, 2, 17).getTime()
-        let today = Date.now()
-        let age = Math.floor((today - birthday) / (1000 * 3600 * 24 * 365))
+        let year = new Date().getFullYear()
+        let age = Date.now() - new Date(year, 1, 17).getTime() >= 0 ? year - 1990 : year - 1990 - 1
 
         return (
             <div id='sidebar'>
