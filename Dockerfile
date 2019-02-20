@@ -1,8 +1,9 @@
-FROM phusion/passenger-ruby24
+FROM ubuntu
 
 EXPOSE 80
 EXPOSE 443
 
+RUN apt-get update && apt-get install curl gnupg2 -y
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 RUN curl -sS https://deb.nodesource.com/setup_9.x | bash -
@@ -13,8 +14,9 @@ RUN add-apt-repository ppa:certbot/certbot
 RUN apt-get update
 RUN apt-get install certbot python-certbot-nginx -y
 
+RUN useradd -c 'app' -m -d /home/app -s /bin/bash app
+
 # Enables nginx
-RUN rm /etc/nginx/conf.d/mod-http-passenger.conf
 RUN rm -f /etc/service/nginx/down
 
 # Add nginx configuration
