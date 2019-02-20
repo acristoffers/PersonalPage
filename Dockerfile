@@ -7,8 +7,14 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 RUN curl -sS https://deb.nodesource.com/setup_9.x | bash -
 RUN apt-get update && apt-get dist-upgrade -y && apt-get install yarn nodejs -y
+RUN apt-get install software-properties-common -y
+RUN add-apt-repository universe
+RUN add-apt-repository ppa:certbot/certbot
+RUN apt-get update
+RUN apt-get install certbot python-certbot-nginx -y
 
 # Enables nginx
+RUN rm /etc/nginx/conf.d/mod-http-passenger.conf
 RUN rm -f /etc/service/nginx/down
 
 # Add nginx configuration
@@ -42,4 +48,6 @@ RUN rm -r docker webapp Dockerfile
 RUN chown -R app:app /home/app/PersonalPage
 RUN chmod -R 775 /home/app/PersonalPage
 
-CMD ["/sbin/my_init"]
+COPY docker/run.sh /run.sh
+
+CMD ["/run.sh"]
