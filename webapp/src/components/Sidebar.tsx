@@ -18,9 +18,9 @@ export class Sidebar extends React.Component<SidebarProps, {}> {
 
         let languages = {
             [i18n.translate('pt')]: i18n.translate('native'),
-            [i18n.translate('en')]: 'C2',
+            [i18n.translate('en')]: 'C1',
             [i18n.translate('de')]: 'C1',
-            [i18n.translate('fr')]: 'B1'
+            [i18n.translate('fr')]: 'B2'
         }
 
         let year = new Date().getFullYear()
