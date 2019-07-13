@@ -4,9 +4,9 @@ EXPOSE 80
 EXPOSE 443
 
 RUN apt-get update && apt-get install curl gnupg2 apt-utils -y
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-RUN curl -sS https://deb.nodesource.com/setup_9.x | bash -
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - 
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list 
+RUN curl -sS https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get update && apt-get dist-upgrade -y && apt-get install yarn nodejs -y
 RUN apt-get install software-properties-common -y
 RUN add-apt-repository universe
@@ -39,12 +39,9 @@ COPY . /home/app/PersonalPage
 
 WORKDIR /home/app/PersonalPage/webapp
 RUN yarn
-RUN yarn run webpack
+RUN yarn run build
 WORKDIR /home/app/PersonalPage
-RUN mkdir dist
-RUN cp -r webapp/assets assets
-RUN cp -r webapp/dist/*.js dist/
-RUN cp -r webapp/index.html .
+RUN cp -r webapp/dist/* .
 RUN rm -r docker webapp Dockerfile
 
 RUN chown -R app:app /home/app/PersonalPage
