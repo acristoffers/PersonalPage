@@ -7,7 +7,7 @@
   "fr": "French",
   "de": "German",
   "native": "Native",
-  "about_me": "I'm a student who is always committed to helping colleagues overcome technical challenges. I like environments where I can cooperate with people towards a goal, aiming at the best outcome feasible. My expertise in programming has always differentiated me and enabled me to work with graduates and post-graduates (master and Ph.D.) in the university's laboratory for system analysis, helping them with their projects. It also made me a member of the Analysis and Control of Mechatronic Systems Group.\n\nAs a member of this group I learned control theory and started working with an advanced control technique: MPC (Model Predictive Control). I then took the challenge to build a control platform in Python to ease the study of control theory and system analysis. Its goal is to replace Simulink with a simple, free platform that can communicate with various hardware using a common interface, relieving the user of the tasks of managing hardware interface, execution timing and data acquisition.",
+  "about_me": "I'm a just graduated mecatronics engineer interested in computer programming, control theory and languages. I'm a teamworker. I know that sounds cliché, but I really prefer to work on a cooperative enviroment than on a competitive one. I enjoy helping people solve problems and I have done it almost daily in the last 7 years, working almost like a tech-support for problems ranging from printers not working to implementing efficient graphing of intersection of ellipsoids. I also like learning languages, playing computer games and listening to German Hard Rock.",
   "languages": "Languages",
   "tests_database_desc": "Manage questions and print tests.",
   "tb_ss1_desc": "This application was developed for the firefighter corporation of the state of Minas Gerais, Brazil, to manage the tests applied to the newcomers, as well as anual tests.",
@@ -39,5 +39,24 @@
   "publications": "Publications",
   "experience": "Education/Experience",
   "experience_title": "Experience",
-  "education": "Education"
+  "education": "Education",
+  "intern": "Intern",
+  "acal_desc": "During this internship, I developed a platform to measure the power loss inside the kernel of the inductor used in a PFC circuit.",
+  "soldier": "Soldier",
+  "cbmmg_desc": "As a firefighter I was entitled to work as a first-aider and diver, being the first response in all sorts of accidents, from fire in the wilds to car accidents and industrial and natural disasters.",
+  "eng_meca": "Mecatronics Engineering Graduation",
+  "cefet_desc": "As a student, I started taking part in activities in my second year, as part of the team that won the 3rd place in the Latin American Robotic Competition. After that, I helped the student representatives in some activities without becoming a member, until accepting to become the student representative in the Graduation Council. Since my first semester, I helped other students from graduation and master with their projects, especially with programming.",
+  "cefet_items": [
+    "Robotics studying group (2014)",
+    "Tutor of Computer Programming for Mechatronic and IT (Technical Course) students (2014)",
+    "3rd place in the Latin America Robotic Competition (2014)",
+    "Student exchange at Université Joseph Fourier (Grenoble, France) (2015)",
+    "Student exchange at Frankfurt University of Applied Sciences (Frankfurt, Germany) (2015/16)",
+    "Scientific Initiation: low-cost process control platform (2017)",
+    "Scientific Initiation: process control platform: an MPC implementation (2018)",
+    "Student member of the Graduation Council (2018/19)"
+  ],
+  "exchange_student": "Exchange Student",
+  "fuas_desc": "I studied as an exchange student through the Brazilian government's program Ciências Sem Fronteiras (Science Without Borders).",
+  "uga_desc": "I studied as an exchange student through the partnership between UGA and CEFET-MG. There I worked in the robotics laboratory helping the team who won the second place in the National Instruments MyRIO Paris competition."
 }

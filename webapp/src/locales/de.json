@@ -7,7 +7,7 @@
   "fr": "Französisch",
   "de": "Deutsch",
   "native": "Muttersprache",
-  "about_me": "Mechatroniker mit Erfahrung in Systemanalyse und -steuerung. Liebt es, in einer kooperativen Umgebung zu arbeiten. Hat in zwei wissenschaftlichen Initiationen zur Verwendung einer fortgeschrittenen Kontrolltechnik (Model Predictive Control) gearbeitet. Liebt es, Sprachen zu lernen und anderen bei der Entwicklung ihrer Projekte zu helfen.",
+  "about_me": "Ich bin ein soeben graduierter Mekatroniker, der sich für Computerprogrammierung, Steuerungstheorie und Sprachen interessiert. Ich bin ein Teamworker. Ich weiß, das klingt nach Klischee, aber ich arbeite lieber an einer kooperativen als an einer wettbewerbsorientierten Umgebung. Es macht mir Spaß, Menschen bei der Lösung von Problemen zu helfen, und ich habe es in den letzten sieben Jahren fast täglich getan. Dabei habe ich fast wie eine technische Unterstützung für Probleme gearbeitet, angefangen von Druckern, die nicht arbeiten, bis hin zur Implementierung einer effizienten grafischen Darstellung der Schnittmenge von Ellipsoiden. Ich mag es auch Sprachen zu lernen, Computerspiele zu spielen und deutschen Hard Rock zu hören.",
   "languages": "Sprachen",
   "tests_database_desc": "Fragen verwalten und Prüfungen drucken.",
   "tb_ss1_desc": "Diese Anwendung wurde für den Feuerwehrmänner des Bundesstaates Minas Gerais/Brasilien entwickelt, um die Tests der Newcomern und die jährlichen Tests zu verwalten.",
@@ -39,5 +39,24 @@
   "publications": "Publikationen",
   "experience": "Ausbildung/Erfahrungen",
   "experience_title": "Erfahrungen",
-  "education": "Ausbildung"
+  "education": "Ausbildung",
+  "intern": "Praktikant",
+  "acal_desc": "Durch dieses Praktikum habe ich eine Messplattform für PFC-Drossel Kernverluste gebaut.",
+  "soldier": "Soldat",
+  "cbmmg_desc": "Als Feuerwehrmann war ich berechtigt, als Ersthelfer und Taucher zu arbeiten. Ich var der Ersthelfer bei allen möglichen Unfällen, vom Feuer in der Wildnis über Autounfälle bis hin zu Industrie- und Naturkatastrophen.",
+  "eng_meca": "Mecatroniker",
+  "cefet_desc": "Als Student habe ich in meinem zweiten Jahr angefangen, an Aktivitäten teilzunehmen, als Teil des Teams, das den 3. Platz im lateinamerikanischen Roboterwettbewerb gewann. Danach half ich den Studentenvertretern bei einigen Aktivitäten, ohne Mitglied zu werden, bis ich Graduierungsrat endlich übergennomen habe. Seit meinem ersten Semester habe ich anderen Graduirung und Meister Studenten mit ihrer Projekte geholfen, besonders mit Programmierung.",
+  "cefet_items": [
+    "Robotik-Lernengruppe (2014)",
+    "Tutor für Computerprogrammierung für Studierende der Mechatronik und Informatik (Fachkurs) (2014)",
+    "3. Platz beim Latin America Robotic Competition (2014)",
+    "Studentaustausch an der Université Joseph Fourier (Grenoble, Frankreich) (2015)",
+    "Studentaustausch an der Frankfurt University of Applied Sciences (Frankfurt, Deutschland) (2015/16)",
+    "Wissenschaftliche Initiation: Kostengünstige Prozesssteuerungsplattform (2017)",
+    "Wissenschaftliche Initiation: Prozesssteuerungsplattform: eine MPC-Implementierung (2018)",
+    "Studentisches Mitglied des Graduierungsrates (2018/19)"
+  ],
+  "exchange_student": "Studentaustausch",
+  "fuas_desc": "Ich habe als Austauschstudent im Rahmen des Programms Ciências Sem Fronteiras (Wissenschaft ohne Grenzen) der brasilianischen Regierung studiert.",
+  "uga_desc": "Ich habe als Austauschstudent durch die Partnerschaft zwischen UGA und CEFET-MG studiert. Dort arbeitete ich im Robotiklabor und half dem Team, das den zweiten Platz beim National Instruments MyRIO Paris-Wettbewerb belegte."
 }

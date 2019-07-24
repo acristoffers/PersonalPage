@@ -10,13 +10,9 @@
           </div>
           <div class="content">
             <div class="title">Acal BFi Germany GmbH</div>
-            <div class="function">Intern</div>
+            <div class="function">{{$t('intern')}}</div>
             <div class="date">03/2016 - 08/2016</div>
-            <div class="desc">
-              During this internship, I developed a platform to measure the
-              power loss inside the kernel of the inductor used in a PFC
-              circuit.
-            </div>
+            <div class="desc">{{$t('acal_desc')}}</div>
           </div>
         </div>
 
@@ -26,14 +22,9 @@
           </div>
           <div class="content">
             <div class="title">Corpo de Bombeiros Militar de Minas Gerais</div>
-            <div class="function">Soldado</div>
+            <div class="function">{{$t('soldier')}}</div>
             <div class="date">01/2010 - 12/2013</div>
-            <div class="desc">
-              As a firefighter I was entitled to work as a first-aider and
-              diver, being the first response in all sorts of accidents, from
-              fire in the wilds to car accidents and industrial and natural
-              disasters.
-            </div>
+            <div class="desc">{{$t('cbmmg_desc')}}</div>
           </div>
         </div>
       </div>
@@ -47,28 +38,14 @@
           </div>
           <div class="content">
             <div class="title">Centro Federal de Educação Tecnológica de Minas Gerais</div>
-            <div class="function">Graduação em Engenharia Mecatrônica</div>
+            <div class="function">{{$t('eng_meca')}}</div>
             <div class="date">04/2013 - 07/2019</div>
             <div class="desc">
-              As a student, I started taking part in activities in my second
-              year, as part of the team that won the 3rd place in the Latin
-              American Robotic Competition. After that, I helped the student
-              representatives in some activities without becoming a member,
-              until accepting to become the student representative in the
-              Graduation Council. Since my first semester, I helped other
-              students from graduation, master and Ph.D. with their projects,
-              especially with programming.
+              {{$t('cefet_desc')}}
               <br />
               <br />
               <ul class="gray">
-                <li>Robotics studying group (2014)</li>
-                <li>Tutor of Computer Programming for Mechatronic and IT (Technical Course) students (2014)</li>
-                <li>3rd place in the Latin America Robotic Competition (2014)</li>
-                <li>Student exchange at Université Joseph Fourier (Grenoble, France) (2015)</li>
-                <li>Student exchange at Frankfurt University of Applied Sciences (Frankfurt, Germany) (2015/16)</li>
-                <li>Scientific Initiation: low-cost process control platform (2017)</li>
-                <li>Scientific Initiation: process control platform: an MPC implementation (2018)</li>
-                <li>Student member of the Graduation Council in 2018</li>
+                <li v-for="item in $t('cefet_items')" :key="item">{{item}}</li>
               </ul>
             </div>
           </div>
@@ -80,13 +57,9 @@
           </div>
           <div class="content">
             <div class="title">Frankfurt University Of Applied Sciences</div>
-            <div class="function">Exchange Student - Ciências Sem Fronteiras</div>
+            <div class="function">{{$t('exchange_student')}} - Ciências Sem Fronteiras</div>
             <div class="date">06/2015 - 08/2017</div>
-            <div class="desc">
-              I studied as an exchange student through the Brazilian
-              government's program Ciências Sem Fronteiras (Science Without
-              Borders).
-            </div>
+            <div class="desc">{{$t('fuas_desc')}}</div>
           </div>
         </div>
 
@@ -99,14 +72,9 @@
               Université Joseph Fourier (now Université
               Grenoble Alpes)
             </div>
-            <div class="function">Exchange Student</div>
+            <div class="function">{{$t('exchange_student')}}</div>
             <div class="date">01/2015 - 03/2015</div>
-            <div class="desc">
-              I studied as an exchange student through the partnership between
-              UGA and CEFET-MG. There I worked in the robotics laboratory
-              helping the team who won the second place in the National
-              Instruments MyRIO Paris competition.
-            </div>
+            <div class="desc">{{$t('uga_desc')}}</div>
           </div>
         </div>
       </div>

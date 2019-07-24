@@ -64,28 +64,28 @@ export default class Projects extends Vue {
         icon: require('@/assets/lachesis.svg'),
         desc: this.$t('lachesis_desc'),
         url: 'https://github.com/acristoffers/lachesis',
-        ss: _.map([1, 2, 3, 4], i => {
+        ss: _.map([1, 2, 3, 4], (i) => {
           return {
             key: i,
             lowres: require(`@/assets/screenshots/Lachesis${i}.jpg`),
             hires: require(`@/assets/screenshots/Lachesis${i}.png`),
-            desc: this.$t(`lachesis${i}_desc`)
+            desc: this.$t(`lachesis${i}_desc`),
           };
-        })
+        }),
       },
       moirai: {
         key: 'moirai',
         name: 'moirai',
         icon: require('../assets/python.svg'),
         desc: this.$t('moirai_desc'),
-        url: 'https://github.com/acristoffers/moirai'
+        url: 'https://github.com/acristoffers/moirai',
       },
       ahio: {
         key: 'ahio',
         name: 'AHIO',
         icon: require('../assets/python.svg'),
         desc: this.$t('ahio_desc'),
-        url: 'https://github.com/acristoffers/ahio'
+        url: 'https://github.com/acristoffers/ahio',
       },
       void: {
         key: 'void',
@@ -93,14 +93,14 @@ export default class Projects extends Vue {
         icon: require('../assets/void.svg'),
         desc: this.$t('void_desc'),
         url: 'https://github.com/acristoffers/void',
-        ss: _.map([1, 2, 3, 4], i => {
+        ss: _.map([1, 2, 3, 4], (i) => {
           return {
             key: i,
             lowres: require(`@/assets/screenshots/Void${i}.jpg`),
             hires: require(`@/assets/screenshots/Void${i}.png`),
-            desc: this.$t(`void${i}_desc`)
+            desc: this.$t(`void${i}_desc`),
           };
-        })
+        }),
       },
       tests_database: {
         key: 'tests-database',
@@ -108,14 +108,14 @@ export default class Projects extends Vue {
         icon: require('../assets/tests-database.png'),
         desc: this.$t('tests_database_desc'),
         url: 'https://github.com/acristoffers/testsdatabase',
-        ss: _.map([1, 2, 3], i => {
+        ss: _.map([1, 2, 3], (i) => {
           return {
             key: i,
             lowres: require(`@/assets/screenshots/TestsDatabase${i}.png`),
             hires: require(`@/assets/screenshots/TestsDatabase${i}.png`),
-            desc: this.$t(`void${i}_desc`)
+            desc: this.$t(`void${i}_desc`),
           };
-        })
+        }),
       },
       tracker: {
         key: 'tracker',
@@ -123,22 +123,22 @@ export default class Projects extends Vue {
         icon: require('../assets/tracker.svg'),
         desc: this.$t('tracker_desc'),
         url: 'https://github.com/acristoffers/tracker',
-        ss: _.map([1, 2, 3], i => {
+        ss: _.map([1, 2, 3], (i) => {
           return {
             key: i,
             lowres: require(`@/assets/screenshots/Tracker${i}.png`),
             hires: require(`@/assets/screenshots/Tracker${i}.png`),
-            desc: this.$t(`void${i}_desc`)
+            desc: this.$t(`void${i}_desc`),
           };
-        })
+        }),
       },
       cef: {
         key: 'cef',
         name: 'CEF3 Simple Sample',
         icon: require('../assets/cef_logo.png'),
         desc: this.$t('cefss_desc'),
-        url: 'https://github.com/acristoffers/CEF3SimpleSample'
-      }
+        url: 'https://github.com/acristoffers/CEF3SimpleSample',
+      },
     };
   }
 

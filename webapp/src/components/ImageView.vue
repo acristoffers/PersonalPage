@@ -57,6 +57,7 @@ export default class ImageView extends Vue {
     color: white;
     font-size: 2rem;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
   }
 }

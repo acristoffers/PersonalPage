@@ -7,7 +7,7 @@
   "fr": "Francês",
   "de": "Alemão",
   "native": "Nativo",
-  "about_me": "Estudante de engenharia mecatrônica com experiência em análise de sistemas e controle e programação. Adora trabalhar em um ambiente cooperativo para resolver problemas complexos. Trabalhou em duas iniciações científicas para o uso de uma técnica de controle avançado (Model Predictive Control). Adora aprender idiomas e ajudar os outros a desenvolver seus projetos.",
+  "about_me": "Sou um engenheiro mecatrônico recém-formado interessado em programação de computadores, teoria de controle e línguas. Gosto de trabalhar em equipe. Eu sei que isso soa clichê, mas eu realmente prefiro trabalhar em um ambiente cooperativo do que em um competitivo. Gosto de ajudar as pessoas a resolver problemas e tenho feito isso quase diariamente nos últimos 7 anos, trabalhando quase como um suporte técnico para problemas que vão desde impressoras que não funcionam até implementar gráficos eficientes de interseção de elipsóides. Eu também gosto de aprender idiomas, jogar jogos de computador e ouvir Hard Rock Alemão.",
   "languages": "Idiomas",
   "tests_database_desc": "Gerencia um banco de questões e facilita a geração e correção de provas.",
   "tb_ss1_desc": "Este aplicativo foi desenvolvido para o estado de Minas Gerais, para gerenciar as provas aplicadas aos recrutas bem como provas anuais.",
@@ -39,5 +39,24 @@
   "publications": "Publicações",
   "experience": "Formação/Experiência",
   "experience_title": "Experiência",
-  "education": "Formação"
+  "education": "Formação",
+  "intern": "Estagiário",
+  "acal_desc": "Durante este estágio desenvolvi uma plataforma para medir a perda interna de energia de um núcleo de um circuito de correção de fator de potência.",
+  "soldier": "Soldado",
+  "cbmmg_desc": "Como soldado minhas atribuições eram, principalmente, de primeiros socorros e mergulhador, sendo a primeira resposta em todo tipo de ocorrências, desde incêndios florestais até acidentes automotivos e desastres industriais ou naturais.",
+  "eng_meca": "Graduação em Engenharia Mecatrônica",
+  "cefet_desc": "Como estudante, comecei a participar de atividades no meu segundo ano, como parte do grupo de estudo de robótica, ocupando o terceiro lugar na Competição Latino-America de Robótica de 2014. Em seguida ajudei o DA sem me associar, até aceitar me tornar o representante discente no Conselho de Graduação. Desde o primeiro semestre ajudei estudantes de graduação e mestrado com seus projetos, especialmente com programação.",
+  "cefet_items": [
+    "GER - Grupo de Estudos em Robótica (2014)",
+    "Monitor de programação I e II para alunos da graduação e do curso técnico de informática (2014)",
+    "3º lugar na Competição Latino-Americana de Robótica (LARC/2014)",
+    "Intercambista na Université Joseph Fourier (Grenoble, França) (2015)",
+    "Intercambista na Frankfurt University of Applied Sciences (Frankfurt, Alemanha) (2015/16)",
+    "Iniciação Científica: Plataforma de baixo custo para controle de processos (2017)",
+    "Iniciação Científica: Plataforma para controle de processos: implementação de um controlador MPC (2018)",
+    "Representante discente no Conselho de Graduação (2018/19)"
+  ],
+  "exchange_student": "Intercambista",
+  "fuas_desc": "Estudei como intercambista pelo programa Ciências Sem Fronteiras fomentado pela CAPES.",
+  "uga_desc": "Intercambista pela parceria entre UGA e CEFET/MG. Trabalhei no laboratório de robótica ajudando o time que ficou em segundo lugar na competição da National Instruments, em Paris."
 }

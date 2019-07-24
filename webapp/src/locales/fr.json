@@ -7,7 +7,7 @@
   "fr": "Français",
   "de": "Allemand",
   "native": "Maternelle",
-  "about_me": "Étudiant en ingénierie mécatronique ayant de l'expérience en analyse, contrôle et programmation de systèmes. Aime travailler dans un environnement coopératif pour résoudre des problèmes complexes. A participé à deux initiations scientifiques pour utiliser une technique de contrôle avancée (contrôle prédictif par modèle). Aime apprendre des langues et aider les autres à développer leurs projets.",
+  "about_me": "Je suis un ingénieur en mécatronique récemment diplômé qui s'intéresse à la programmation informatique, à la théorie du contrôle et aux langues. Je suis un travailleur d'équipe. Je sais que cela semble cliché, mais je préfère vraiment travailler dans un environnement coopératif que dans un environnement concurrentiel. J'aime aider les gens à résoudre des problèmes et je l'ai fait presque quotidiennement depuis 7 années, travaillant presque comme un support technique pour des problèmes allant des imprimantes ne fonctionnant pas à la implementation de graphes efficaces de l'intersection d'ellipsoïdes. J'aime aussi apprendre des langues, jouer à des jeux informatiques et écouter du hard rock allemand.",
   "languages": "Langues",
   "tests_database_desc": "Gérer les questions et imprimer les preuves.",
   "tb_ss1_desc": "Cette application a été développé pour la société de pompiers de l'état de Minas Gerais, au Brésil, pour gérer les preuves appliquées aux nouveaux arrivants, ainsi que les preuves annuelles.",
@@ -39,5 +39,24 @@
   "publications": "Publications",
   "experience": "Éducation/Expérience",
   "experience_title": "Expérience",
-  "education": "Éducation"
+  "education": "Éducation",
+  "intern": "Stagiaire",
+  "acal_desc": "Au cours de ce stage, j'ai développé une plate-forme pour mesurer la perte de puissance à l'intérieur du noyau de l'inducteur utilisé dans un circuit PFC.",
+  "soldier": "Soldat",
+  "cbmmg_desc": "En tant que pompier, j’avais le droit de travailler comme secouriste et plongeur. C’était la première intervention dans toutes sortes d’accidents, des incendies dans la nature aux accidents de voiture, en passant par les catastrophes naturelles et naturelles.",
+  "eng_meca": "Génie Mécatronique",
+  "cefet_desc": "En tant qu'étudiante, j'ai commencé à participer à des activités dès ma deuxième année au sein de l'équipe qui a remporté la 3ème place du concours robotique latino-américain. Après cela, j'ai aidé les représentants des étudiants dans certaines activités sans devenir membre, avant d'accepter de devenir le représentant des étudiants au sein du Conseil de remise des diplômes. Depuis le premier semestre, j’ai aidé d’autres finissants et des étudiants à la maîtrise à réaliser leurs projets, notamment en matière de programmation.",
+  "cefet_items": [
+    "Groupe d'étude en robotique (2014)",
+    "Tuteur en programmation informatique pour étudiants en mécatronique et informatique (cours techniques) (2014)",
+    "3ème place du concours robotique d'Amérique latine (2014)",
+    "Échange universitaire à l'Université Joseph Fourier (Grenoble, France) (2015)",
+    "Échange universitaire à l'Université des sciences appliquées de Francfort (Francfort, Allemagne) (2015/16)",
+    "Initiation scientifique: plate-forme de contrôle des processus à faible coût (2017)",
+    "Initiation scientifique: plate-forme de contrôle de processus: une implémentation de MPC (2018)",
+    "Membre étudiant du conseil de graduation (2018/19)"
+  ],
+  "exchange_student": "Étudiant d'échange",
+  "fuas_desc": "J'ai étudié en tant qu'étudiant d'échange dans le cadre du programme du gouvernement brésilien Ciências Sem Fronteiras (Science sans frontières).",
+  "uga_desc": "J'ai étudié en tant qu'étudiant d'échange grâce au partenariat entre UGA et CEFET-MG. Là, j'ai travaillé dans le laboratoire de robotique en aidant l'équipe qui a remporté la deuxième place au concours National Instruments MyRIO Paris."
 }

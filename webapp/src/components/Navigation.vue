@@ -89,7 +89,7 @@ export default class Navigation extends Vue {
 
   img {
     width: 125px;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
   }
 
   p.name {

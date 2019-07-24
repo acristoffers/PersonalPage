@@ -15,7 +15,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import Navigation from '@/components/Navigation.vue';
 
 @Component({
-  components: { Navigation }
+  components: { Navigation },
 })
 export default class App extends Vue {}
 </script>
@@ -86,7 +86,7 @@ a:hover {
       flex: 1;
       display: flex;
       flex-direction: row;
-      overflow: scroll;
+      overflow: auto;
     }
 
     footer {
@@ -101,7 +101,7 @@ a:hover {
     .view {
       flex: 1;
       padding: 1rem;
-      overflow: scroll;
+      overflow: auto;
     }
   }
 }
