@@ -39,7 +39,7 @@ import { setTimeout } from 'timers';
 
 @Component
 export default class Navigation extends Vue {
-  public langs = ['en', 'pt', 'fr', 'de'];
+  public langs = ['pt', 'en', 'de', 'fr'];
   public loadLanguageAsync = loadLanguageAsync;
   public links = ['about', 'projects', 'publications', 'experience'];
 
@@ -158,7 +158,7 @@ export default class Navigation extends Vue {
     height: 3rem;
     background-color: white;
     z-index: 0;
-    transition: top 1s;
+    transition: top 0.2s;
 
     @media only screen and (min-device-width: 900px) {
       width: 300px;
