@@ -80,6 +80,9 @@ export default class Navigation extends Vue {
   }
 
   background-color: rgb(0, 122, 204);
+  background-image: url(./../assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
 
   #header {
