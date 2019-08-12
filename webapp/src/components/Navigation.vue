@@ -17,6 +17,7 @@
     </ul>
     <div id="background" ref="bg">
       <div class="arrow-right"></div>
+      <div class="white-bg"></div>
     </div>
     <ul id="links">
       <li
@@ -156,9 +157,9 @@ export default class Navigation extends Vue {
     position: absolute;
     left: 0;
     height: 3rem;
-    background-color: white;
     z-index: 0;
     transition: top 0.2s;
+    display: flex;
 
     @media only screen and (min-device-width: 900px) {
       width: 300px;
@@ -172,9 +173,15 @@ export default class Navigation extends Vue {
   .arrow-right {
     width: 0;
     height: 0;
-    border-top: 1.5rem solid transparent;
-    border-bottom: 1.5rem solid transparent;
-    border-left: 1.5rem solid rgb(0, 122, 204);
+    margin-left: 5px;
+    border-top: 1.5rem solid white;
+    border-bottom: 1.5rem solid white;
+    border-left: 1.5rem solid transparent;
+  }
+
+  .white-bg {
+    background-color: white;
+    flex: 1;
   }
 }
 </style>
