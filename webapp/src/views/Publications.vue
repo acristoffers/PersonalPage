@@ -4,10 +4,7 @@
       <h1>2019</h1>
       <div class="publication">
         <h2>
-          <a
-            href="https://sic.ici.ro/wp-content/uploads/2018/10/Art.-2-Issue-3-2018-SIC.pdf"
-            target="_blank"
-          >
+          <a href="https://www.cilamce2019.com.br" target="_blank">
             FILHO, MARCIO R. O.; E SOUSA, ÁLAN C.; COSTA, EMERSON S.; LEITE,
             VALTER J. DE S. (2019). XL CILAMCE: Prototype Modelling for Real
             Systems.
