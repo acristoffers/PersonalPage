@@ -17,7 +17,7 @@
       :key="project.name"
     >
       <div class="desc">
-        <a :href="project.url">
+        <a :href="project.url" target="_blank">
           <img :src="project.icon" />
           <h1 class="project-name">{{project.name}}</h1>
         </a>
@@ -138,6 +138,21 @@ export default class Projects extends Vue {
         icon: require('../assets/cef_logo.png'),
         desc: this.$t('cefss_desc'),
         url: 'https://github.com/acristoffers/CEF3SimpleSample',
+      },
+      sigaa: {
+        key: 'sigaa:notas',
+        name: 'SIGAA:Notas',
+        icon: require('../assets/sigaa_logo.svg'),
+        desc: this.$t('sigaa_desc'),
+        url: 'https://github.com/acristoffers/SIGAAGrades',
+        ss: _.map([1, 2, 3, 4], (i) => {
+          return {
+            key: i,
+            lowres: require(`@/assets/screenshots/SIGAA_Notas${i}.png`),
+            hires: require(`@/assets/screenshots/SIGAA_Notas${i}.png`),
+            desc: this.$t(`sigaa_notas${i}_desc`),
+          };
+        }),
       },
     };
   }

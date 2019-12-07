@@ -28,6 +28,11 @@
   "void2_desc": "Text files can be edited inside the application using the Ace editor, which supports theming and syntax highlight for 161 languages.",
   "void3_desc": "You can search files by matching their path, tags and comments.",
   "void4_desc": "Videos can be played from inside the application, without touching the disk. Images can also be displayed carousel-like.",
+  "sigaa_desc": "WebScrapper that extracts grades from CEFET-MG's SIGAA portal, allowing students to see their grades, schedules and frequency in one interface, even when offline.",
+  "sigaa_notas1_desc": "The student can select their immatriculation, when there is more than one.",
+  "sigaa_notas2_desc": "Grades from all subjects are displayed in a single interface.",
+  "sigaa_notas3_desc": "Schedules are shown by day, in order, making it easy to read them.",
+  "sigaa_notas4_desc": "Frequency is also available on a single screen, but remember that it only shows what the professor inputs!",
   "%d years old, Brazilian": "%d years old, Brazilian",
   "contacts": "Contacts",
   "skills": "Skills",
@@ -45,6 +50,8 @@
   "soldier": "Soldier",
   "cbmmg_desc": "As a firefighter I was entitled to work as a first-aider and diver, being the first response in all sorts of accidents, from fire in the wilds to car accidents and industrial and natural disasters.",
   "eng_meca": "Mecatronics Engineering Graduation",
+  "mes_control": "Master in Control Theory",
+  "cefet_mes_desc": "Master student under the guidance of Prof. Dr. Valter Leite and Prof. Dr. Walter Lucia, researching fault tolerant control in state-restricted switched systems.",
   "cefet_desc": "As a student, I started taking part in activities in my second year, as part of the team that won the 3rd place in the Latin American Robotic Competition. After that, I helped the student representatives in some activities without becoming a member, until accepting to become the student representative in the Graduation Council. Since my first semester, I helped other students from graduation and master with their projects, especially with programming.",
   "cefet_items": [
     "Robotics studying group (2014)",
@@ -54,7 +61,10 @@
     "Student exchange at Frankfurt University of Applied Sciences (Frankfurt, Germany) (2015/16)",
     "Scientific Initiation: low-cost process control platform (2017)",
     "Scientific Initiation: process control platform: an MPC implementation (2018)",
-    "Student member of the Graduation Council (2018/19)"
+    "Student member of the Graduation Council (2018/19)",
+    "Coorientator of a BIC-Jr entitled 'System modeling for process control' (2018)",
+    "Coorientator of a BIC-Jr entitled 'Modeling of a oven with space-distributed parameters' (2019)",
+    "Coorientator of a BIC-Jr entitled 'Control of a coupled tanks system' (2019)"
   ],
   "exchange_student": "Exchange Student",
   "fuas_desc": "I studied as an exchange student through the Brazilian government's program Ciências Sem Fronteiras (Science Without Borders).",

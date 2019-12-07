@@ -34,6 +34,21 @@
 
         <div class="entry">
           <div>
+            <img src="@/assets/cefet-ufsj.jpg" />
+          </div>
+          <div class="content">
+            <div class="title">
+              Centro Federal de Educação Tecnológica de Minas
+              Gerais / Universidade Federal de São Jõal Del Rey
+            </div>
+            <div class="function">{{$t('mes_control')}}</div>
+            <div class="date">08/2019 -</div>
+            <div class="desc">{{$t('cefet_mes_desc')}}</div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div>
             <img src="@/assets/cefet.png" />
           </div>
           <div class="content">

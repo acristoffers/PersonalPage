@@ -28,6 +28,11 @@
   "void2_desc": "Textdateien können innerhalb der Anwendung mit dem Ace-Editor bearbeitet werden, der das Theming und die Syntaxhervorhebung für 161 Sprachen unterstützt.",
   "void3_desc": "Sie können Dateien durchsuchen, indem Sie deren Pfad, Tags und Kommentare abgleichen.",
   "void4_desc": "Videos können innerhalb der Anwendung abgespielt werden, ohne die Festplatte zu berühren. Bilder können auch karussellartig dargestellt werden.",
+  "sigaa_desc": "Web Scraper, der Noten aus dem CEFET-MG SIGAA-Portal extrahiert und es den Schülern ermöglicht, Noten, Zeitpläne und Häufigkeit auf einer Oberfläche zu sehen, auch wenn sie offline sind.",
+  "sigaa_notas1_desc": "Der Student kann seine Immatrikulation auswählen, wenn es mehr als eine gibt.",
+  "sigaa_notas2_desc": "Noten aller Fächer werden auf einer einzigen Oberfläche angezeigt.",
+  "sigaa_notas3_desc": "Die Zeitpläne werden nach Tag sortiert angezeigt, damit sie leicht gelesen werden können.",
+  "sigaa_notas4_desc": "Die Frequenz ist auch auf einem einzelnen Bildschirm verfügbar, aber denken Sie daran, dass hier nur die Eingaben des Professors angezeigt werden!",
   "%d years old, Brazilian": "%d Jahre alt, Brasilianer",
   "contacts": "Kontakte",
   "skills": "Fähigkeiten",
@@ -45,6 +50,8 @@
   "soldier": "Soldat",
   "cbmmg_desc": "Als Feuerwehrmann war ich berechtigt, als Ersthelfer und Taucher zu arbeiten. Ich var der Ersthelfer bei allen möglichen Unfällen, vom Feuer in der Wildnis über Autounfälle bis hin zu Industrie- und Naturkatastrophen.",
   "eng_meca": "Mecatroniker",
+  "mes_control": "Master in Steuerungstheorie",
+  "cefet_mes_desc": "Masterstudent unter der Leitung von Prof. Dr. Valter Leite und Prof. Dr. Walter Lucia zur Erforschung der fehlertoleranten Steuerung in zustandsbeschränkten vermittelten Systemen.",
   "cefet_desc": "Als Student habe ich in meinem zweiten Jahr angefangen, an Aktivitäten teilzunehmen, als Teil des Teams, das den 3. Platz im lateinamerikanischen Roboterwettbewerb gewann. Danach half ich den Studentenvertretern bei einigen Aktivitäten, ohne Mitglied zu werden, bis ich Graduierungsrat endlich übergennomen habe. Seit meinem ersten Semester habe ich anderen Graduirung und Meister Studenten mit ihrer Projekte geholfen, besonders mit Programmierung.",
   "cefet_items": [
     "Robotik-Lernengruppe (2014)",
@@ -54,7 +61,11 @@
     "Studentaustausch an der Frankfurt University of Applied Sciences (Frankfurt, Deutschland) (2015/16)",
     "Wissenschaftliche Initiation: Kostengünstige Prozesssteuerungsplattform (2017)",
     "Wissenschaftliche Initiation: Prozesssteuerungsplattform: eine MPC-Implementierung (2018)",
-    "Studentisches Mitglied des Graduierungsrates (2018/19)"
+    "Studentisches Mitglied des Graduierungsrates (2018/19)",
+    "Student member of the Graduation Council (2018/19)",
+    "Coorientator eines BIC-Jr mit dem Titel 'Systemmodellierung für die Prozesssteuerung' (2018)",
+    "Coorientator eines BIC-Jr mit dem Titel 'Modellierung eines Ofens mit raumverteilten Parametern' (2019)",
+    "Coorientator eines BIC-Jr mit dem Titel 'Steuerung eines gekoppelten Panzersystems' (2019)"
   ],
   "exchange_student": "Studentaustausch",
   "fuas_desc": "Ich habe als Austauschstudent im Rahmen des Programms Ciências Sem Fronteiras (Wissenschaft ohne Grenzen) der brasilianischen Regierung studiert.",

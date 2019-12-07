@@ -42,7 +42,7 @@
             href="https://sic.ici.ro/wp-content/uploads/2018/10/Art.-2-Issue-3-2018-SIC.pdf"
             target="_blank"
           >
-            SOUSA, ÁLAN C. E.; LEITE, VALTER J. S. ; RUBIO SCOLA, IGNACIO.
+            E SOUSA, ÁLAN C.; LEITE, VALTER J. S. ; RUBIO SCOLA, IGNACIO.
             Affordable Control Platform with MPC Application. Studies in
             Informatics and Control, v. 27, p. 265-274, 2018
           </a>
