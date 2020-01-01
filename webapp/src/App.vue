@@ -7,6 +7,12 @@
       </transition>
     </main>
     <footer>© Copyright 2019 Álan Crístoffer</footer>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -17,7 +23,14 @@ import Navigation from '@/components/Navigation.vue';
 @Component({
   components: { Navigation },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  private widget: any;
+
+  public mounted() {
+    const url = 'https://vlibras.gov.br/app';
+    this.widget = new (window as any).VLibras.Widget(url);
+  }
+}
 </script>
 
 <style lang="scss">
@@ -25,7 +38,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 12pt;
 }
 
