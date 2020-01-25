@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <div id="header">
-      <img src="@/assets/me.jpg" />
+      <img src="@/assets/me.jpg" ref="avatar" />
       <p class="name">
         Álan
         <br />Crístoffer
@@ -68,7 +68,8 @@ export default class Navigation extends Vue {
     this.$router.afterEach((to, from) => {
       this.$forceUpdate();
     });
-    setTimeout(this.menuItemOut, 500);
+
+    (this.$refs.avatar as any).addEventListener('load', this.menuItemOut);
   }
 }
 </script>
@@ -93,6 +94,7 @@ export default class Navigation extends Vue {
 
   img {
     width: 125px;
+    height: 125px;
     border-radius: 0.5rem;
   }
 
