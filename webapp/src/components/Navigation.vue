@@ -70,7 +70,7 @@ export default class Navigation extends Vue {
     });
 
     (this.$refs.avatar as any).addEventListener('load', this.menuItemOut);
-    this.menuItemOut();
+    setTimeout(this.menuItemOut, 500);
   }
 }
 </script>
