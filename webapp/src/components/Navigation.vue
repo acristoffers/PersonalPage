@@ -67,6 +67,7 @@ export default class Navigation extends Vue {
   protected mounted() {
     this.$router.afterEach((to, from) => {
       this.$forceUpdate();
+      setTimeout(this.menuItemOut, 500);
     });
 
     (this.$refs.avatar as any).addEventListener('load', this.menuItemOut);
