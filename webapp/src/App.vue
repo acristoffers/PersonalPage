@@ -29,6 +29,11 @@ export default class App extends Vue {
   public mounted() {
     const url = 'https://vlibras.gov.br/app';
     this.widget = new (window as any).VLibras.Widget(url);
+
+    const page = localStorage.getItem('path');
+    if (page != null) {
+      this.$router.push({ name: page });
+    }
   }
 }
 </script>
@@ -38,7 +43,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 12pt;
 }
 

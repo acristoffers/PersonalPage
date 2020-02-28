@@ -45,15 +45,15 @@ export default class About extends Vue {
     Github: 'https://www.github.com/acristoffers',
     Twitter: 'https://twitter.com/acristoffers',
     Linkedin: 'https://www.linkedin.com/in/acristoffers',
-    Lattes: 'http://lattes.cnpq.br/0846174549224433'
+    Lattes: 'http://lattes.cnpq.br/0846174549224433',
   };
 
   public get links() {
     return {
-      TCC: 'Monografia.pdf',
+      'TCC': 'Monografia.pdf',
       'Apostila de Python 3': '/Python3.pdf',
       [this.$t('resume') as string]: '/resume.pdf',
-      [this.$t('gpg_public_key') as string]: '/PublicKey.asc'
+      [this.$t('gpg_public_key') as string]: '/PublicKey.asc',
     };
   }
 
@@ -62,7 +62,7 @@ export default class About extends Vue {
       [this.$t('pt') as string]: this.$t('native'),
       [this.$t('en') as string]: 'C1',
       [this.$t('de') as string]: 'C1',
-      [this.$t('fr') as string]: 'B1'
+      [this.$t('fr') as string]: 'B1',
     };
   }
 
