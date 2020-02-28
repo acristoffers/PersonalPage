@@ -33,6 +33,7 @@ export default class App extends Vue {
     const page = localStorage.getItem('path');
     if (page != null) {
       this.$router.push({ name: page });
+      localStorage.removeItem('path');
     }
   }
 }
