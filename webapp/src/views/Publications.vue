@@ -74,30 +74,30 @@
       <div class="publication">
         <h2>
           <a href="https://www.ufrgs.br/sbai17/papers/paper_681.pdf" target="_blank">
-            LOPES, A. N. D. ; LEITE, V. J. S. ; SILVA, L. F. P. ; e Sousa, Álan
-            . ESTABILIZAÇÃO LOCAL DE SISTEMAS NÃO-LINEARES VIA MODELAGEM FUZZY
+            LOPES, A. N. D. ; LEITE, V. J. S. ; SILVA, L. F. P. ; E SOUSA, ÁLAN.
+            ESTABILIZAÇÃO LOCAL DE SISTEMAS NÃO-LINEARES VIA MODELAGEM FUZZY
             TAKAGI-SUGENO DISCRETA NO TEMPO. In: Simpósio Brasileiro de
             Automação Inteligente (SBAI), 2017, Porto Alegre - RS. XIII Simpósio
             Brasileiro de Automação Inteligente, 2017.
           </a>
         </h2>
         <div class="abstract">
-          The authors conduct experiments to locally
-          stabilize a nonlinear system subject to actuator sat-uration. For that
-          they utilize a real system of coupled tankswith a nonlinearity and
-          sensors and actuators withindustrial characteristics. Takagi-Sugeno's
-          fuzzy modeling is adopted to obtain a representation of this systemin
-          discrete time. The studied controller is composed of a state feedback
-          and a discrete integrator in time withfuzzy-type gains. However the
-          adopted structure is not a PDC(parallel distributed compensation). The
-          synthesisof the fuzzy gains is done via convex optimization procedures
-          that aim to maximize the attraction region in thepresence of exogenous
-          signals limited in amplitude. This allows the implementation of the
-          reference tracking,ensuring the convergence of the controlled variable
-          to the desired reference value. A PLC (programmable logiccontroller) is
-          used for safety interlocking and also as an interface between the
-          controlled system and the com-puter that implements the fuzzy controller
-          in the Python language. Several experiments are carried out
+          The authors conduct experiments to locally stabilize a nonlinear
+          system subject to actuator sat-uration. For that they utilize a real
+          system of coupled tankswith a nonlinearity and sensors and actuators
+          withindustrial characteristics. Takagi-Sugeno's fuzzy modeling is
+          adopted to obtain a representation of this systemin discrete time. The
+          studied controller is composed of a state feedback and a discrete
+          integrator in time withfuzzy-type gains. However the adopted structure
+          is not a PDC(parallel distributed compensation). The synthesisof the
+          fuzzy gains is done via convex optimization procedures that aim to
+          maximize the attraction region in thepresence of exogenous signals
+          limited in amplitude. This allows the implementation of the reference
+          tracking,ensuring the convergence of the controlled variable to the
+          desired reference value. A PLC (programmable logiccontroller) is used
+          for safety interlocking and also as an interface between the
+          controlled system and the com-puter that implements the fuzzy
+          controller in the Python language. Several experiments are carried out
           thatillustrate the feasibility of the proposal in an
           industrialenvironment without the need for greater investments
           inequipment.
