@@ -39,7 +39,7 @@
           <div class="content">
             <div class="title">
               Centro Federal de Educação Tecnológica de Minas
-              Gerais / Universidade Federal de São Jõal Del Rey
+              Gerais / Universidade Federal de São Jõao del-Rei
             </div>
             <div class="function">{{$t('mes_control')}}</div>
             <div class="date">08/2019 -</div>
@@ -98,8 +98,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import _ from 'lodash';
+import { Component, Vue } from "vue-property-decorator";
+import _ from "lodash";
 
 @Component
 export default class Experiences extends Vue {}
