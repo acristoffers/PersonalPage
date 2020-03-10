@@ -98,8 +98,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import _ from "lodash";
+import { Component, Vue } from 'vue-property-decorator';
+import _ from 'lodash';
 
 @Component
 export default class Experiences extends Vue {}
