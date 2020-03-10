@@ -75,8 +75,8 @@
         <h2>
           <a href="https://www.ufrgs.br/sbai17/papers/paper_681.pdf" target="_blank">
             LOPES, A. N. D. ; LEITE, V. J. S. ; SILVA, L. F. P. ; E SOUSA, ÁLAN.
-            ESTABILIZAÇÃO LOCAL DE SISTEMAS NÃO-LINEARES VIA MODELAGEM FUZZY
-            TAKAGI-SUGENO DISCRETA NO TEMPO. In: Simpósio Brasileiro de
+            Estabilização Local De Sistemas Não-Lineares Via Modelagem Fuzzy
+            Takagi-Sugeno Discreta No Tempo. In: Simpósio Brasileiro de
             Automação Inteligente (SBAI), 2017, Porto Alegre - RS. XIII Simpósio
             Brasileiro de Automação Inteligente, 2017.
           </a>
