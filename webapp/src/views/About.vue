@@ -40,12 +40,13 @@ Vue.prototype._ = _;
 @Component
 export default class About extends Vue {
   public contacts = {
-    Email: 'mailto:acristoffers@gmail.com',
-    Facebook: 'https://www.facebook.com/acristoffers',
-    Github: 'https://www.github.com/acristoffers',
-    Twitter: 'https://twitter.com/acristoffers',
-    Linkedin: 'https://www.linkedin.com/in/acristoffers',
-    Lattes: 'http://lattes.cnpq.br/0846174549224433',
+    'Email': 'mailto:acristoffers@gmail.com',
+    'Facebook': 'https://www.facebook.com/acristoffers',
+    'Github': 'https://www.github.com/acristoffers',
+    'Twitter': 'https://twitter.com/acristoffers',
+    'Linkedin': 'https://www.linkedin.com/in/acristoffers',
+    'Lattes': 'http://lattes.cnpq.br/0846174549224433',
+    'Research Gate': 'https://www.researchgate.net/profile/Alan_E_Sousa',
   };
 
   public get links() {
