@@ -4,24 +4,24 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 interface IState {
-  image: string;
+    image: string;
 }
 
 export default new Vuex.Store({
-  state: {
-    image: '',
-  },
-  mutations: {
-    setImage(state: IState, image: string) {
-      state.image = image;
+    state: {
+        image: '',
     },
-  },
-  actions: {
-    setImage({ commit }, image: string) {
-      commit('setImage', image);
+    mutations: {
+        setImage(state: IState, image: string) {
+            state.image = image;
+        },
     },
-    clrImage({ commit }) {
-      commit('setImage', '');
+    actions: {
+        setImage({ commit }, image: string) {
+            commit('setImage', image);
+        },
+        clrImage({ commit }) {
+            commit('setImage', '');
+        },
     },
-  },
 });
