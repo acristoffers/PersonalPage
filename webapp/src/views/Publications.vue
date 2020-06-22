@@ -1,6 +1,68 @@
 <template>
     <div id="publications">
         <div class="center">
+            <h1>2020</h1>
+            <div class="publication">
+                <h2>
+                    <a href="#"
+                       targe="_blank">
+                        E SOUSA, ÁLAN C.; SILVA, LUÍS F.  P.; LUCIA, WALTER;
+                        LEITE, VALTER J. DE S. (2020). XXIII Congresso
+                        Brasileiro de Automática: Command Governor strategy
+                        based on region of attraction control switching.
+                        <i>(Submitted, under review)</i>
+                    </a>
+                </h2>
+                <div class="abstract">
+                    PID controllers are robust and easily synthesized. The are
+                    many techniques that allow its tuning with simple steps,
+                    with or without a system model. The direct synthesis method
+                    allows us to find gain expressions in terms of the model
+                    parameters, using its canonical representation. We used a
+                    thermal system, available at the Signals and Systems
+                    Laboratory of CEFET-MG's campus V, which is composed of 9
+                    sensors placed in series along an acrylic path with forced
+                    ventilation. Three resistances and a damper act as actuators
+                    for the system, heating the air and regulating its flow. We
+                    identified 1280 first-order models for this system, using
+                    different combinations of damper opening, resistance power
+                    and selected output sensor by using the complementary output
+                    method and used a subsample of those to create controllers
+                    using direct synthesis. We use a set of equations developed
+                    by ourselves and another set found in an article by Chen. We
+                    tested them in the real system with satisfactory results.
+                </div>
+            </div>
+            <div class="publication">
+                <h2>
+                    <a href="#"
+                       targe="_blank">
+                        FILHO, MARCIO R. O.; E SOUSA, ÁLAN C.; LEITE, VALTER J.
+                        DE S.; COSTA, EMERSON S. (2020). XLI CILAMCE: Control Of
+                        An Oven With Space-Distributed Sensors.
+                        <i>(Submitted, under review)</i>
+                    </a>
+                </h2>
+                <div class="abstract">
+                    PID controllers are robust and easily synthesized. The are
+                    many techniques that allow its tuning with simple steps,
+                    with or without a system model. The direct synthesis method
+                    allows us to find gain expressions in terms of the model
+                    parameters, using its canonical representation. We used a
+                    thermal system, available at the Signals and Systems
+                    Laboratory of CEFET-MG's campus V, which is composed of 9
+                    sensors placed in series along an acrylic path with forced
+                    ventilation. Three resistances and a damper act as actuators
+                    for the system, heating the air and regulating its flow. We
+                    identified 1280 first-order models for this system, using
+                    different combinations of damper opening, resistance power
+                    and selected output sensor by using the complementary output
+                    method and used a subsample of those to create controllers
+                    using direct synthesis. We use a set of equations developed
+                    by ourselves and another set found in an article by Chen. We
+                    tested them in the real system with satisfactory results.
+                </div>
+            </div>
             <h1>2019</h1>
             <div class="publication">
                 <h2>
