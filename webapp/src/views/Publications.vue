@@ -14,23 +14,23 @@
                     </a>
                 </h2>
                 <div class="abstract">
-                    PID controllers are robust and easily synthesized. The are
-                    many techniques that allow its tuning with simple steps,
-                    with or without a system model. The direct synthesis method
-                    allows us to find gain expressions in terms of the model
-                    parameters, using its canonical representation. We used a
-                    thermal system, available at the Signals and Systems
-                    Laboratory of CEFET-MG's campus V, which is composed of 9
-                    sensors placed in series along an acrylic path with forced
-                    ventilation. Three resistances and a damper act as actuators
-                    for the system, heating the air and regulating its flow. We
-                    identified 1280 first-order models for this system, using
-                    different combinations of damper opening, resistance power
-                    and selected output sensor by using the complementary output
-                    method and used a subsample of those to create controllers
-                    using direct synthesis. We use a set of equations developed
-                    by ourselves and another set found in an article by Chen. We
-                    tested them in the real system with satisfactory results.
+                    The command governor (CG) is a useful strategy to avoid
+                    constraints violation in case of control reconfiguration or
+                    operational conditions changes, like switched systems mode
+                    changes. In general, the structure of the CG specializes in
+                    producing an alternative reference signal to drive a
+                    closed-loop system to the desired reference while avoiding
+                    constraints violations in the control signal, state-space,
+                    or combinations of them. In this paper, we propose a simple
+                    strategy that modifies the conventional structures of the CG
+                    and supervisor, yielding a switched rule based on the
+                    estimated controllers' region of attraction. We present some
+                    simulations to illustrate the proposal's potential and
+                    compare it with a competitor scheme exploiting a dwell-time
+                    approach. The results suggest that our approach adds new
+                    possibilities of CG and supervisor design, reducing the
+                    transition time between system modes and improving the
+                    closed-loop performance indexes.
                 </div>
             </div>
             <div class="publication">
