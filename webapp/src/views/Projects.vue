@@ -113,7 +113,7 @@ export default class Projects extends Vue {
                         key: i,
                         lowres: require(`@/assets/screenshots/TestsDatabase${i}.png`),
                         hires: require(`@/assets/screenshots/TestsDatabase${i}.png`),
-                        desc: this.$t(`tb_ss{i}_desc`),
+                        desc: this.$t(`tb_ss${i}_desc`),
                     };
                 }),
             },
@@ -128,7 +128,7 @@ export default class Projects extends Vue {
                         key: i,
                         lowres: require(`@/assets/screenshots/Tracker${i}.png`),
                         hires: require(`@/assets/screenshots/Tracker${i}.png`),
-                        desc: this.$t(`tracker{i}_desc`),
+                        desc: this.$t(`tracker${i}_desc`),
                     };
                 }),
             },
