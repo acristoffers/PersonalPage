@@ -128,7 +128,6 @@ export default class Projects extends Vue {
                         key: i,
                         lowres: require(`@/assets/screenshots/Tracker${i}.png`),
                         hires: require(`@/assets/screenshots/Tracker${i}.png`),
-                        desc: this.$t(`tracker${i}_desc`),
                     };
                 }),
             },
