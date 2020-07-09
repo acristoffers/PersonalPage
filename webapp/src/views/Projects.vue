@@ -9,7 +9,6 @@
                 </router-link>
             </li>
         </ul>
-
         <div
             class="project"
             :class="shouldShow(project.key)"
@@ -32,7 +31,6 @@
                 </div>
             </div>
         </div>
-
         <ImageView />
     </div>
 </template>
@@ -158,6 +156,38 @@ export default class Projects extends Vue {
 
     public setImage(image: string) {
         this.$store.dispatch('setImage', image);
+    }
+
+    public isActiveRoute(project: string): boolean {
+        return this.shouldShow(project).length === 0;
+    }
+
+    protected keyUp(event: KeyboardEvent) {
+        const projects = _.values(this.projects).map((v) => v.key);
+        const active = projects.findIndex(this.isActiveRoute);
+
+        switch (event.key) {
+            case 'h': {
+                const n = projects.length;
+                const index = ((active - 1) % n + n) % n;
+                this.$router.push(`/projects/${projects[index]}`);
+                break;
+            }
+            case 'l': {
+                const n = projects.length;
+                const index = ((active + 1) % n + n) % n;
+                this.$router.push(`/projects/${projects[index]}`);
+                break;
+            }
+        }
+    }
+
+    protected mounted() {
+        window.addEventListener('keyup', this.keyUp);
+    }
+
+    protected beforeDestroy() {
+        window.removeEventListener('keyup', this.keyUp);
     }
 }
 </script>

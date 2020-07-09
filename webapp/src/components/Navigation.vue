@@ -9,7 +9,6 @@
                 <strong>e Sousa</strong>
             </p>
         </div>
-
         <ul id="langs">
             <li v-for="lang in langs"
                 :key="lang" @click="loadLanguageAsync(lang)">
@@ -66,6 +65,38 @@ export default class Navigation extends Vue {
         (this.$refs.bg as any).style.top = `${element.offsetTop}px`;
     }
 
+    protected keyUp(event: KeyboardEvent) {
+        const isActive = (l: string) => this.isActiveRoute(l).length > 0;
+        const active = this.links.findIndex(isActive);
+
+        switch (event.key) {
+            case 'j': {
+                const n = this.links.length;
+                const index = ((active + 1) % n + n) % n;
+                this.$router.push(`/${this.links[index]}`);
+                break;
+            }
+            case 'k': {
+                const n = this.links.length;
+                const index = ((active - 1) % n + n) % n;
+                this.$router.push(`/${this.links[index]}`);
+                break;
+            }
+            case '1':
+                this.loadLanguageAsync('pt');
+                break;
+            case '2':
+                this.loadLanguageAsync('en');
+                break;
+            case '3':
+                this.loadLanguageAsync('de');
+                break;
+            case '4':
+                this.loadLanguageAsync('fr');
+                break;
+        }
+    }
+
     protected mounted() {
         this.$router.afterEach((to, from) => {
             this.$forceUpdate();
@@ -74,6 +105,12 @@ export default class Navigation extends Vue {
 
         (this.$refs.avatar as any).addEventListener('load', this.menuItemOut);
         setTimeout(this.menuItemOut, 500);
+
+        window.addEventListener('keyup', this.keyUp);
+    }
+
+    protected beforeDestroy() {
+        window.removeEventListener('keyup', this.keyUp);
     }
 }
 </script>
