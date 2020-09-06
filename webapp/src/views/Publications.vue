@@ -10,7 +10,7 @@
                         LEITE, VALTER J. DE S. (2020). XXIII Congresso
                         Brasileiro de Automática: Command Governor strategy
                         based on region of attraction control switching.
-                        <i>(Submitted, under review)</i>
+                        <i>(Accepted, publication on November)</i>
                     </a>
                 </h2>
                 <div class="abstract">
@@ -40,7 +40,7 @@
                         FILHO, MARCIO R. O.; E SOUSA, ÁLAN C.; LEITE, VALTER J.
                         DE S.; COSTA, EMERSON S. (2020). XLI CILAMCE: Control Of
                         An Oven With Space-Distributed Sensors.
-                        <i>(Submitted, under review)</i>
+                        <i>(Accepted, publication on November)</i>
                     </a>
                 </h2>
                 <div class="abstract">
