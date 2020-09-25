@@ -6629,10 +6629,10 @@ npm-bundled@^1.1.1:
   dependencies:
     npm-normalize-package-bin "^1.0.1"
 
-npm-check-updates@^9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-9.0.1.tgz#862a9757cf5003541127606c3da0eb22e045cc4f"
-  integrity sha512-xSMyNEIvsrNPDh5r1N/VxDGE+5ZkiEx8BxBvoEBWc/rsaHHfwKCvsY3qJjAn064pULH4uTrT7+kJwroHYsY/Yw==
+npm-check-updates@^9.0.2:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-9.0.2.tgz#653d75aba6163a0d9b56a87f0e005005aaea322c"
+  integrity sha512-TanEAEsRTtIEyX2On0SNTVMghx2oRpGN3QSNFqWdiq7COdxDzfC2YxQFpqTZGOC3A4BlXUForAyV/0OiyXp1lg==
   dependencies:
     chalk "^4.1.0"
     cint "^8.2.1"
@@ -6651,6 +6651,7 @@ npm-check-updates@^9.0.1:
     prompts "^2.3.2"
     rc-config-loader "^3.0.0"
     remote-git-tags "^3.0.0"
+    rimraf "^3.0.2"
     semver "^7.3.2"
     semver-utils "^1.1.4"
     spawn-please "^0.4.1"
@@ -9714,10 +9715,10 @@ vue-property-decorator@^9.0.0:
   resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-9.0.0.tgz#0a5f6d47d33ca62a8876108ccfa65c2c4fb7325a"
   integrity sha512-oegTNPItuHOkW0AP1MnbdNwkmyhfsUIIXvIRHpgC18tVoEo21/i6kItyeekjMs8JgZJeuHzsaTc/DZaJFH4IWQ==
 
-vue-router@^3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.4.3.tgz#fa93768616ee338aa174f160ac965167fa572ffa"
-  integrity sha512-BADg1mjGWX18Dpmy6bOGzGNnk7B/ZA0RxuA6qedY/YJwirMfKXIDzcccmHbQI0A6k5PzMdMloc0ElHfyOoX35A==
+vue-router@^3.4.4:
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.4.4.tgz#ad0c27f6353107ed527afa3afc5da69ce3ea3841"
+  integrity sha512-qFfwwLvxUYq+iDJ0UoE8HMnuZEDtIDA+p573brVMb7NZr0t1vhMeMWDTvgF2b8MqAFOc77bNOTSSwYcR4pCZlg==
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"
