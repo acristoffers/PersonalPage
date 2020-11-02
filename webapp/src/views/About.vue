@@ -53,10 +53,10 @@ export default class About extends Vue {
 
     public get links() {
         return {
-            'TCC': 'Monografia.pdf',
-            'Apostila de Python 3': '/Python3.pdf',
-            'Apostila de MATLAB': '/MATLAB.pdf',
-            [this.$t('resume') as string]: '/resume.pdf',
+            'TCC': 'Monografia.pdf#view=FitH',
+            'Apostila de Python 3': '/Python3.pdf#view=FitH',
+            'Apostila de MATLAB': '/MATLAB.pdf#view=FitH',
+            [this.$t('resume') as string]: '/resume.pdf#view=FitH',
             [this.$t('gpg_public_key') as string]: '/PublicKey.asc',
         };
     }

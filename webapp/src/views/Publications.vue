@@ -66,7 +66,7 @@
             <h1>2019</h1>
             <div class="publication">
                 <h2>
-                    <a href="/Filho2019.pdf"
+                    <a href="/Filho2019.pdf#view=FitH"
                        target="_blank">
                         FILHO, MARCIO R. O.; E SOUSA, ÁLAN C.; COSTA, EMERSON
                         S.; LEITE, VALTER J. DE S. (2019). XL CILAMCE: Prototype
@@ -104,7 +104,7 @@
             <h1>2018</h1>
             <div class="publication">
                 <h2>
-                    <a href="https://sic.ici.ro/wp-content/uploads/2018/10/Art.-2-Issue-3-2018-SIC.pdf"
+                    <a href="https://sic.ici.ro/wp-content/uploads/2018/10/Art.-2-Issue-3-2018-SIC.pdf#view=FitH"
                        target="_blank">
                         E SOUSA, ÁLAN C.; LEITE, VALTER J. S. ; RUBIO SCOLA,
                         IGNACIO.  Affordable Control Platform with MPC
@@ -142,7 +142,7 @@
             <h1>2017</h1>
             <div class="publication">
                 <h2>
-                    <a href="https://www.ufrgs.br/sbai17/papers/paper_681.pdf"
+                    <a href="https://www.ufrgs.br/sbai17/papers/paper_681.pdf#view=FitH"
                        target="_blank">
                         LOPES, A. N. D. ; LEITE, V. J. S. ; SILVA, L. F. P. ; E
                         SOUSA, ÁLAN.  Estabilização Local De Sistemas
