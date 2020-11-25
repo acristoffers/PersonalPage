@@ -35,12 +35,11 @@
             </div>
             <div class="publication">
                 <h2>
-                    <a href="#"
+                    <a href="https://cilamce.com.br/arearestrita/apresentacoes/198/7640.pdf"
                        targe="_blank">
                         FILHO, MARCIO R. O.; E SOUSA, ÁLAN C.; LEITE, VALTER J.
                         DE S.; COSTA, EMERSON S. (2020). XLI CILAMCE: Control Of
                         An Oven With Space-Distributed Sensors.
-                        <i>(Accepted, publication on November)</i>
                     </a>
                 </h2>
                 <div class="abstract">
