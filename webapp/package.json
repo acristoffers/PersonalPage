@@ -30,7 +30,7 @@
         "@vue/cli-plugin-babel": "~4.5.8",
         "@vue/cli-plugin-typescript": "~4.5.8",
         "@vue/cli-service": "~4.5.8",
-        "axios": "^0.21.0",
+        "axios": "^0.21.1",
         "eslint-plugin-import": "^2.22.1",
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-promise": "^4.2.1",
