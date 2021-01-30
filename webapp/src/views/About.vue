@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <div id="about-text">{{ ageStr }}. {{ $t("about_me") }}</div>
+    <div id="about-text">{{ ageStr }}. {{ $t('about_me') }}</div>
 
     <div id="links">
       <div class="section">
@@ -53,6 +53,7 @@ export default class About extends Vue {
 
   public get links() {
     return {
+      'Dissertation': 'Dissertation.pdf#view=FitH',
       'TCC': 'Monografia.pdf#view=FitH',
       'Apostila de Python 3': '/Python3.pdf#view=FitH',
       'Apostila de MATLAB': '/MATLAB.pdf#view=FitH',
