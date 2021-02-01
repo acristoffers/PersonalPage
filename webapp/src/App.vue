@@ -24,12 +24,7 @@ import Navigation from '@/components/Navigation.vue';
     components: { Navigation },
 })
 export default class App extends Vue {
-    private widget: any;
-
     public mounted() {
-        const url = 'https://vlibras.gov.br/app';
-        this.widget = new (window as any).VLibras.Widget(url);
-
         const page = localStorage.getItem('path');
         if (page != null) {
             this.$router.push(page);
