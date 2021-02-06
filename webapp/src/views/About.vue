@@ -53,7 +53,7 @@ export default class About extends Vue {
 
   public get links() {
     return {
-      'Dissertation': 'Dissertation.pdf#view=FitH',
+      'Master\'s Thesis': 'Thesis.pdf#view=FitH',
       'TCC': 'Monografia.pdf#view=FitH',
       'Apostila de Python 3': '/Python3.pdf#view=FitH',
       'Apostila de MATLAB': '/MATLAB.pdf#view=FitH',
