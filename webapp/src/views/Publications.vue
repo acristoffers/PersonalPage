@@ -4,10 +4,11 @@
       <h1>2020</h1>
       <div class="publication">
         <h2>
-          <a href="/eSousa2020.pdf#view=FitH" targe="_blank">
+          <a href="https://www.sba.org.br/open_journal_systems/index.php/sba/article/view/1516/1335" targe="_blank">
             E SOUSA, ÁLAN C.; SILVA, LUÍS F. P.; LUCIA, WALTER; LEITE, VALTER J.
             DE S. (2020). XXIII Congresso Brasileiro de Automática: Command
             Governor strategy based on region of attraction control switching.
+            DOI: <a href="https://doi.org/10.48011/asba.v2i1.1516">10.48011/asba.v2i1.1516</a>
           </a>
         </h2>
         <div class="abstract">
