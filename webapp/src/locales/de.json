@@ -7,7 +7,7 @@
   "fr": "Französisch",
   "de": "Deutsch",
   "native": "Muttersprache",
-  "about_me": "Ich bin ein Doktorand arbeitet an Angriffserkennung und -minderung auf Cyber-Physical Systems. Ich bin eine introvertierte Person, die kooperative Umgebungen mag. Ich genieße es zu programmieren (damit ich die langweiligen Aufgaben automatisieren kann) und Sprachen zu lernen (damit ich in ihnen schweigen kann).",
+  "about_me": "Ich bin ein Doktorand, der arbeitet auf meiner Thesis mit dem Titel \"Angriffserkennung auf verteilten cyber-physischen Systemen: Anwendung auf Smart Factory\". Ich bin eine introvertierte Person, die kooperative Umgebungen mag. Ich genieße es zu programmieren (damit ich die langweiligen Aufgaben automatisieren kann) und Sprachen zu lernen (damit ich in ihnen schweigen kann).",
   "languages": "Sprachen",
   "tests_database_desc": "Fragen verwalten und Prüfungen drucken.",
   "tb_ss1_desc": "Diese Anwendung wurde für den Feuerwehrmänner des Bundesstaates Minas Gerais/Brasilien entwickelt, um die Tests der Newcomern und die jährlichen Tests zu verwalten.",
@@ -70,5 +70,5 @@
   "fuas_desc": "Ich habe als Austauschstudent im Rahmen des Programms Ciências Sem Fronteiras (Wissenschaft ohne Grenzen) der brasilianischen Regierung studiert.",
   "uga_desc": "Ich habe als Austauschstudent durch die Partnerschaft zwischen UGA und CEFET-MG studiert. Dort arbeitete ich im Robotiklabor und half dem Team, das den zweiten Platz beim National Instruments MyRIO Paris-Wettbewerb belegte.",
   "phd_control": "Doktorat in Automatisierung und Signalverarbeitung",
-  "phd_desc": "Doktorand unter der Leitung von Prof. Dr. Nadhir Messai und Prof. Dr. Nouredinne Manamanni zur Erforschung der Erkennung und Abschwächung von Angriffen auf cyber-physikalische Systeme."
+  "phd_desc": "Doktorand unter der Leitung von Prof. Dr. Nadhir Messai und Prof. Dr. Nouredinne Manamanni, ich arbeite auf meiner Thesis mit dem Titel \"Angriffserkennung auf verteilten cyber-physischen Systemen: Anwendung auf Smart Factory\"."
 }

@@ -7,7 +7,7 @@
   "fr": "Français",
   "de": "Allemand",
   "native": "Maternelle",
-  "about_me": "Je suis doctorant et travaille sur la détection et l'atténuation des attaques sur les systèmes cyber-physiques. Je suis une personne introvertie qui aime les environnements coopératifs. J'aime la programmation (pour que je puisse automatiser les tâches ennuyeuses) et d'apprendre les langues (pour que je puisse rester silencieux).",
+  "about_me": "Je suis doctorant et travaille sur ma tèsis entitulé \"Surveillance Distribuée des Systèmes Cyber-Physiques: Application aux Smart Factories\". Je suis une personne introvertie qui aime les environnements coopératifs. J'aime la programmation (pour que je puisse automatiser les tâches ennuyeuses) et d'apprendre les langues (pour que je puisse rester silencieux).",
   "languages": "Langues",
   "tests_database_desc": "Gérer les questions et imprimer les preuves.",
   "tb_ss1_desc": "Cette application a été développé pour la société de pompiers de l'état de Minas Gerais, au Brésil, pour gérer les preuves appliquées aux nouveaux arrivants, ainsi que les preuves annuelles.",
@@ -70,5 +70,5 @@
   "fuas_desc": "J'ai étudié en tant qu'étudiant d'échange dans le cadre du programme du gouvernement brésilien Ciências Sem Fronteiras (Science sans frontières).",
   "uga_desc": "J'ai étudié en tant qu'étudiant d'échange grâce au partenariat entre UGA et CEFET-MG. Là, j'ai travaillé dans le laboratoire de robotique en aidant l'équipe qui a remporté la deuxième place au concours National Instruments MyRIO Paris.",
   "phd_control": "Doctorat en Automatique et Traitement de Signal",
-  "phd_desc": "Doctorant sous la direction du Prof. Dr. Nadhir Messai et du Prof. Dr. Nouredinne Manamanni, recherche sur la détection et l'atténuation des attaques sur les systèmes cyber-physiques."
+  "phd_desc": "Doctorant sous la direction du Prof. Dr. Nadhir Messai et du Prof. Dr. Nouredinne Manamanni, avec une tèsis entitulé \"Surveillance Distribuée des Systèmes Cyber-Physiques: Application aux Smart Factories\"."
 }

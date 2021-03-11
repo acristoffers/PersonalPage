@@ -7,7 +7,7 @@
   "fr": "Francês",
   "de": "Alemão",
   "native": "Nativo",
-  "about_me": "Sou estudante de doutorado e trabalho com detecção e mitigação de ataques em sistemas ciberfísicos. Sou uma pessoa introvertida que gosta de ambientes cooperativos. Gosto de programar (para automatizar tarefas chatas) e aprender línguas (para ficar calado nelas).",
+  "about_me": "Sou estudante de doutorado trabalhando na minha tese entitulada \"Detecção de ataques em sistemas cyber-físicos distribuídos: Aplicação em Fábricas Inteligentes\". Sou uma pessoa introvertida que gosta de ambientes cooperativos. Gosto de programar (para automatizar tarefas chatas) e aprender línguas (para ficar calado nelas).",
   "languages": "Idiomas",
   "tests_database_desc": "Gerencia um banco de questões e facilita a geração e correção de provas.",
   "tb_ss1_desc": "Este aplicativo foi desenvolvido para o estado de Minas Gerais, para gerenciar as provas aplicadas aos recrutas bem como provas anuais.",
@@ -70,5 +70,5 @@
   "fuas_desc": "Estudei como intercambista pelo programa Ciências Sem Fronteiras fomentado pela CAPES.",
   "uga_desc": "Intercambista pela parceria entre UGA e CEFET/MG. Trabalhei no laboratório de robótica ajudando o time que ficou em segundo lugar na competição da National Instruments, em Paris.",
   "phd_control": "Doutorado em Automação e Tratamento de Sinal",
-  "phd_desc": "Doutorando sob a orientação do Prof. Dr. Nadhir Messai e do Prof. Dr. Nouredinne Manamanni, pesquisando detecção e mitigação de ataques em sistemas ciber-físicos."
+  "phd_desc": "Doutorando sob a orientação do Prof. Dr. Nadhir Messai e do Prof. Dr. Nouredinne Manamanni, com tese entitulada \"Detecção de ataques em sistemas cyber-físicos distribuídos: Aplicação em Fábricas Inteligentes\"."
 }

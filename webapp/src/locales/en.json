@@ -7,7 +7,7 @@
   "fr": "French",
   "de": "German",
   "native": "Native",
-  "about_me": "I'm a Ph.D. student working on attack detection and mitigation on cyber-physical systems. I'm an introverted person who likes cooperative environments. I enjoy programming (so I can automate the boring tasks) and learning languages (so I can be silent in them).",
+  "about_me": "I'm a Ph.D. student working on my thesis titled \"Attack detection on distributed cyber-physical systems: applications on smart factories\". I'm an introverted person who likes cooperative environments. I enjoy programming (so I can automate the boring tasks) and learning languages (so I can be silent in them).",
   "languages": "Languages",
   "tests_database_desc": "Manage questions and print tests.",
   "tb_ss1_desc": "This application was developed for the firefighter corporation of the state of Minas Gerais, Brazil, to manage the tests applied to the newcomers, as well as anual tests.",
@@ -70,5 +70,5 @@
   "fuas_desc": "I studied as an exchange student through the Brazilian government's program Ciências Sem Fronteiras (Science Without Borders).",
   "uga_desc": "I studied as an exchange student through the partnership between UGA and CEFET-MG. There I worked in the robotics laboratory helping the team who won the second place in the National Instruments MyRIO Paris competition.",
   "phd_control": "PhD in Automation and Signal Processing",
-  "phd_desc": "Doctorate student under the guidance of Prof. Dr. Nadhir Messai and Prof. Dr. Nouredinne Manamanni, researching attack detection and mitigation on cyber-physical systems."
+  "phd_desc": "Doctorate student under the guidance of Prof. Dr. Nadhir Messai and Prof. Dr. Nouredinne Manamanni, with thesis titled \"Attack detection on distributed cyber-physical systems: applications on smart factories\"."
 }
