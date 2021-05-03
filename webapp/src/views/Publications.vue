@@ -1,6 +1,34 @@
 <template>
   <div id="publications">
     <div class="center">
+      <h1>2021</h1>
+      <div class="publication">
+        <h2>
+          <a href="#" targe="_blank">
+            E SOUSA, ÁLAN C.; LEITE, VALTER J. DE S.; LUCIA, WALTER; SILVA, LUÍS F. P. (2021).
+            Journal of Control, Automation and Electrical Systems:
+            Command Governor strategy based on region of attraction.
+            (Under review)
+          </a>
+        </h2>
+        <div class="abstract">
+          The command governor (CG) is a useful strategy to avoid constraints
+          violation in case of control reconfiguration or operational conditions
+          changes, like switched systems mode changes. In general, the structure
+          of the CG specializes in producing an alternative reference signal to
+          drive a closed-loop system to the desired reference while avoiding
+          constraints violations in the control signal, state-space, or
+          combinations of them. In this paper, we propose a simple strategy that
+          modifies the conventional structures of the CG and supervisor,
+          yielding a switched rule based on the estimated controllers' region of
+          attraction. We present some simulations to illustrate the proposal's
+          potential and compare it with a competitor scheme exploiting a
+          dwell-time approach. The results suggest that our approach adds new
+          possibilities of CG and supervisor design, reducing the transition
+          time between system modes and improving the closed-loop performance
+          indexes.
+        </div>
+      </div>
       <h1>2020</h1>
       <div class="publication">
         <h2>
@@ -102,6 +130,7 @@
             E SOUSA, ÁLAN C.; LEITE, VALTER J. S. ; RUBIO SCOLA, IGNACIO.
             Affordable Control Platform with MPC Application. Studies in
             Informatics and Control, v. 27, p. 265-274, 2018
+            DOI: <a href="https://doi.org/10.24846/v27i3y201802">10.24846/v27i3y201802</a>
           </a>
         </h2>
         <div class="abstract">
