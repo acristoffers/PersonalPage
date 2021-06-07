@@ -140,7 +140,7 @@
           code of the controllers is written in the open-source Python language,
           facilitating the translation of code usually written in commercial
           software. The proposed platform can use from Arduinos to Programmable
-          Logic Computers (PLCs). Beyond the research and tests on industrial
+          Logic Controllers (PLCs). Beyond the research and tests on industrial
           facilities, the simplicity of the proposed platform allows its use
           also for educational and training purposes. Therefore, the proposed
           platform can help students focus on system analysis and control theory
@@ -182,7 +182,7 @@
           maximize the attraction region in thepresence of exogenous signals
           limited in amplitude. This allows the implementation of the reference
           tracking,ensuring the convergence of the controlled variable to the
-          desired reference value. A PLC (programmable logiccontroller) is used
+          desired reference value. A PLC (programmable logic controller) is used
           for safety interlocking and also as an interface between the
           controlled system and the com-puter that implements the fuzzy
           controller in the Python language. Several experiments are carried out
