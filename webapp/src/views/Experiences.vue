@@ -39,7 +39,7 @@
             <img src="@/assets/urca.png" />
           </div>
           <div class="content">
-            <div class="title">Université de Reims Champagne-Ardene</div>
+            <div class="title">Université de Reims Champagne-Ardenne</div>
             <div class="function">{{ $t("phd_control") }}</div>
             <div class="date">03/2021 - </div>
             <div class="desc">{{ $t("phd_desc") }}</div>
