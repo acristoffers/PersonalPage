@@ -1,5 +1,6 @@
 rm -rf css img js MATLAB.pdf Monografia.pdf Python3.pdf PublicKey.asc
 rm -rf index.html resume.pdf favicon.ico Thesis.pdf Filho2019.pdf
+rm -rf PublicKey.asc
 
 pushd webapp
 yarn

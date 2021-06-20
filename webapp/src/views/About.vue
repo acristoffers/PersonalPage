@@ -59,6 +59,7 @@ export default class About extends Vue {
       'Apostila de MATLAB': '/MATLAB.pdf#view=FitH',
       [this.$t('resume') as string]: '/resume.pdf#view=FitH',
       [this.$t('gpg_public_key') as string]: '/PublicKey.asc',
+      [this.$t('age_public_key') as string]: '/PublicKey.age',
     };
   }
 
