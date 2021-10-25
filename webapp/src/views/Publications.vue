@@ -37,7 +37,7 @@
             E SOUSA, ÁLAN C.; LEITE, VALTER J. DE S.; LUCIA, WALTER; SILVA, LUÍS F. P. (2021).
             Journal of Control, Automation and Electrical Systems:
             Command Governor strategy based on region of attraction.
-            (Under review)
+            (Accepted)
           </a>
         </h2>
         <div class="abstract">
