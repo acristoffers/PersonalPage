@@ -43,7 +43,6 @@ Vue.prototype._ = _;
 export default class About extends Vue {
   public contacts = {
     'Email': 'mailto:acristoffers@startmail.com',
-    'Facebook': 'https://www.facebook.com/acristoffers',
     'Github': 'https://www.github.com/acristoffers',
     'Twitter': 'https://twitter.com/acristoffers',
     'Linkedin': 'https://www.linkedin.com/in/acristoffers',
