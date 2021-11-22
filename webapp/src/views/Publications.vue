@@ -6,6 +6,39 @@
         <h2>
           <a href="#" targe="_blank">
             E SOUSA, ÁLAN C.; MESSAI, NADHIR; MANAMANNI, NOUREDINNE (2021).
+            SAFEProcess 2022:
+            False Data Injection Detection in Cyber-Physical System.
+            (Under review)
+          </a>
+        </h2>
+        <div class="abstract">
+          The interconnectedness of the CPS allows sharing data with relevant
+          systems and taking more informed process control decisions; however,
+          it also broadens the attack surface. One pain point of IoT, technology
+          usually applied in CPS, is that embedded devices are usually low
+          energy and do not have enough processing power to operate while
+          keeping up with security measures, such as encryption and data
+          validation. As a result, attackers may use such devices to launch
+          attacks on the network, compromising the whole CPS infrastructure. One
+          common type of attack is the False Data Injection (FDI), in which the
+          attacker has access to a communication channel and can change the
+          value read by a sensor or sent to an actuator. One way of coping with
+          such attacks is to develop a bank of observer by using Functional
+          Observers, which are better suited for high-dimensional, sparse
+          systems. It does not suffer from sparsity's numerical problems and
+          uses a reduced-order system to observe only the desired states,
+          significantly reducing the computational burden of the observer. We
+          propose an LMI-based approach to design a bank of residual generators
+          for functional observers to detect such attacks. This approach has the
+          advantage of using a reduced order arbitrary dynamic system, making it
+          suitable for large-scale smart grids, and the use of LMI, allowing the
+          easy insertion of restrictions.
+        </div>
+      </div>
+      <div class="publication">
+        <h2>
+          <a href="#" targe="_blank">
+            E SOUSA, ÁLAN C.; MESSAI, NADHIR; MANAMANNI, NOUREDINNE (2021).
             International Journal of Critical Infrastructure Protection:
             Load-altering attack detection on smart grids using functional observers.
             (Under review)
