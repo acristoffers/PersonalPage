@@ -1,11 +1,11 @@
 <template>
   <div id="publications">
     <div class="center">
-      <h1>2021</h1>
+      <h1>2022</h1>
       <div class="publication">
         <h2>
           <a href="#" targe="_blank">
-            E SOUSA, ÁLAN C.; MESSAI, NADHIR; MANAMANNI, NOUREDINNE (2021).
+            E SOUSA, ÁLAN C.; MESSAI, NADHIR; MANAMANNI, NOUREDINNE (2022).
             SAFEProcess 2022:
             False Data Injection Detection in Cyber-Physical System.
             (Under review)
@@ -38,7 +38,7 @@
       <div class="publication">
         <h2>
           <a href="#" targe="_blank">
-            E SOUSA, ÁLAN C.; MESSAI, NADHIR; MANAMANNI, NOUREDINNE (2021).
+            E SOUSA, ÁLAN C.; MESSAI, NADHIR; MANAMANNI, NOUREDINNE (2022).
             International Journal of Critical Infrastructure Protection:
             Load-altering attack detection on smart grids using functional observers.
             (Under review)
@@ -66,11 +66,11 @@
       </div>
       <div class="publication">
         <h2>
-          <a href="#" targe="_blank">
-            E SOUSA, ÁLAN C.; LEITE, VALTER J. DE S.; LUCIA, WALTER; SILVA, LUÍS F. P. (2021).
+          <a href="https://trebuchet.public.springernature.app/get_content/ed8389ff-65bf-4f48-bea5-8faa88ee24b7" targe="_blank">
+            E SOUSA, ÁLAN C.; LEITE, VALTER J. DE S.; LUCIA, WALTER; SILVA, LUÍS F. P. (2022).
             Journal of Control, Automation and Electrical Systems:
             Command Governor strategy based on region of attraction.
-            (Accepted)
+            DOI: <a href="https://doi.org/10.1007/s40313-021-00859-x">10.1007/s40313-021-00859-x</a>
           </a>
         </h2>
         <div class="abstract">
