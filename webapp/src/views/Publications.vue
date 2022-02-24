@@ -8,7 +8,7 @@
             E SOUSA, ÁLAN C.; MESSAI, NADHIR; MANAMANNI, NOUREDINNE (2022).
             SAFEProcess 2022:
             False Data Injection Detection in Cyber-Physical System.
-            (Under review)
+            (Accepted)
           </a>
         </h2>
         <div class="abstract">
