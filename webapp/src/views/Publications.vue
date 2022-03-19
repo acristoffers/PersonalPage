@@ -41,7 +41,7 @@
             E SOUSA, ÁLAN C.; MESSAI, NADHIR; MANAMANNI, NOUREDINNE (2022).
             International Journal of Critical Infrastructure Protection:
             Load-altering attack detection on smart grids using functional observers.
-            (Accepted)
+            DOI: <a href="https://doi.org/10.1016/j.ijcip.2022.100518">10.1016/j.ijcip.2022.100518</a>
           </a>
         </h2>
         <div class="abstract">
