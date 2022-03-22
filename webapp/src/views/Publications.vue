@@ -1,6 +1,7 @@
 <template>
-  <div id="publications">
+  <div id="publications" v-bind:class="{'collapsed':collapsed}">
     <div class="center">
+      <a class="point" @click="toggle_collapse()">{{collapse_text}}</a>
       <h1>2022</h1>
       <div class="publication">
         <h2>
@@ -262,7 +263,14 @@ import { Component, Vue } from 'vue-property-decorator';
 import _ from 'lodash';
 
 @Component
-export default class Publications extends Vue {}
+export default class Publications extends Vue {
+    public collapsed = false;
+    public collapse_text = "Collapse";
+    public toggle_collapse() {
+        this.collapsed = !this.collapsed;
+        this.collapse_text = this.collapsed ? "Expand" : "Collapse";
+    }
+}
 </script>
 
 <style scoped lang="scss">
@@ -282,6 +290,10 @@ export default class Publications extends Vue {}
     margin: 1rem 0;
   }
 
+  .point {
+      cursor: pointer;
+  }
+
   .publication {
     padding-bottom: 1rem;
     h2 {
@@ -293,5 +305,11 @@ export default class Publications extends Vue {}
       margin-top: 0.5rem;
     }
   }
+}
+.collapsed {
+    .abstract {
+        display: none;
+        margin-top: 0;
+    }
 }
 </style>
