@@ -8,8 +8,8 @@
 </template>
 
 <script lang="ts">
-import _ from 'lodash';
-import { Component, Vue } from 'vue-property-decorator';
+import _ from "lodash";
+import { Component, Vue } from "vue-property-decorator";
 
 Vue.prototype._ = _;
 
@@ -20,7 +20,7 @@ export default class ImageView extends Vue {
     }
 
     public close() {
-        this.$store.dispatch('clrImage');
+        this.$store.dispatch("clrImage");
     }
 }
 </script>

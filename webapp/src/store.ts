@@ -1,5 +1,5 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 
 Vue.use(Vuex);
 
@@ -9,7 +9,7 @@ interface IState {
 
 export default new Vuex.Store({
     state: {
-        image: '',
+        image: "",
     },
     mutations: {
         setImage(state: IState, image: string) {
@@ -18,10 +18,10 @@ export default new Vuex.Store({
     },
     actions: {
         setImage({ commit }, image: string) {
-            commit('setImage', image);
+            commit("setImage", image);
         },
         clrImage({ commit }) {
-            commit('setImage', '');
+            commit("setImage", "");
         },
     },
 });

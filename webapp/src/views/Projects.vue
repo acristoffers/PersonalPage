@@ -2,10 +2,12 @@
     <div id="projects">
         <ul id="project-list">
             <li v-for="project in projects" :key="project.key">
-                <router-link :to="{ name: 'projects', params: { project: project.key }}">
+                <router-link
+                    :to="{ name: 'projects', params: { project: project.key } }"
+                >
                     <img :src="project.icon" />
                     <br />
-                    {{project.name}}
+                    {{ project.name }}
                 </router-link>
             </li>
         </ul>
@@ -14,20 +16,27 @@
             :class="shouldShow(project.key)"
             v-for="project in projects"
             :key="project.name"
-            >
+        >
             <div class="desc">
                 <a :href="project.url" target="_blank">
                     <img :src="project.icon" />
-                    <h1 class="project-name">{{project.name}}</h1>
+                    <h1 class="project-name">{{ project.name }}</h1>
                 </a>
                 <br />
                 <br />
-                <div class="desc-text">{{project.desc}}</div>
+                <div class="desc-text">{{ project.desc }}</div>
             </div>
             <div class="screenshots" v-if="project.ss">
-                <div class="screenshot" v-for="screenshot in project.ss" :key="screenshot.key">
-                    <img :src="screenshot.lowres" @click="setImage(screenshot.hires)" />
-                    <div class="desc-text">{{screenshot.desc}}</div>
+                <div
+                    class="screenshot"
+                    v-for="screenshot in project.ss"
+                    :key="screenshot.key"
+                >
+                    <img
+                        :src="screenshot.lowres"
+                        @click="setImage(screenshot.hires)"
+                    />
+                    <div class="desc-text">{{ screenshot.desc }}</div>
                 </div>
             </div>
         </div>
@@ -36,32 +45,32 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import _ from 'lodash';
-import ImageView from '../components/ImageView.vue';
+import { Component, Vue } from "vue-property-decorator";
+import _ from "lodash";
+import ImageView from "../components/ImageView.vue";
 
 @Component({ components: { ImageView } })
 export default class Projects extends Vue {
     public get currentProject() {
-        return this.$route.params.project || 'lachesis';
+        return this.$route.params.project || "lachesis";
     }
 
     public shouldShow(project: string): string[] {
         if (project === this.currentProject) {
             return [];
         } else {
-            return ['hidden'];
+            return ["hidden"];
         }
     }
 
     public get projects() {
         return {
             lachesis: {
-                key: 'lachesis',
-                name: 'Lachesis',
-                icon: require('@/assets/lachesis.svg'),
-                desc: this.$t('lachesis_desc'),
-                url: 'https://github.com/acristoffers/lachesis',
+                key: "lachesis",
+                name: "Lachesis",
+                icon: require("@/assets/lachesis.svg"),
+                desc: this.$t("lachesis_desc"),
+                url: "https://github.com/acristoffers/lachesis",
                 ss: _.map([1, 2, 3, 4], (i) => {
                     return {
                         key: i,
@@ -72,25 +81,25 @@ export default class Projects extends Vue {
                 }),
             },
             moirai: {
-                key: 'moirai',
-                name: 'moirai',
-                icon: require('../assets/python.svg'),
-                desc: this.$t('moirai_desc'),
-                url: 'https://github.com/acristoffers/moirai',
+                key: "moirai",
+                name: "moirai",
+                icon: require("../assets/python.svg"),
+                desc: this.$t("moirai_desc"),
+                url: "https://github.com/acristoffers/moirai",
             },
             ahio: {
-                key: 'ahio',
-                name: 'AHIO',
-                icon: require('../assets/python.svg'),
-                desc: this.$t('ahio_desc'),
-                url: 'https://github.com/acristoffers/ahio',
+                key: "ahio",
+                name: "AHIO",
+                icon: require("../assets/python.svg"),
+                desc: this.$t("ahio_desc"),
+                url: "https://github.com/acristoffers/ahio",
             },
             void: {
-                key: 'void',
-                name: 'Void',
-                icon: require('../assets/void.svg'),
-                desc: this.$t('void_desc'),
-                url: 'https://github.com/acristoffers/void',
+                key: "void",
+                name: "Void",
+                icon: require("../assets/void.svg"),
+                desc: this.$t("void_desc"),
+                url: "https://github.com/acristoffers/void",
                 ss: _.map([1, 2, 3, 4], (i) => {
                     return {
                         key: i,
@@ -101,11 +110,11 @@ export default class Projects extends Vue {
                 }),
             },
             tests_database: {
-                key: 'tests-database',
-                name: 'Tests Database',
-                icon: require('../assets/tests-database.png'),
-                desc: this.$t('tests_database_desc'),
-                url: 'https://github.com/acristoffers/testsdatabase',
+                key: "tests-database",
+                name: "Tests Database",
+                icon: require("../assets/tests-database.png"),
+                desc: this.$t("tests_database_desc"),
+                url: "https://github.com/acristoffers/testsdatabase",
                 ss: _.map([1, 2, 3], (i) => {
                     return {
                         key: i,
@@ -116,11 +125,11 @@ export default class Projects extends Vue {
                 }),
             },
             tracker: {
-                key: 'tracker',
-                name: 'Tracker',
-                icon: require('../assets/tracker.svg'),
-                desc: this.$t('tracker_desc'),
-                url: 'https://github.com/acristoffers/tracker',
+                key: "tracker",
+                name: "Tracker",
+                icon: require("../assets/tracker.svg"),
+                desc: this.$t("tracker_desc"),
+                url: "https://github.com/acristoffers/tracker",
                 ss: _.map([1, 2, 3], (i) => {
                     return {
                         key: i,
@@ -130,18 +139,18 @@ export default class Projects extends Vue {
                 }),
             },
             cef: {
-                key: 'cef',
-                name: 'CEF3 Simple Sample',
-                icon: require('../assets/cef_logo.png'),
-                desc: this.$t('cefss_desc'),
-                url: 'https://github.com/acristoffers/CEF3SimpleSample',
+                key: "cef",
+                name: "CEF3 Simple Sample",
+                icon: require("../assets/cef_logo.png"),
+                desc: this.$t("cefss_desc"),
+                url: "https://github.com/acristoffers/CEF3SimpleSample",
             },
             sigaa: {
-                key: 'sigaa:notas',
-                name: 'SIGAA:Notas',
-                icon: require('../assets/sigaa_logo.svg'),
-                desc: this.$t('sigaa_desc'),
-                url: 'https://github.com/acristoffers/SIGAAGrades',
+                key: "sigaa:notas",
+                name: "SIGAA:Notas",
+                icon: require("../assets/sigaa_logo.svg"),
+                desc: this.$t("sigaa_desc"),
+                url: "https://github.com/acristoffers/SIGAAGrades",
                 ss: _.map([1, 2, 3, 4], (i) => {
                     return {
                         key: i,
@@ -155,7 +164,7 @@ export default class Projects extends Vue {
     }
 
     public setImage(image: string) {
-        this.$store.dispatch('setImage', image);
+        this.$store.dispatch("setImage", image);
     }
 
     public isActiveRoute(project: string): boolean {
@@ -167,15 +176,15 @@ export default class Projects extends Vue {
         const active = projects.findIndex(this.isActiveRoute);
 
         switch (event.key) {
-            case 'h': {
+            case "h": {
                 const n = projects.length;
-                const index = ((active - 1) % n + n) % n;
+                const index = (((active - 1) % n) + n) % n;
                 this.$router.push(`/projects/${projects[index]}`);
                 break;
             }
-            case 'l': {
+            case "l": {
                 const n = projects.length;
-                const index = ((active + 1) % n + n) % n;
+                const index = (((active + 1) % n) + n) % n;
                 this.$router.push(`/projects/${projects[index]}`);
                 break;
             }
@@ -183,11 +192,11 @@ export default class Projects extends Vue {
     }
 
     protected mounted() {
-        window.addEventListener('keyup', this.keyUp);
+        window.addEventListener("keyup", this.keyUp);
     }
 
     protected beforeDestroy() {
-        window.removeEventListener('keyup', this.keyUp);
+        window.removeEventListener("keyup", this.keyUp);
     }
 }
 </script>

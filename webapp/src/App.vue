@@ -3,7 +3,7 @@
         <main>
             <Navigation />
             <transition name="component-fade" mode="out-in" :duration="500">
-            <router-view class="view" />
+                <router-view class="view" />
             </transition>
         </main>
         <footer>© Copyright 2019 Álan Crístoffer</footer>
@@ -17,18 +17,18 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import Navigation from '@/components/Navigation.vue';
+import { Component, Vue } from "vue-property-decorator";
+import Navigation from "@/components/Navigation.vue";
 
 @Component({
     components: { Navigation },
 })
 export default class App extends Vue {
     public mounted() {
-        const page = localStorage.getItem('path');
+        const page = localStorage.getItem("path");
         if (page != null) {
             this.$router.push(page);
-            localStorage.removeItem('path');
+            localStorage.removeItem("path");
         }
     }
 }
@@ -65,7 +65,7 @@ a:hover {
 }
 .component-fade-enter, .component-fade-leave-to
 /* .component-fade-leave-active below version 2.1.8 */ {
-opacity: 0;
+    opacity: 0;
 }
 
 @media only screen and (max-device-width: 900px) {

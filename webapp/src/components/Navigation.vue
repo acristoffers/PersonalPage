@@ -10,10 +10,16 @@
             </p>
         </div>
         <ul id="langs">
-            <li v-for="lang in langs"
-                :key="lang" @click="loadLanguageAsync(lang)">
-                <img :title="$t(lang)" :src="require(`../assets/${lang}.svg`)"
-                    :alt="$t(lang)" />
+            <li
+                v-for="lang in langs"
+                :key="lang"
+                @click="loadLanguageAsync(lang)"
+            >
+                <img
+                    :title="$t(lang)"
+                    :src="require(`../assets/${lang}.svg`)"
+                    :alt="$t(lang)"
+                />
             </li>
         </ul>
         <div id="background" ref="bg">
@@ -27,30 +33,30 @@
                 :class="isActiveRoute(link)"
                 @mouseover="menuItemHover"
                 @mouseout="menuItemOut"
-                >
-                <router-link :to="`/${link}`">{{$t(link)}}</router-link>
+            >
+                <router-link :to="`/${link}`">{{ $t(link) }}</router-link>
             </li>
         </ul>
     </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import { loadLanguageAsync } from '../i18n';
-import { setTimeout } from 'timers';
+import { Component, Vue } from "vue-property-decorator";
+import { loadLanguageAsync } from "../i18n";
+import { setTimeout } from "timers";
 
 @Component
 export default class Navigation extends Vue {
-    public langs = ['pt', 'en', 'de', 'fr'];
+    public langs = ["pt", "en", "de", "fr"];
     public loadLanguageAsync = loadLanguageAsync;
-    public links = ['about', 'projects', 'publications', 'experience'];
+    public links = ["about", "projects", "publications", "experience"];
 
     public isActiveRoute(route: string): string[] {
         const current = this.$router.currentRoute;
         const given = this.$router.resolve(`/${route}`).route;
 
         if (current.name === given.name) {
-            return ['current'];
+            return ["current"];
         } else {
             return [];
         }
@@ -61,7 +67,7 @@ export default class Navigation extends Vue {
     }
 
     public menuItemOut() {
-        const element = document.getElementsByClassName('current')[0] as any;
+        const element = document.getElementsByClassName("current")[0] as any;
         (this.$refs.bg as any).style.top = `${element.offsetTop}px`;
     }
 
@@ -70,47 +76,47 @@ export default class Navigation extends Vue {
         const active = this.links.findIndex(isActive);
 
         switch (event.key) {
-            case 'j': {
+            case "j": {
                 const n = this.links.length;
-                const index = ((active + 1) % n + n) % n;
+                const index = (((active + 1) % n) + n) % n;
                 this.$router.push(`/${this.links[index]}`);
                 break;
             }
-            case 'k': {
+            case "k": {
                 const n = this.links.length;
-                const index = ((active - 1) % n + n) % n;
+                const index = (((active - 1) % n) + n) % n;
                 this.$router.push(`/${this.links[index]}`);
                 break;
             }
-            case '1':
-                this.loadLanguageAsync('pt');
+            case "1":
+                this.loadLanguageAsync("pt");
                 break;
-            case '2':
-                this.loadLanguageAsync('en');
+            case "2":
+                this.loadLanguageAsync("en");
                 break;
-            case '3':
-                this.loadLanguageAsync('de');
+            case "3":
+                this.loadLanguageAsync("de");
                 break;
-            case '4':
-                this.loadLanguageAsync('fr');
+            case "4":
+                this.loadLanguageAsync("fr");
                 break;
         }
     }
 
     protected mounted() {
-        this.$router.afterEach((to, from) => {
+        this.$router.afterEach(() => {
             this.$forceUpdate();
             setTimeout(this.menuItemOut, 500);
         });
 
-        (this.$refs.avatar as any).addEventListener('load', this.menuItemOut);
+        (this.$refs.avatar as any).addEventListener("load", this.menuItemOut);
         setTimeout(this.menuItemOut, 500);
 
-        window.addEventListener('keyup', this.keyUp);
+        window.addEventListener("keyup", this.keyUp);
     }
 
     protected beforeDestroy() {
-        window.removeEventListener('keyup', this.keyUp);
+        window.removeEventListener("keyup", this.keyUp);
     }
 }
 </script>
