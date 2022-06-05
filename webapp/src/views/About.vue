@@ -45,6 +45,8 @@ export default class About extends Vue {
         Email: "mailto:acristoffers@startmail.com",
         Github: "https://www.github.com/acristoffers",
         Twitter: "https://twitter.com/acristoffers",
+        Mastodon: "https://mastodon.online/@acristoffers",
+        Matrix: "https://matrix.to/#/@acristoffers:linuxdelta.com",
         Linkedin: "https://www.linkedin.com/in/acristoffers",
         Lattes: "http://lattes.cnpq.br/0846174549224433",
         "Research Gate": "https://www.researchgate.net/profile/Alan_E_Sousa",
