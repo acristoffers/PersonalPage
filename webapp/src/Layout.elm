@@ -67,10 +67,7 @@ fullscreenImage src =
             , height fill
             , Element.Font.size 24
             , Element.Font.family
-                [ Element.Font.external
-                    { url = "https://fonts.googleapis.com/css?family=Times+New+Roman"
-                    , name = "Times New Roman"
-                    }
+                [ Element.Font.typeface "Times New Roman"
                 , Element.Font.serif
                 ]
             ]
@@ -139,10 +136,7 @@ desktopLayout model =
             [ Element.Font.color (rgb 0 0 0)
             , Element.Font.size 14
             , Element.Font.family
-                [ Element.Font.external
-                    { url = "https://fonts.googleapis.com/css?family=Times+New+Roman"
-                    , name = "Times New Roman"
-                    }
+                [ Element.Font.typeface "Times New Roman"
                 , Element.Font.serif
                 ]
             ]
@@ -211,10 +205,7 @@ mobileLayout model =
         [ Element.Font.color (rgb 0 0 0)
         , Element.Font.size 14
         , Element.Font.family
-            [ Element.Font.external
-                { url = "https://fonts.googleapis.com/css?family=Times+New+Roman"
-                , name = "Times New Roman"
-                }
+            [ Element.Font.typeface "Times New Roman"
             , Element.Font.serif
             ]
         ]
