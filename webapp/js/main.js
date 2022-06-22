@@ -13,5 +13,6 @@ const app = Elm.Main.init({
 });
 
 app.ports.setLang.subscribe(function (lang) {
-  localStorage.setItem("lang", lang)
+  localStorage.setItem("lang", lang);
+  document.querySelector("html").setAttribute("lang", lang);
 });
