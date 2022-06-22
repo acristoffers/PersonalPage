@@ -1,5 +1,11 @@
 import 'elm-keyboard-shortcut'
 
+const path = localStorage.getItem("path");
+if (path != null) {
+  localStorage.setItem("path", null);
+  history.pushState({}, "", path);
+}
+
 const lang = localStorage.getItem("lang") || "en";
 
 const app = Elm.Main.init({
