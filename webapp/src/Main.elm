@@ -27,15 +27,11 @@ import Browser
 import Browser.Events
 import Browser.Navigation
 import Element exposing (..)
-import Element.Background
-import Element.Font
-import Html exposing (a)
-import Html.Attributes
 import Layout
-import Routing exposing (..)
+import Routing exposing (routeParser)
 import Types exposing (..)
 import Url
-import Url.Parser exposing ((</>), Parser, s)
+import Url.Parser
 
 
 port setLang : String -> Cmd msg
@@ -75,15 +71,12 @@ main =
 
 subscriptions : Model -> Sub Msg
 subscriptions _ =
-    Sub.batch [ Browser.Events.onResize (\values -> SetScreenSize values) ]
+    Browser.Events.onResize (\values -> SetScreenSize values)
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        NoOp ->
-            ( model, Cmd.none )
-
         LinkClicked urlRequest ->
             case urlRequest of
                 Browser.Internal url ->
@@ -104,6 +97,7 @@ update msg model =
 
         SetScreenSize x y ->
             let
+                classifiedDevice : Device
                 classifiedDevice =
                     classifyDevice
                         { width = x

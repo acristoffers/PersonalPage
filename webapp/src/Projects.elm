@@ -23,32 +23,29 @@
 
 module Projects exposing (view)
 
-import Browser
-import Browser.Navigation
 import Element exposing (..)
-import Element.Background
 import Element.Events exposing (onClick)
 import Element.Font
-import Html exposing (Html)
 import Html.Attributes
 import I18n.I18n exposing (tr)
-import Routing exposing (..)
-import Sidebar
 import Types exposing (..)
-import Url
-import Url.Parser exposing ((</>), Parser, s)
 
 
-view : Model -> Project -> Element Msg
-view model project =
+view : Model -> Element Msg
+view model =
+    let
+        ps : List Proj
+        ps =
+            projects model
+    in
     column [ width fill, spacing 64 ]
         (List.concat
             [ if model.device.class == Desktop then
-                [ row [ width fill, spaceEvenly ] (List.map projectLink (projects model)) ]
+                [ row [ width fill, spaceEvenly ] (List.map projectLink ps) ]
 
               else
                 [ none ]
-            , List.map (projectElement model) (projects model)
+            , List.map (projectElement model) ps
             ]
         )
 

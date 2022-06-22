@@ -25,7 +25,6 @@ module Layout exposing (view)
 
 import About
 import Browser
-import Browser.Navigation
 import Element exposing (..)
 import Element.Background
 import Element.Events exposing (onClick)
@@ -39,7 +38,6 @@ import Shortcut
 import Sidebar
 import Types exposing (..)
 import Url
-import Url.Parser exposing ((</>), Parser, s)
 
 
 view : Model -> Browser.Document Msg
@@ -103,6 +101,7 @@ fullscreenImage src =
 stringToUrl : Model -> String -> Url.Url
 stringToUrl model path =
     let
+        url : Url.Url
         url =
             model.url
     in
@@ -182,8 +181,8 @@ desktopLayout model =
                                 About ->
                                     About.view model
 
-                                Projects project ->
-                                    Projects.view model project
+                                Projects _ ->
+                                    Projects.view model
 
                                 Publications ->
                                     Publications.view model
@@ -244,8 +243,8 @@ mobileLayout model =
                         About ->
                             About.view model
 
-                        Projects project ->
-                            Projects.view model project
+                        Projects _ ->
+                            Projects.view model
 
                         Publications ->
                             Publications.view model

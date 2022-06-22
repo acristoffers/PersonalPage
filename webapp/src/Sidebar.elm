@@ -95,6 +95,7 @@ view model =
 menuItem : Model -> Route -> Element Msg
 menuItem model route =
     let
+        str : String
         str =
             case route of
                 About ->
@@ -109,12 +110,15 @@ menuItem model route =
                 Experience ->
                     "experience"
 
+        url : String
         url =
             "/" ++ str
 
+        value : String
         value =
             tr model.lang str
 
+        color : Color
         color =
             if model.route == route then
                 rgb 0.92 0.17 0
@@ -147,23 +151,15 @@ menuItem model route =
 flag : Model -> Language -> Element Msg
 flag model lang =
     let
+        abbr : String
         abbr =
-            case lang of
-                Portuguese ->
-                    "pt"
+            language2String lang
 
-                English ->
-                    "en"
-
-                German ->
-                    "de"
-
-                French ->
-                    "fr"
-
+        url : String
         url =
             "/" ++ abbr ++ ".svg"
 
+        desc : String
         desc =
             tr model.lang abbr
     in
@@ -185,6 +181,7 @@ flag model lang =
 bookmark : Model -> Element Msg
 bookmark model =
     let
+        index : Int
         index =
             case model.hoverOn of
                 About ->

@@ -1,1 +1,1 @@
-rm -rf public/app.css public/app.js public/main.js elm-stuff node_modules &> /dev/null
+rm -rf public/app.css public/app.js public/main.js elm-stuff node_modules review/elm-stuff &> /dev/null

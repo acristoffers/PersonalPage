@@ -21,7 +21,7 @@
 -- SOFTWARE.
 
 
-module Types exposing (..)
+module Types exposing (Flags, Language(..), Model, Msg(..), Project(..), Route(..), TranslationDictionary(..), language2String, string2Language)
 
 import Browser
 import Browser.Navigation
@@ -113,8 +113,7 @@ type alias Model =
 
 
 type Msg
-    = NoOp
-    | LinkClicked Browser.UrlRequest
+    = LinkClicked Browser.UrlRequest
     | UrlChanged Url.Url
     | SetScreenSize Int Int
     | SetLanguage Language

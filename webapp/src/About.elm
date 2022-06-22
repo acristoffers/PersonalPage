@@ -23,18 +23,11 @@
 
 module About exposing (view)
 
-import Browser
-import Browser.Navigation
 import Element exposing (..)
-import Element.Background
 import Element.Font
-import Html exposing (Html)
 import Html.Attributes
 import I18n.I18n exposing (tr)
-import Sidebar
 import Types exposing (..)
-import Url
-import Url.Parser exposing ((</>), Parser, s)
 
 
 view : Model -> Element Msg

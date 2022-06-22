@@ -23,18 +23,10 @@
 
 module Publications exposing (view)
 
-import Browser
-import Browser.Navigation
 import Element exposing (..)
-import Element.Background
 import Element.Events exposing (onClick)
 import Element.Font
-import Html exposing (Html)
-import Html.Attributes
-import Sidebar
 import Types exposing (..)
-import Url
-import Url.Parser exposing ((</>), Parser, s)
 
 
 view : Model -> Element Msg

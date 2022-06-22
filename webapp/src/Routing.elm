@@ -21,10 +21,9 @@
 -- SOFTWARE.
 
 
-module Routing exposing (..)
+module Routing exposing (routeParser)
 
 import Types exposing (..)
-import Url
 import Url.Parser exposing ((</>), Parser, s)
 
 
