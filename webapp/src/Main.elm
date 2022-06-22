@@ -123,10 +123,10 @@ update msg model =
             ( { model | fullscreenImage = value }, Cmd.none )
 
 
-classifyDevice : { window | height : Int, width : Int, ratio : Int } -> Device
+classifyDevice : { window | height : Int, width : Int, ratio : Float } -> Device
 classifyDevice window =
     { class =
-        if (window.width // window.ratio) < 900 then
+        if (toFloat window.width / window.ratio) < 900 then
             Phone
 
         else
