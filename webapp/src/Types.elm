@@ -54,6 +54,38 @@ type Language
     | French
 
 
+language2String : Language -> String
+language2String lang =
+    case lang of
+        Portuguese ->
+            "pt"
+
+        English ->
+            "en"
+
+        German ->
+            "de"
+
+        French ->
+            "fr"
+
+
+string2Language : String -> Language
+string2Language lang =
+    case lang of
+        "pt" ->
+            Portuguese
+
+        "de" ->
+            German
+
+        "fr" ->
+            French
+
+        _ ->
+            English
+
+
 type TranslationDictionary
     = TString String
     | TList (List String)
@@ -62,6 +94,7 @@ type TranslationDictionary
 type alias Flags =
     { height : Int
     , width : Int
+    , lang : String
     }
 
 

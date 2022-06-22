@@ -21,7 +21,7 @@
 -- SOFTWARE.
 
 
-module Main exposing (main)
+port module Main exposing (main)
 
 import Browser
 import Browser.Events
@@ -38,6 +38,9 @@ import Url
 import Url.Parser exposing ((</>), Parser, s)
 
 
+port setLang : String -> Cmd msg
+
+
 init : Flags -> Url.Url -> Browser.Navigation.Key -> ( Model, Cmd Msg )
 init flags url key =
     ( Model key
@@ -48,7 +51,7 @@ init flags url key =
             , width = flags.width
             }
         )
-        English
+        (string2Language flags.lang)
         (Maybe.withDefault About (Url.Parser.parse routeParser url))
         True
         Nothing
@@ -108,7 +111,7 @@ update msg model =
             ( { model | device = classifiedDevice }, Cmd.none )
 
         SetLanguage lang ->
-            ( { model | lang = lang }, Cmd.none )
+            ( { model | lang = lang }, setLang (language2String lang) )
 
         SidebarHoverStart route ->
             ( { model | hoverOn = route }, Cmd.none )

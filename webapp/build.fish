@@ -11,5 +11,5 @@ uglifyjs app2.js --mangle --output public/app.js
 npm install
 npx webpack --mode production --config webpack.config.js
 
-rm -rf app.js app2.js public/app.css.map node_modules
+rm -rf app.js app2.js public/app.css.map node_modules elm-stuff
 
