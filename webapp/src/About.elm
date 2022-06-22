@@ -74,7 +74,7 @@ downloads model =
             , ( tr model.lang "gpg_public_key", "/PublicKey.asc" )
             , ( tr model.lang "age_public_key", "/PublicKey.age" )
             ]
-                |> List.map (\( label, url ) -> underlinedLink url label)
+                |> List.map (\( label, url ) -> underlinedDownload url label)
            )
         |> column [ spacing 16, width fill, alignTop, Html.Attributes.class "about-list" |> htmlAttribute ]
 
@@ -123,6 +123,17 @@ underlinedText label =
 underlinedLink : String -> String -> Element Msg
 underlinedLink url label =
     link
+        [ width fill
+        , Html.Attributes.style "border-bottom" "1px solid black" |> htmlAttribute
+        , Html.Attributes.style "padding-top" "8px" |> htmlAttribute
+        , Html.Attributes.style "padding-bottom" "16px" |> htmlAttribute
+        ]
+        { url = url, label = text label }
+
+
+underlinedDownload : String -> String -> Element Msg
+underlinedDownload url label =
+    download
         [ width fill
         , Html.Attributes.style "border-bottom" "1px solid black" |> htmlAttribute
         , Html.Attributes.style "padding-top" "8px" |> htmlAttribute
