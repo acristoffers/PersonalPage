@@ -42,6 +42,7 @@ init : Flags -> Url.Url -> Browser.Navigation.Key -> ( Model, Cmd Msg )
 init flags url key =
     ( Model key
         (Maybe.withDefault About (Url.Parser.parse routeParser url))
+        url
         (classifyDevice
             { height = flags.height
             , width = flags.width
@@ -90,6 +91,8 @@ update msg model =
             ( { model
                 | route = Maybe.withDefault About (Url.Parser.parse routeParser url)
                 , hoverOn = Maybe.withDefault About (Url.Parser.parse routeParser url)
+                , showAbstract = True
+                , fullscreenImage = Nothing
               }
             , Cmd.none
             )

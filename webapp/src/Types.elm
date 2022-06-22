@@ -68,6 +68,7 @@ type alias Flags =
 type alias Model =
     { key : Browser.Navigation.Key
     , route : Route
+    , url : Url.Url
     , device : Device
     , lang : Language
     , hoverOn : Route

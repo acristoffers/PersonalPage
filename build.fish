@@ -4,6 +4,7 @@ fish clean.fish
 
 pushd webapp
 fish build.fish
+cp -r public/* ..
+fish clean.fish
 popd
 
-cp -r webapp/public/* .
