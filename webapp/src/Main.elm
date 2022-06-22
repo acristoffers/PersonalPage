@@ -45,7 +45,7 @@ init flags url key =
         (classifyDevice
             { height = flags.height
             , width = flags.width
-            , ratio = flags.ratio
+            , screenWidth = flags.screenWidth
             }
         )
         (string2Language flags.lang)
@@ -102,7 +102,7 @@ update msg model =
                     classifyDevice
                         { width = x
                         , height = y
-                        , ratio = model.flags.ratio
+                        , screenWidth = model.flags.screenWidth
                         }
             in
             ( { model | device = classifiedDevice }, Cmd.none )
@@ -123,10 +123,10 @@ update msg model =
             ( { model | fullscreenImage = value }, Cmd.none )
 
 
-classifyDevice : { window | height : Int, width : Int, ratio : Float } -> Device
+classifyDevice : { window | height : Int, width : Int, screenWidth : Float } -> Device
 classifyDevice window =
     { class =
-        if (toFloat window.width / window.ratio) < 900 then
+        if (window.screenWidth < 20) || (window.width < 1000) then
             Phone
 
         else

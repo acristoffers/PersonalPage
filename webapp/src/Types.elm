@@ -94,7 +94,7 @@ type TranslationDictionary
 type alias Flags =
     { height : Int
     , width : Int
-    , ratio : Float
+    , screenWidth : Float
     , lang : String
     }
 
