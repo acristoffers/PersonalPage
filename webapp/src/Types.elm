@@ -94,6 +94,7 @@ type TranslationDictionary
 type alias Flags =
     { height : Int
     , width : Int
+    , ratio : Int
     , lang : String
     }
 
@@ -107,6 +108,7 @@ type alias Model =
     , hoverOn : Route
     , showAbstract : Bool
     , fullscreenImage : Maybe String
+    , flags : Flags
     }
 
 

@@ -43,7 +43,11 @@ view : Model -> Project -> Element Msg
 view model project =
     column [ width fill, spacing 64 ]
         (List.concat
-            [ [ row [ width fill, spaceEvenly ] (List.map projectLink (projects model)) ]
+            [ if model.device.class == Desktop then
+                [ row [ width fill, spaceEvenly ] (List.map projectLink (projects model)) ]
+
+              else
+                [ none ]
             , List.map (projectElement model) (projects model)
             ]
         )
@@ -61,10 +65,20 @@ projectLink proj =
         }
 
 
+rowOrCol : Model -> List (Attribute msg) -> List (Element msg) -> Element msg
+rowOrCol model =
+    if model.device.class == Desktop then
+        row
+
+    else
+        column
+
+
 projectElement : Model -> Proj -> Element Msg
 projectElement model proj =
-    if model.route == Projects proj.proj then
-        row [ width fill, spacing 16 ]
+    if model.route == Projects proj.proj || model.device.class == Phone then
+        rowOrCol model
+            [ width fill, spacing 16 ]
             [ column [ width (fillPortion 4), spacing 16, alignTop ]
                 [ row [ width fill, Element.Font.size 38, Element.Font.bold, spacing 8 ]
                     [ image [ height (px 48) ] { src = proj.icon, description = proj.name }

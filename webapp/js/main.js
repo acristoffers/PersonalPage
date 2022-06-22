@@ -7,6 +7,7 @@ const app = Elm.Main.init({
   flags: {
     height: window.innerHeight,
     width: window.innerWidth,
+    ratio: window.devicePixelRatio,
     lang: lang
   }
 });

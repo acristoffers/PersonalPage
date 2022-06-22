@@ -49,12 +49,14 @@ init flags url key =
         (classifyDevice
             { height = flags.height
             , width = flags.width
+            , ratio = flags.ratio
             }
         )
         (string2Language flags.lang)
         (Maybe.withDefault About (Url.Parser.parse routeParser url))
         True
         Nothing
+        flags
     , Cmd.none
     )
 
@@ -106,6 +108,7 @@ update msg model =
                     classifyDevice
                         { width = x
                         , height = y
+                        , ratio = model.flags.ratio
                         }
             in
             ( { model | device = classifiedDevice }, Cmd.none )
@@ -124,3 +127,20 @@ update msg model =
 
         SetFullscreenImage value ->
             ( { model | fullscreenImage = value }, Cmd.none )
+
+
+classifyDevice : { window | height : Int, width : Int, ratio : Int } -> Device
+classifyDevice window =
+    { class =
+        if (window.width // window.ratio) < 900 then
+            Phone
+
+        else
+            Desktop
+    , orientation =
+        if window.width < window.height then
+            Portrait
+
+        else
+            Landscape
+    }
