@@ -26,7 +26,7 @@ import 'elm-keyboard-shortcut'
 
 const path = localStorage.getItem("path");
 if (path != null) {
-  localStorage.setItem("path", null);
+  localStorage.removeItem("path");
   history.pushState({}, "", path);
 }
 
