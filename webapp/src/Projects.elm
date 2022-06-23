@@ -79,7 +79,7 @@ projectElement model proj =
             [ column [ width (fillPortion 4), spacing 16, alignTop ]
                 [ row [ width fill, Element.Font.size 38, Element.Font.bold, spacing 8 ]
                     [ image [ height (px 48) ] { src = proj.icon, description = proj.name }
-                    , text proj.name
+                    , paragraph [] [ text proj.name ]
                     ]
                 , paragraph [ Element.Font.size 18, Element.Font.justify ] [ text proj.desc ]
                 ]
