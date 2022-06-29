@@ -113,7 +113,7 @@ linkClicked model url =
 desktopLayout : Model -> Html Msg
 desktopLayout model =
     Shortcut.shortcutElement
-        [ Shortcut.simpleShortcut (Shortcut.Regular "c") (SetShowAbstract (not model.showAbstract))
+        [ Shortcut.simpleShortcut (Shortcut.Regular "-") (SetShowAbstract (not model.showAbstract))
         , Shortcut.simpleShortcut (Shortcut.Regular "1") (SetLanguage Portuguese)
         , Shortcut.simpleShortcut (Shortcut.Regular "2") (SetLanguage English)
         , Shortcut.simpleShortcut (Shortcut.Regular "3") (SetLanguage German)
