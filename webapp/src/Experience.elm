@@ -91,7 +91,7 @@ education model =
     [ Experience "/urca.png" "Université de Reims Champagne-Ardenne" "03/2021 -" (tr model.lang "phd_control") (tr model.lang "phd_desc") []
     , Experience "/cefet-ufsj.jpg" "Centro Federal de Educação Tecnológica de Minas Gerais / Universidade Federal de São Jõao del-Rei" "08/2019 - 12/2020" (tr model.lang "soldier") (tr model.lang "cefet_mes_desc") []
     , Experience "/cefet.png" "Centro Federal de Educação Tecnológica de Minas Gerais" "04/2013 - 07/2019" (tr model.lang "eng_meca") (tr model.lang "cefet_desc") (trList model.lang "cefet_items")
-    , Experience "/fuas.png" "Frankfurt University Of Applied Sciences" "06/2015 - 08/2017" (tr model.lang "exchange_student") (tr model.lang "fuas_desc") []
+    , Experience "/fuas.png" "Frankfurt University Of Applied Sciences" "06/2015 - 08/2016" (tr model.lang "exchange_student") (tr model.lang "fuas_desc") []
     , Experience "/uga.png" "Université Joseph Fourier (now Université Grenoble Alpes)" "01/2015 - 03/2015" (tr model.lang "exchange_student") (tr model.lang "uga_desc") []
     ]
 
