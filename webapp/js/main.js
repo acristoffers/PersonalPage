@@ -47,3 +47,8 @@ app.ports.setLang.subscribe(function (lang) {
   localStorage.setItem("lang", lang);
   document.querySelector("html").setAttribute("lang", lang);
 });
+
+const html = document.querySelector(':root');
+let fontSize = Math.round(parseFloat(getComputedStyle(html).getPropertyValue("font-size").slice(0, -2)));
+html.style.fontSize = fontSize.toString() + "px";
+

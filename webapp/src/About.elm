@@ -35,17 +35,17 @@ view model =
     column
         [ width fill ]
         [ paragraph
-            [ Element.Font.size 22, Element.Font.justify ]
+            [ Element.Font.justify ]
             [ text (String.replace "%d" (String.fromInt 32) (tr model.lang "%d years old, Brazilian"))
             , text ". "
             , text (tr model.lang "about_me")
             ]
-        , el [ height (px 24) ] none
+        , el [ Html.Attributes.class "font1rem" |> htmlAttribute ] none
         , columnOrRow model
             [ width fill
             , padding 16
             , spacing 16
-            , Element.Font.size 18
+            , Html.Attributes.class "font07rem" |> htmlAttribute
             ]
             [ downloads model
             , contacts model
@@ -65,7 +65,7 @@ columnOrRow model =
 
 downloads : Model -> Element Msg
 downloads model =
-    el [ height (px 24) ] none
+    el [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] (text " ")
         :: ([ ( "Master's Thesis", "/Thesis.pdf#view=FitH" )
             , ( "TCC", "/Monografia.pdf#view=FitH" )
             , ( "Apostila de Python 3", "/Python3.pdf#view=FitH" )
@@ -81,7 +81,7 @@ downloads model =
 
 contacts : Model -> Element Msg
 contacts model =
-    el [ height (px 24), Element.Font.size 22, Element.Font.bold ] (text (tr model.lang "contacts"))
+    el [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] (text (tr model.lang "contacts"))
         :: ([ ( "Email", "mailto:acristoffers@startmail.com" )
             , ( "Github", "https://www.github.com/acristoffers" )
             , ( "Twitter", "https://twitter.com/acristoffers" )
@@ -98,7 +98,7 @@ contacts model =
 
 languages : Model -> Element Msg
 languages model =
-    el [ height (px 24), Element.Font.size 22, Element.Font.bold ] (text (tr model.lang "languages"))
+    el [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] (text (tr model.lang "languages"))
         :: ([ ( tr model.lang "pt", tr model.lang "native" )
             , ( tr model.lang "en", "C1" )
             , ( tr model.lang "de", "C1" )

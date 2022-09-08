@@ -22,13 +22,29 @@
  * SOFTWARE.
  */
 
-@import url("https://fonts.googleapis.com/css?family=Times+New+Roman");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+
+:root {
+  font-size: calc(15px + 0.390625vw);
+}
 
 #root {
   width: 1cm;
   height: 1cm;
   padding: none;
   margin: none;
+}
+
+.font07rem {
+  font-size: 0.8rem !important;
+}
+
+.font1rem {
+  font-size: 1rem !important;
+}
+
+.font2rem {
+  font-size: 2rem !important;
 }
 
 .rounded-corners-image {
@@ -49,5 +65,16 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+}
+
+.sidebar-item {
+  padding-top: 0.5rem !important;
+  z-index: 1;
+  height: 2rem;
+  font-size: 1rem !important;
+
+  div {
+    height: 2rem;
   }
 }

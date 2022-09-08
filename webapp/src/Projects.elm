@@ -55,9 +55,14 @@ projectLink proj =
     link []
         { url = "/projects/" ++ proj.key
         , label =
-            column [ spacing 8, centerX, Html.Attributes.style "text-align" "center" |> htmlAttribute ]
+            column
+                [ spacing 8
+                , centerX
+                , Html.Attributes.class "font07rem" |> htmlAttribute
+                , Html.Attributes.style "text-align" "center" |> htmlAttribute
+                ]
                 [ image [ centerX, height (px 48) ] { src = proj.icon, description = proj.name }
-                , paragraph [ centerX, Element.Font.size 16 ] [ text proj.name ]
+                , paragraph [ centerX ] [ text proj.name ]
                 ]
         }
 
@@ -80,12 +85,12 @@ projectElement model proj =
                 [ newTabLink []
                     { url = proj.url
                     , label =
-                        row [ width fill, Element.Font.size 38, Element.Font.bold, spacing 8 ]
+                        row [ width fill, Element.Font.bold, spacing 8 ]
                             [ image [ height (px 48) ] { src = proj.icon, description = proj.name }
-                            , paragraph [] [ text proj.name ]
+                            , paragraph [ Html.Attributes.class "font2rem" |> htmlAttribute ] [ text proj.name ]
                             ]
                     }
-                , paragraph [ Element.Font.size 18, Element.Font.justify ] [ text proj.desc ]
+                , paragraph [ Element.Font.justify ] [ text proj.desc ]
                 ]
             , if not (List.isEmpty proj.screenshots) then
                 wrappedRow [ width (fillPortion 6), spacing 16, alignTop ]
@@ -99,7 +104,7 @@ projectElement model proj =
                                         , onClick (SetFullscreenImage (Just ss.hires))
                                         ]
                                         { src = ss.lowres, description = "screenshot" }
-                                    , paragraph [ Element.Font.justify, Element.Font.size 16 ] [ text ss.desc ]
+                                    , paragraph [ Html.Attributes.class "font07rem" |> htmlAttribute, Element.Font.justify ] [ text ss.desc ]
                                     ]
                             )
                     )

@@ -65,9 +65,9 @@ fullscreenImage src =
             [ padding 16
             , width fill
             , height fill
-            , Element.Font.size 24
+            , Html.Attributes.class "font2rem" |> htmlAttribute
             , Element.Font.family
-                [ Element.Font.typeface "Times New Roman"
+                [ Element.Font.typeface "Noto Serif"
                 , Element.Font.serif
                 ]
             ]
@@ -134,9 +134,9 @@ desktopLayout model =
         []
         [ layout
             [ Element.Font.color (rgb 0 0 0)
-            , Element.Font.size 14
+            , Html.Attributes.class "font1rem" |> htmlAttribute
             , Element.Font.family
-                [ Element.Font.typeface "Times New Roman"
+                [ Element.Font.typeface "Noto Serif"
                 , Element.Font.serif
                 ]
             ]
@@ -190,8 +190,9 @@ desktopLayout model =
                     [ Element.Background.color (rgb 0 0 0)
                     , Element.Font.color (rgb 1 1 1)
                     , Element.Font.alignRight
+                    , Html.Attributes.class "font07rem" |> htmlAttribute
+                    , Html.Attributes.style "height" "2rem" |> htmlAttribute
                     , width fill
-                    , height (px 32)
                     ]
                     [ el [ alignRight, padding 8 ] (text "© Copyright 2022 Álan Crístoffer e Sousa") ]
                 ]
@@ -203,9 +204,9 @@ mobileLayout : Model -> Html Msg
 mobileLayout model =
     layout
         [ Element.Font.color (rgb 0 0 0)
-        , Element.Font.size 14
+        , Html.Attributes.class "font1rem" |> htmlAttribute
         , Element.Font.family
-            [ Element.Font.typeface "Times New Roman"
+            [ Element.Font.typeface "Noto Serif"
             , Element.Font.serif
             ]
         ]
@@ -248,8 +249,9 @@ mobileLayout model =
                 [ Element.Background.color (rgb 0 0 0)
                 , Element.Font.color (rgb 1 1 1)
                 , Element.Font.alignRight
+                , Html.Attributes.class "font07rem" |> htmlAttribute
+                , Html.Attributes.style "height" "2rem" |> htmlAttribute
                 , width fill
-                , height (px 32)
                 ]
                 [ el [ alignRight, padding 8 ] (text "© Copyright 2022 Álan Crístoffer e Sousa") ]
             ]

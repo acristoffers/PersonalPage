@@ -25,6 +25,7 @@ module Experience exposing (view)
 
 import Element exposing (..)
 import Element.Font
+import Html.Attributes
 import I18n.I18n exposing (tr, trList)
 import Types exposing (..)
 
@@ -50,10 +51,10 @@ experienceElements model =
                 row [ width fill, spacing 16 ]
                     [ image [ width (px 64), alignTop ] { src = xp.img, description = "logo" }
                     , column [ width fill, spacing 8 ]
-                        [ paragraph [ Element.Font.size 18, Element.Font.bold ] [ text xp.title ]
-                        , paragraph [ Element.Font.size 16 ] [ text xp.position ]
-                        , paragraph [ Element.Font.size 16, Element.Font.color (rgb 0.5 0.5 0.5) ] [ text xp.date ]
-                        , paragraph [ Element.Font.size 16 ] [ text xp.description ]
+                        [ paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] [ text xp.title ]
+                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute ] [ text xp.position ]
+                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.color (rgb 0.2 0.2 0.2) ] [ text xp.date ]
+                        , paragraph [ Html.Attributes.class "font07rem" |> htmlAttribute ] [ text xp.description ]
                         , bulletList xp.subItems
                         ]
                     ]
@@ -68,10 +69,10 @@ educationElements model =
                 row [ width fill, spacing 16 ]
                     [ image [ width (px 64), alignTop ] { src = xp.img, description = "logo" }
                     , column [ width fill, spacing 8 ]
-                        [ paragraph [ Element.Font.size 18, Element.Font.bold ] [ text xp.title ]
-                        , paragraph [ Element.Font.size 16 ] [ text xp.position ]
-                        , paragraph [ Element.Font.size 16, Element.Font.color (rgb 0.5 0.5 0.5) ] [ text xp.date ]
-                        , paragraph [ Element.Font.size 16 ] [ text xp.description ]
+                        [ paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] [ text xp.title ]
+                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute ] [ text xp.position ]
+                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.color (rgb 0.2 0.2 0.2) ] [ text xp.date ]
+                        , paragraph [ Html.Attributes.class "font07rem" |> htmlAttribute ] [ text xp.description ]
                         , el [ height (px 8) ] none
                         , bulletList xp.subItems
                         ]
@@ -99,7 +100,7 @@ education model =
 bulletList : List String -> Element Msg
 bulletList xs =
     column
-        [ width fill, Element.Font.size 16, spacing 8, Element.Font.color (rgb 0.5 0.5 0.5) ]
+        [ width fill, Html.Attributes.class "font07rem" |> htmlAttribute, spacing 8, Element.Font.color (rgb 0.2 0.2 0.2) ]
         (List.map (\x -> row [ width fill, spacing 8 ] [ el [ alignTop ] (text "•"), paragraph [] [ text x ] ]) xs)
 
 

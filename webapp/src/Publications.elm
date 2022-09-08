@@ -26,6 +26,7 @@ module Publications exposing (view)
 import Element exposing (..)
 import Element.Events exposing (onClick)
 import Element.Font
+import Html.Attributes
 import Types exposing (..)
 
 
@@ -39,6 +40,7 @@ publications model =
     link
         [ alignRight
         , onClick (SetShowAbstract (not model.showAbstract))
+        , Html.Attributes.class "font07rem" |> htmlAttribute
         ]
         { url = "#", label = text "Toggle Abstracts" }
         :: ([ ( 2022
@@ -63,7 +65,7 @@ publications model =
 
 publicationYear : Model -> ( Int, List ( String, String, String ) ) -> List (Element Msg)
 publicationYear model ( year, ps ) =
-    el [ Element.Font.size 24, Element.Font.bold ] (text (String.fromInt year))
+    el [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] (text (String.fromInt year))
         :: List.concatMap (publicationEntries model) ps
 
 
@@ -75,7 +77,7 @@ publicationEntries model ( url, title, abstract ) =
         ]
         { url = url, label = paragraph [] [ text title ] }
     , if model.showAbstract then
-        paragraph [ Element.Font.size 16, Element.Font.justify ] [ text abstract ]
+        paragraph [ Html.Attributes.class "font07rem" |> htmlAttribute, Element.Font.justify ] [ text abstract ]
 
       else
         none

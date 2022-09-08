@@ -132,11 +132,8 @@ menuItem model route =
                         rgb 1 1 1
     in
     link
-        [ Html.Attributes.style "padding-top" "12px" |> htmlAttribute
-        , Html.Attributes.style "z-index" "1" |> htmlAttribute
-        , height (px 48)
+        [ Html.Attributes.class "sidebar-item" |> htmlAttribute
         , centerX
-        , Element.Font.size 24
         , Element.Font.color color
         , Element.mouseOver [ Element.Font.color (rgb 0.92 0.17 0) ]
         , Transition.properties [ Transition.color 500 [] ] |> Element.htmlAttribute
@@ -200,26 +197,28 @@ bookmark model =
         [ Html.Attributes.class "bookmark" |> htmlAttribute
         , Html.Attributes.style "z-index" "0" |> htmlAttribute
         , Html.Attributes.style "position" "absolute" |> htmlAttribute
-        , Html.Attributes.style "top" (String.fromInt (48 * index) ++ "px") |> htmlAttribute
+        , Html.Attributes.style "height" "2rem" |> htmlAttribute
+        , Html.Attributes.style "top" (String.fromInt (2 * index) ++ "rem") |> htmlAttribute
         , Html.Attributes.id "bookmark" |> htmlAttribute
         , Transition.properties [ Transition.property "top" 250 [] ] |> Element.htmlAttribute
         , width fill
-        , height (px 48)
         ]
         [ el
             ([ ( "width", "0" )
              , ( "height", "0" )
-             , ( "margin-left", "5px" )
-             , ( "border-top", "1.5rem solid #fff" )
-             , ( "border-bottom", "1.5rem solid #fff" )
-             , ( "border-left", "1.5rem solid transparent" )
+             , ( "margin-left", "8px" )
+             , ( "border-top", "1rem solid #fff" )
+             , ( "border-bottom", "1rem solid #fff" )
+             , ( "border-left", "1rem solid transparent" )
              ]
                 |> List.map (\( key, value ) -> htmlAttribute (Html.Attributes.style key value))
             )
             none
         , el
             [ Element.Background.color (rgb 1 1 1)
-            , height fill
+
+            -- , height fill
+            , Html.Attributes.style "height" "2rem" |> htmlAttribute
             , width fill
             ]
             none

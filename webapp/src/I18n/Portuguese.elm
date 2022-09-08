@@ -74,7 +74,7 @@ translations =
         , ( "resume", TString "Currículo" )
         , ( "projects", TString "Projetos" )
         , ( "publications", TString "Publicações" )
-        , ( "experience", TString "Formação/Experiência" )
+        , ( "experience", TString "Formação" )
         , ( "experience_title", TString "Experiência" )
         , ( "education", TString "Formação" )
         , ( "intern", TString "Estagiário" )
