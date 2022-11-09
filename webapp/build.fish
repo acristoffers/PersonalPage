@@ -1,3 +1,5 @@
+#!/usr/bin/env fish
+
 rm public/app.css public/app.js &> /dev/null
 
 sass -s compressed src/App.scss public/app.css
