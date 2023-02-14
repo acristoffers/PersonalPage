@@ -84,7 +84,6 @@ contacts model =
     el [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] (text (tr model.lang "contacts"))
         :: ([ ( "Email", "mailto:acristoffers@startmail.com" )
             , ( "Github", "https://www.github.com/acristoffers" )
-            , ( "Twitter", "https://twitter.com/acristoffers" )
             , ( "Mastodon", "https://mastodon.online/@acristoffers" )
             , ( "Matrix", "https://matrix.to/#/@acristoffers:linuxdelta.com" )
             , ( "Linkedin", "https://www.linkedin.com/in/acristoffers" )
