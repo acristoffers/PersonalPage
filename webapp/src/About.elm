@@ -36,7 +36,7 @@ view model =
         [ width fill ]
         [ paragraph
             [ Element.Font.justify ]
-            [ text (String.replace "%d" (String.fromInt 32) (tr model.lang "%d years old, Brazilian"))
+            [ text (String.replace "%d" (String.fromInt 33) (tr model.lang "%d years old, Brazilian"))
             , text ". "
             , text (tr model.lang "about_me")
             ]
