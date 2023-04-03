@@ -73,6 +73,7 @@ downloads model =
             , ( tr model.lang "resume", "/resume.pdf#view=FitH" )
             , ( tr model.lang "gpg_public_key", "/PublicKey.asc" )
             , ( tr model.lang "age_public_key", "/PublicKey.age" )
+            , ( tr model.lang "SY32", "/SY32.pdf" )
             ]
                 |> List.map (\( label, url ) -> underlinedDownload url label)
            )
