@@ -66,14 +66,14 @@ columnOrRow model =
 downloads : Model -> Element Msg
 downloads model =
     el [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] (text " ")
-        :: ([ ( "Master's Thesis", "/Thesis.pdf#view=FitH" )
-            , ( "TCC", "/Monografia.pdf#view=FitH" )
+        :: ([ ( tr model.lang "resume", "/resume.pdf#view=FitH" )
+            , ( "Master's Thesis", "/Thesis.pdf#view=FitH" )
+            , ( "Graduation's Thesis", "/Monografia.pdf#view=FitH" )
             , ( "Apostila de Python 3", "/Python3.pdf#view=FitH" )
             , ( "Apostila de MATLAB", "/MATLAB.pdf#view=FitH" )
-            , ( tr model.lang "resume", "/resume.pdf#view=FitH" )
             , ( tr model.lang "gpg_public_key", "/PublicKey.asc" )
             , ( tr model.lang "age_public_key", "/PublicKey.age" )
-            , ( "SY32", "/SY32.pdf" )
+            , ( "SY32", "/SY32.pdf#view=FitH" )
             ]
                 |> List.map (\( label, url ) -> underlinedDownload url label)
            )
