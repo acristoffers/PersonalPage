@@ -105,4 +105,12 @@ translations =
                 , "Berater eines BIC-Jr mit dem Titel 'Steuerung eines gekoppelten Panzersystems' (2019)"
                 ]
           )
+        , ( "phd_items"
+          , TList
+                [ "Betreute Klasse: Android-Entwicklungslabor (2021)"
+                , "Betreute Klasse: Labor für Analyse und Kontrolle Linearer Systeme (Automatismus Klasse) (2022)"
+                , "Betreute Klasse: Labor für Analyse und Kontrolle Linearer Systeme (Klasse Robotik) (2022)"
+                , "Betreute Klasse: Labor für Analyse und Kontrolle Linearer Systeme (Automatismus Klasse) (2023)"
+                ]
+          )
         ]

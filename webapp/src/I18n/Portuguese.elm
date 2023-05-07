@@ -105,4 +105,12 @@ translations =
                 , "Coorientador do BIC-Júnior 'Controle de um sistema de tanques interconectados' (2019)"
                 ]
           )
+        , ( "phd_items"
+          , TList
+                [ "Curso ministrado: Laboratório de Desenvolvimento Android (2021)"
+                , "Curso ministrado: Laboratório de Análise e Controle de Sistemas Lineares (Curso de Automação) (2022)"
+                , "Curso ministrado: Laboratório de Análise e Controle de Sistemas Lineares (Curso de Robótica) (2022)"
+                , "Curso ministrado: Laboratório de Análise e Controle de Sistemas Lineares (Curso de Automação) (2023)"
+                ]
+          )
         ]

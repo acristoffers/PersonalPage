@@ -105,4 +105,12 @@ translations =
                 , "Co-superviseur d'un BIC-Jr intitulé 'Contrôle d'un système de réservoirs couplés' (2019)"
                 ]
           )
+        , ( "phd_items"
+          , TList
+                [ "Cours ministré: Laboratoire de Développement Android (2021)"
+                , "Cours ministré: Laboratoire d'Analyse et de Contrôle des Systèmes Linéaires (Classe d'Automatique) (2022)"
+                , "Cours ministré: Laboratoire d'Analyse et de Contrôle des Systèmes Linéaires (Classe de Robotique) (2022)"
+                , "Cours ministré: Laboratoire d'Analyse et de Contrôle des Systèmes Linéaires (Classe d'Automatique) (2023)"
+                ]
+          )
         ]

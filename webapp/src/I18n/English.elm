@@ -105,4 +105,12 @@ translations =
                 , "Advisor of a BIC-Jr entitled 'Control of a coupled tanks system' (2019)"
                 ]
           )
+        , ( "phd_items"
+          , TList
+                [ "Ministered class: Android Development Laboratory (2021)"
+                , "Ministered class: Linear System Analyzis and Control Laboratory (Automation Class) (2022)"
+                , "Ministered class: Linear System Analyzis and Control Laboratory (Robotics Class) (2022)"
+                , "Ministered class: Linear System Analyzis and Control Laboratory (Automation Class) (2023)"
+                ]
+          )
         ]
