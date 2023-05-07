@@ -41,7 +41,15 @@ view model =
     column [ width fill, spacing 64 ]
         (List.concat
             [ if model.device.class == Desktop then
-                [ row [ width fill, spaceEvenly ] (List.map projectLink ps) ]
+                [ row
+                    [ width fill
+                    , spaceEvenly
+                    , Html.Attributes.style "background" "white" |> htmlAttribute
+                    , Html.Attributes.style "border-radius" "10px" |> htmlAttribute
+                    , Html.Attributes.style "padding" "10px" |> htmlAttribute
+                    ]
+                    (List.map projectLink ps)
+                ]
 
               else
                 [ none ]
@@ -60,6 +68,7 @@ projectLink proj =
                 , centerX
                 , Html.Attributes.class "font07rem" |> htmlAttribute
                 , Html.Attributes.style "text-align" "center" |> htmlAttribute
+                , Html.Attributes.style "color" "black" |> htmlAttribute
                 ]
                 [ image [ centerX, height (px 48) ] { src = proj.icon, description = proj.name }
                 , paragraph [ centerX ] [ text proj.name ]
@@ -85,8 +94,24 @@ projectElement model proj =
                 [ newTabLink []
                     { url = proj.url
                     , label =
-                        row [ width fill, Element.Font.bold, spacing 8 ]
-                            [ image [ height (px 48) ] { src = proj.icon, description = proj.name }
+                        row
+                            [ width fill
+                            , Element.Font.bold
+                            , spacing 8
+                            , Html.Attributes.style "background" "#282a36" |> htmlAttribute
+                            , Html.Attributes.style "border-radius" "10px" |> htmlAttribute
+                            , Html.Attributes.style "padding" "10px" |> htmlAttribute
+                            ]
+                            [ el
+                                [ height (px 58)
+                                , Html.Attributes.style "background" "white" |> htmlAttribute
+                                , Html.Attributes.style "border-radius" "10px" |> htmlAttribute
+                                , Html.Attributes.style "padding" "5px" |> htmlAttribute
+                                ]
+                                (image
+                                    [ height (px 48) ]
+                                    { src = proj.icon, description = proj.name }
+                                )
                             , paragraph [ Html.Attributes.class "font2rem" |> htmlAttribute ] [ text proj.name ]
                             ]
                     }

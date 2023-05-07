@@ -49,11 +49,17 @@ experienceElements model =
         |> List.map
             (\xp ->
                 row [ width fill, spacing 16 ]
-                    [ image [ width (px 64), alignTop ] { src = xp.img, description = "logo" }
+                    [ el
+                        [ Html.Attributes.style "background" "white" |> htmlAttribute
+                        , Html.Attributes.style "padding" "5px" |> htmlAttribute
+                        , Html.Attributes.style "border-radius" "10px" |> htmlAttribute
+                        , alignTop
+                        ]
+                        (image [ width (px 64) ] { src = xp.img, description = "logo" })
                     , column [ width fill, spacing 8 ]
                         [ paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] [ text xp.title ]
                         , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute ] [ text xp.position ]
-                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.color (rgba 0 0 0 0.7) ] [ text xp.date ]
+                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.color (rgba 1 1 1 0.7) ] [ text xp.date ]
                         , paragraph [ Html.Attributes.class "font07rem" |> htmlAttribute ] [ text xp.description ]
                         , bulletList xp.subItems
                         ]
@@ -67,11 +73,17 @@ educationElements model =
         |> List.map
             (\xp ->
                 row [ width fill, spacing 16 ]
-                    [ image [ width (px 64), alignTop ] { src = xp.img, description = "logo" }
+                    [ el
+                        [ Html.Attributes.style "background" "white" |> htmlAttribute
+                        , Html.Attributes.style "padding" "5px" |> htmlAttribute
+                        , Html.Attributes.style "border-radius" "10px" |> htmlAttribute
+                        , alignTop
+                        ]
+                        (image [ width (px 64) ] { src = xp.img, description = "logo" })
                     , column [ width fill, spacing 8 ]
                         [ paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] [ text xp.title ]
                         , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute ] [ text xp.position ]
-                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.color (rgba 0 0 0 0.7) ] [ text xp.date ]
+                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.color (rgba 1 1 1 0.7) ] [ text xp.date ]
                         , paragraph [ Html.Attributes.class "font07rem" |> htmlAttribute ] [ text xp.description ]
                         , el [ height (px 8) ] none
                         , bulletList xp.subItems
@@ -100,7 +112,7 @@ education model =
 bulletList : List String -> Element Msg
 bulletList xs =
     column
-        [ width fill, Html.Attributes.class "font07rem" |> htmlAttribute, spacing 8, Element.Font.color (rgba 0 0 0 0.7) ]
+        [ width fill, Html.Attributes.class "font07rem" |> htmlAttribute, spacing 8, Element.Font.color (rgba 1 1 1 0.7) ]
         (List.map (\x -> row [ width fill, spacing 8 ] [ el [ alignTop ] (text "•"), paragraph [] [ text x ] ]) xs)
 
 

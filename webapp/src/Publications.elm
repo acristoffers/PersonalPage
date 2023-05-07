@@ -77,7 +77,12 @@ publicationEntries model ( url, title, abstract ) =
         ]
         { url = url, label = paragraph [] [ text title ] }
     , if model.showAbstract then
-        paragraph [ Html.Attributes.class "font07rem" |> htmlAttribute, Element.Font.justify ] [ text abstract ]
+        paragraph
+            [ Html.Attributes.class "font07rem" |> htmlAttribute
+            , Html.Attributes.style "padding" "0 3rem" |> htmlAttribute
+            , Element.Font.justify
+            ]
+            [ text abstract ]
 
       else
         none

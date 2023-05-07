@@ -66,6 +66,7 @@ fullscreenImage src =
             , width fill
             , height fill
             , Html.Attributes.class "font2rem" |> htmlAttribute
+            , Html.Attributes.style "color" "white" |> htmlAttribute
             , Element.Font.family
                 [ Element.Font.typeface "Noto Serif"
                 , Element.Font.serif
@@ -133,7 +134,7 @@ desktopLayout model =
         ]
         []
         [ layout
-            [ Element.Font.color (rgb 0 0 0)
+            [ Element.Font.color (rgb 1 1 1)
             , Html.Attributes.class "font1rem" |> htmlAttribute
             , Element.Font.family
                 [ Element.Font.typeface "Noto Serif"
@@ -150,14 +151,9 @@ desktopLayout model =
                     , Html.Attributes.style "overflow" "auto" |> htmlAttribute
                     ]
                     [ column
-                        [ Element.Background.image "/bg.jpg"
-                        , width (px 300)
+                        [ width (px 300)
                         , height fill
-                        , Html.Attributes.style "background-position" "" |> htmlAttribute
-                        , Html.Attributes.style "background-origin" "" |> htmlAttribute
-                        , Html.Attributes.style "background-clip" "" |> htmlAttribute
-                        , Html.Attributes.style "background-attachment" "" |> htmlAttribute
-                        , Html.Attributes.style "background-color" "#007acc" |> htmlAttribute
+                        , Html.Attributes.style "background-color" "#282a36" |> htmlAttribute
                         ]
                         [ Sidebar.view model ]
                     , el
@@ -203,7 +199,7 @@ desktopLayout model =
 mobileLayout : Model -> Html Msg
 mobileLayout model =
     layout
-        [ Element.Font.color (rgb 0 0 0)
+        [ Element.Font.color (rgb 1 1 1)
         , Html.Attributes.class "font1rem" |> htmlAttribute
         , Element.Font.family
             [ Element.Font.typeface "Noto Serif"
@@ -219,7 +215,7 @@ mobileLayout model =
                 , height fill
                 ]
                 [ column
-                    [ Element.Background.image "/bg.jpg"
+                    [ Html.Attributes.style "background-color" "#282a36" |> htmlAttribute
                     , width fill
                     ]
                     [ Sidebar.view model

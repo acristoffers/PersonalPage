@@ -207,17 +207,15 @@ bookmark model =
             ([ ( "width", "0" )
              , ( "height", "0" )
              , ( "margin-left", "8px" )
-             , ( "border-top", "1rem solid #fff" )
-             , ( "border-bottom", "1rem solid #fff" )
+             , ( "border-top", "1rem solid #353746" )
+             , ( "border-bottom", "1rem solid #353746" )
              , ( "border-left", "1rem solid transparent" )
              ]
                 |> List.map (\( key, value ) -> htmlAttribute (Html.Attributes.style key value))
             )
             none
         , el
-            [ Element.Background.color (rgb 1 1 1)
-
-            -- , height fill
+            [ Html.Attributes.style "background" "#353746" |> htmlAttribute
             , Html.Attributes.style "height" "2rem" |> htmlAttribute
             , width fill
             ]
