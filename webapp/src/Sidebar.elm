@@ -24,9 +24,9 @@
 module Sidebar exposing (view)
 
 import Element exposing (..)
-import Element.Background
 import Element.Events
 import Element.Font
+import Html
 import Html.Attributes
 import Html.Events exposing (onClick)
 import I18n.I18n exposing (tr)
@@ -59,7 +59,7 @@ view model =
                 { src = "/me.jpg", description = "My photo" }
             , column
                 [ Element.Font.size 32
-                , Element.Font.color (rgb 1 1 1)
+                , Html.Attributes.style "color" "var(--foreground-color)" |> htmlAttribute
                 , alignBottom
                 , centerX
                 ]
@@ -118,24 +118,23 @@ menuItem model route =
         value =
             tr model.lang str
 
-        color : Color
+        color : String
         color =
             if model.route == route then
-                rgb 0.92 0.17 0
+                "sidebar-item-accent"
 
             else
                 case ( model.route, route ) of
                     ( Projects _, Projects _ ) ->
-                        rgb 0.92 0.17 0
+                        "sidebar-item-accent"
 
                     _ ->
-                        rgb 1 1 1
+                        "sidebar-item-foreground"
     in
     link
         [ Html.Attributes.class "sidebar-item" |> htmlAttribute
         , centerX
-        , Element.Font.color color
-        , Element.mouseOver [ Element.Font.color (rgb 0.92 0.17 0) ]
+        , Html.Attributes.class color |> htmlAttribute
         , Transition.properties [ Transition.color 500 [] ] |> Element.htmlAttribute
         , Element.Events.onMouseEnter (SidebarHoverStart route)
         , Element.Events.onMouseLeave SidebarHoverEnd
@@ -207,15 +206,15 @@ bookmark model =
             ([ ( "width", "0" )
              , ( "height", "0" )
              , ( "margin-left", "8px" )
-             , ( "border-top", "1rem solid #353746" )
-             , ( "border-bottom", "1rem solid #353746" )
+             , ( "border-top", "1rem solid var(--background-color)" )
+             , ( "border-bottom", "1rem solid var(--background-color)" )
              , ( "border-left", "1rem solid transparent" )
              ]
                 |> List.map (\( key, value ) -> htmlAttribute (Html.Attributes.style key value))
             )
             none
         , el
-            [ Html.Attributes.style "background" "#353746" |> htmlAttribute
+            [ Html.Attributes.style "background" "var(--background-color)" |> htmlAttribute
             , Html.Attributes.style "height" "2rem" |> htmlAttribute
             , width fill
             ]

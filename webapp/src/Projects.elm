@@ -98,8 +98,6 @@ projectElement model proj =
                             [ width fill
                             , Element.Font.bold
                             , spacing 8
-                            , Html.Attributes.style "background" "#282a36" |> htmlAttribute
-                            , Html.Attributes.style "border-radius" "10px" |> htmlAttribute
                             , Html.Attributes.style "padding" "10px" |> htmlAttribute
                             ]
                             [ el
@@ -107,9 +105,12 @@ projectElement model proj =
                                 , Html.Attributes.style "background" "white" |> htmlAttribute
                                 , Html.Attributes.style "border-radius" "10px" |> htmlAttribute
                                 , Html.Attributes.style "padding" "5px" |> htmlAttribute
+                                , Html.Attributes.style "min-width" "58px" |> htmlAttribute
                                 ]
                                 (image
-                                    [ height (px 48) ]
+                                    [ height (px 48)
+                                    , Html.Attributes.style "margin" "auto" |> htmlAttribute
+                                    ]
                                     { src = proj.icon, description = proj.name }
                                 )
                             , paragraph [ Html.Attributes.class "font2rem" |> htmlAttribute ] [ text proj.name ]

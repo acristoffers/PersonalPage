@@ -26,7 +26,11 @@
 
 :root {
   font-size: calc(15px + 0.390625vw);
-  background: #353746;
+  --background-color: #282a36;
+  --bg-accent-color: #1d1e26;
+  --foreground-color: #f8f8f2;
+  --accent-color: #ff5555;
+  background: var(--background-color);
 }
 
 #root {
@@ -78,4 +82,12 @@
   div {
     height: 2rem;
   }
+}
+
+.sidebar-item-foreground {
+  color: var(--foreground-color);
+}
+
+.sidebar-item-accent {
+  color: var(--accent-color) !important;
 }

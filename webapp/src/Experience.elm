@@ -53,9 +53,15 @@ experienceElements model =
                         [ Html.Attributes.style "background" "white" |> htmlAttribute
                         , Html.Attributes.style "padding" "5px" |> htmlAttribute
                         , Html.Attributes.style "border-radius" "10px" |> htmlAttribute
+                        , Html.Attributes.style "min-height" "74px" |> htmlAttribute
                         , alignTop
                         ]
-                        (image [ width (px 64) ] { src = xp.img, description = "logo" })
+                        (image
+                            [ width (px 64)
+                            , Html.Attributes.style "margin" "auto" |> htmlAttribute
+                            ]
+                            { src = xp.img, description = "logo" }
+                        )
                     , column [ width fill, spacing 8 ]
                         [ paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] [ text xp.title ]
                         , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute ] [ text xp.position ]
@@ -77,9 +83,15 @@ educationElements model =
                         [ Html.Attributes.style "background" "white" |> htmlAttribute
                         , Html.Attributes.style "padding" "5px" |> htmlAttribute
                         , Html.Attributes.style "border-radius" "10px" |> htmlAttribute
+                        , Html.Attributes.style "min-height" "74px" |> htmlAttribute
                         , alignTop
                         ]
-                        (image [ width (px 64) ] { src = xp.img, description = "logo" })
+                        (image
+                            [ width (px 64)
+                            , Html.Attributes.style "margin" "auto" |> htmlAttribute
+                            ]
+                            { src = xp.img, description = "logo" }
+                        )
                     , column [ width fill, spacing 8 ]
                         [ paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] [ text xp.title ]
                         , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute ] [ text xp.position ]

@@ -134,7 +134,7 @@ desktopLayout model =
         ]
         []
         [ layout
-            [ Element.Font.color (rgb 1 1 1)
+            [ Html.Attributes.style "color" "var(--foreground-color)" |> htmlAttribute
             , Html.Attributes.class "font1rem" |> htmlAttribute
             , Element.Font.family
                 [ Element.Font.typeface "Noto Serif"
@@ -153,7 +153,7 @@ desktopLayout model =
                     [ column
                         [ width (px 300)
                         , height fill
-                        , Html.Attributes.style "background-color" "#282a36" |> htmlAttribute
+                        , Html.Attributes.style "background-color" "var(--bg-accent-color)" |> htmlAttribute
                         ]
                         [ Sidebar.view model ]
                     , el
@@ -184,7 +184,7 @@ desktopLayout model =
                     ]
                 , row
                     [ Element.Background.color (rgb 0 0 0)
-                    , Element.Font.color (rgb 1 1 1)
+                    , Html.Attributes.style "color" "var(--foreground-color)" |> htmlAttribute
                     , Element.Font.alignRight
                     , Html.Attributes.class "font07rem" |> htmlAttribute
                     , Html.Attributes.style "height" "2rem" |> htmlAttribute
@@ -199,7 +199,7 @@ desktopLayout model =
 mobileLayout : Model -> Html Msg
 mobileLayout model =
     layout
-        [ Element.Font.color (rgb 1 1 1)
+        [ Html.Attributes.style "color" "var(--foreground-color)" |> htmlAttribute
         , Html.Attributes.class "font1rem" |> htmlAttribute
         , Element.Font.family
             [ Element.Font.typeface "Noto Serif"
@@ -215,7 +215,7 @@ mobileLayout model =
                 , height fill
                 ]
                 [ column
-                    [ Html.Attributes.style "background-color" "#282a36" |> htmlAttribute
+                    [ Html.Attributes.style "background-color" "var(--bg-accent-color)" |> htmlAttribute
                     , width fill
                     ]
                     [ Sidebar.view model
@@ -243,7 +243,7 @@ mobileLayout model =
                 ]
             , row
                 [ Element.Background.color (rgb 0 0 0)
-                , Element.Font.color (rgb 1 1 1)
+                , Html.Attributes.style "color" "var(--foreground-color)" |> htmlAttribute
                 , Element.Font.alignRight
                 , Html.Attributes.class "font07rem" |> htmlAttribute
                 , Html.Attributes.style "height" "2rem" |> htmlAttribute
