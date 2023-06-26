@@ -73,7 +73,6 @@ downloads model =
             , ( "Apostila de MATLAB", "/MATLAB.pdf#view=FitH" )
             , ( tr model.lang "gpg_public_key", "/PublicKey.asc" )
             , ( tr model.lang "age_public_key", "/PublicKey.age" )
-            , ( "SY32", "/SY32.pdf#view=FitH" )
             ]
                 |> List.map (\( label, url ) -> underlinedDownload url label)
            )
