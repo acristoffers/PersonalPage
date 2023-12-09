@@ -39,7 +39,7 @@ translations =
         , ( "fr", TString "Francês" )
         , ( "de", TString "Alemão" )
         , ( "native", TString "Nativo" )
-        , ( "about_me", TString "Sou estudante de doutorado trabalhando na minha tese entitulada \"Detecção de ataques em sistemas cyber-físicos distribuídos: Aplicação em Fábricas Inteligentes\". Sou uma pessoa introvertida que gosta de ambientes cooperativos. Gosto de programar (para automatizar tarefas chatas) e aprender línguas (para ficar calado nelas)." )
+        , ( "about_me", TString "Eu sou um doutorando em Automação Industrial com mestrado em Engenharia Elétrica e formação em Engenharia Mecatrônica. Gosto de computadores, tecnologia, programação e idiomas. Eu uso tecnologias como Linux, Nix e Neovim pela liberdade que me dão de modificá-las e automatizar tarefas. Eu também gosto de ensinar/mentorar e ajudar as pessoas a resolver problemas, especialmente problemas relacionados à programação ou à tecnologia." )
         , ( "languages", TString "Idiomas" )
         , ( "tests_database_desc", TString "Gerencia um banco de questões e facilita a geração e correção de provas." )
         , ( "tb_ss1_desc", TString "Este aplicativo foi desenvolvido para o estado de Minas Gerais, para gerenciar as provas aplicadas aos recrutas bem como provas anuais." )

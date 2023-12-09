@@ -39,7 +39,7 @@ translations =
         , ( "fr", TString "Français" )
         , ( "de", TString "Allemand" )
         , ( "native", TString "Maternelle" )
-        , ( "about_me", TString "Je suis doctorant et travaille sur ma tèsis entitulé \"Surveillance Distribuée des Systèmes Cyber-Physiques: Application aux Smart Factories\". Je suis une personne introvertie qui aime les environnements coopératifs. J'aime la programmation (pour que je puisse automatiser les tâches ennuyeuses) et d'apprendre les langues (pour que je puisse rester silencieux)." )
+        , ( "about_me", TString "Je suis doctorant en automatisation industrielle, titulaire d'un master en génie électrique et d'une formation en génie mécatronique. J'aime les ordinateurs, la technologie, la programmation et les langues. J'utilise des technologies telles que Linux, Nix et Neovim en raison de la liberté qu'elles me donnent de les modifier et de les automatiser. J'aime aussi enseigner/mentorer et aider les gens à résoudre des problèmes, en particulier ceux liés à la programmation ou à la technologie." )
         , ( "languages", TString "Langues" )
         , ( "tests_database_desc", TString "Gérer les questions et imprimer les preuves." )
         , ( "tb_ss1_desc", TString "Cette application a été développé pour la société de pompiers de l'état de Minas Gerais, au Brésil, pour gérer les preuves appliquées aux nouveaux arrivants, ainsi que les preuves annuelles." )

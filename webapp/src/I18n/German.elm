@@ -39,7 +39,7 @@ translations =
         , ( "fr", TString "Französisch" )
         , ( "de", TString "Deutsch" )
         , ( "native", TString "Muttersprache" )
-        , ( "about_me", TString "Ich bin ein Doktorand, der arbeitet auf meiner Thesis mit dem Titel \"Angriffserkennung auf verteilten cyber-physischen Systemen: Anwendung auf Smart Factory\". Ich bin eine introvertierte Person, die kooperative Umgebungen mag. Ich genieße es zu programmieren (damit ich die langweiligen Aufgaben automatisieren kann) und Sprachen zu lernen (damit ich in ihnen schweigen kann)." )
+        , ( "about_me", TString "Ich bin ein Doktorand in der Automatisierungstechnik mit einem Master-Abschluss in Elektrotechnik und einem Hintergrund in Mechatronik. Ich mag Computer, Technologie, Programmierung und Sprachen. Ich verwende Technologien wie Linux, Nix und Neovim wegen der Freiheit, die sie mir geben, sie zu modifizieren und Aufgaben zu automatisieren. Ich genieße es auch, zu unterrichten/zu betreuen und Menschen bei der Lösung von Problemen zu helfen, insbesondere bei Programmier- oder Technologieproblemen." )
         , ( "languages", TString "Sprachen" )
         , ( "tests_database_desc", TString "Fragen verwalten und Prüfungen drucken." )
         , ( "tb_ss1_desc", TString "Diese Anwendung wurde für den Feuerwehrmänner des Bundesstaates Minas Gerais/Brasilien entwickelt, um die Tests der Newcomern und die jährlichen Tests zu verwalten." )

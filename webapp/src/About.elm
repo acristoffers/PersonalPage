@@ -36,10 +36,7 @@ view model =
         [ width fill ]
         [ paragraph
             [ Element.Font.justify ]
-            [ text (String.replace "%d" (String.fromInt 33) (tr model.lang "%d years old, Brazilian"))
-            , text ". "
-            , text (tr model.lang "about_me")
-            ]
+            [ text (tr model.lang "about_me") ]
         , el [ Html.Attributes.class "font1rem" |> htmlAttribute ] none
         , columnOrRow model
             [ width fill
@@ -99,9 +96,9 @@ languages : Model -> Element Msg
 languages model =
     el [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] (text (tr model.lang "languages"))
         :: ([ ( tr model.lang "pt", tr model.lang "native" )
-            , ( tr model.lang "en", "C1" )
-            , ( tr model.lang "de", "C1" )
-            , ( tr model.lang "fr", "B1" )
+            , ( tr model.lang "en", "C1/C2" )
+            , ( tr model.lang "de", "B2/C1" )
+            , ( tr model.lang "fr", "B2/C1" )
             ]
                 |> List.map (\( lang, level ) -> underlinedText (lang ++ " (" ++ level ++ ")"))
            )
