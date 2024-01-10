@@ -111,6 +111,7 @@ translations =
                 , "Cours ministré: Laboratoire d'Analyse et de Contrôle des Systèmes Linéaires (Classe d'Automatique) (2022)"
                 , "Cours ministré: Laboratoire d'Analyse et de Contrôle des Systèmes Linéaires (Classe de Robotique) (2022)"
                 , "Cours ministré: Laboratoire d'Analyse et de Contrôle des Systèmes Linéaires (Classe d'Automatique) (2023)"
+                , "Cours ministré: Laboratoire de Robot Operating System (Classe d'Automatique) (2023)"
                 ]
           )
         ]

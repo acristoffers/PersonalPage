@@ -100,8 +100,8 @@ translations =
                 , "Scientific Initiation: low-cost process control platform (2017)"
                 , "Scientific Initiation: process control platform: a MPC implementation (2018)"
                 , "Student member of the Graduation Council (2018/19)"
-                , "Advisor of a BIC-Jr entitled 'System modelling for process control' (2018)"
-                , "Advisor of a BIC-Jr entitled 'Modelling of an oven with space-distributed parameters' (2019)"
+                , "Advisor of a BIC-Jr entitled 'System modeling for process control' (2018)"
+                , "Advisor of a BIC-Jr entitled 'Modeling of an oven with space-distributed parameters' (2019)"
                 , "Advisor of a BIC-Jr entitled 'Control of a coupled tanks system' (2019)"
                 ]
           )
@@ -111,6 +111,7 @@ translations =
                 , "Ministered class: Linear System Analyzis and Control Laboratory (Automation Class) (2022)"
                 , "Ministered class: Linear System Analyzis and Control Laboratory (Robotics Class) (2022)"
                 , "Ministered class: Linear System Analyzis and Control Laboratory (Automation Class) (2023)"
+                , "Ministered class: Robot Operating System Laboratory (Automation Class) (2023)"
                 ]
           )
         ]

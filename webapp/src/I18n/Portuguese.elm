@@ -111,6 +111,7 @@ translations =
                 , "Curso ministrado: Laboratório de Análise e Controle de Sistemas Lineares (Curso de Automação) (2022)"
                 , "Curso ministrado: Laboratório de Análise e Controle de Sistemas Lineares (Curso de Robótica) (2022)"
                 , "Curso ministrado: Laboratório de Análise e Controle de Sistemas Lineares (Curso de Automação) (2023)"
+                , "Curso ministrado: Laboratório de Robot Operating System (Curso de Automação) (2023)"
                 ]
           )
         ]

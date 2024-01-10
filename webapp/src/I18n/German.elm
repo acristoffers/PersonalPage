@@ -111,6 +111,7 @@ translations =
                 , "Betreute Klasse: Labor für Analyse und Kontrolle Linearer Systeme (Automatismus Klasse) (2022)"
                 , "Betreute Klasse: Labor für Analyse und Kontrolle Linearer Systeme (Klasse Robotik) (2022)"
                 , "Betreute Klasse: Labor für Analyse und Kontrolle Linearer Systeme (Automatismus Klasse) (2023)"
+                , "Betreute Klasse: Labor für Robot Operating System (Automatismus Klasse) (2023)"
                 ]
           )
         ]
