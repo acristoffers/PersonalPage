@@ -20,7 +20,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 
-
 module About exposing (view)
 
 import Element exposing (..)
@@ -28,7 +27,6 @@ import Element.Font
 import Html.Attributes
 import I18n.I18n exposing (tr)
 import Types exposing (..)
-
 
 view : Model -> Element Msg
 view model =
@@ -50,7 +48,6 @@ view model =
             ]
         ]
 
-
 columnOrRow : Model -> List (Element.Attribute Msg) -> List (Element.Element Msg) -> Element Msg
 columnOrRow model =
     if model.device.class == Phone then
@@ -59,13 +56,13 @@ columnOrRow model =
     else
         row
 
-
 downloads : Model -> Element Msg
 downloads model =
     el [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] (text " ")
         :: ([ ( tr model.lang "resume", "/resume.pdf#view=FitH" )
-            , ( "Master's Thesis", "/Thesis.pdf#view=FitH" )
-            , ( "Graduation's Thesis", "/Monografia.pdf#view=FitH" )
+            , ( "PhD's Thesis", "/phd-thesis.pdf#view=FitH" )
+            , ( "Master's Thesis", "/master-thesis.pdf#view=FitH" )
+            , ( "Graduation's Memoir", "/Monografia.pdf#view=FitH" )
             , ( "Apostila de Python 3", "/Python3.pdf#view=FitH" )
             , ( "Apostila de MATLAB", "/MATLAB.pdf#view=FitH" )
             , ( tr model.lang "gpg_public_key", "/PublicKey.asc" )
@@ -74,7 +71,6 @@ downloads model =
                 |> List.map (\( label, url ) -> underlinedDownload url label)
            )
         |> column [ spacing 16, width fill, alignTop, Html.Attributes.class "about-list" |> htmlAttribute ]
-
 
 contacts : Model -> Element Msg
 contacts model =
@@ -91,7 +87,6 @@ contacts model =
            )
         |> column [ spacing 16, width fill, alignTop, Html.Attributes.class "about-list" |> htmlAttribute ]
 
-
 languages : Model -> Element Msg
 languages model =
     el [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] (text (tr model.lang "languages"))
@@ -104,7 +99,6 @@ languages model =
            )
         |> column [ spacing 16, width fill, alignTop, Html.Attributes.class "about-list" |> htmlAttribute ]
 
-
 underlinedText : String -> Element Msg
 underlinedText label =
     el
@@ -115,7 +109,6 @@ underlinedText label =
         ]
         (text label)
 
-
 underlinedLink : String -> String -> Element Msg
 underlinedLink url label =
     link
@@ -125,7 +118,6 @@ underlinedLink url label =
         , Html.Attributes.style "padding-bottom" "16px" |> htmlAttribute
         ]
         { url = url, label = text label }
-
 
 underlinedDownload : String -> String -> Element Msg
 underlinedDownload url label =

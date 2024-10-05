@@ -59,6 +59,7 @@
 }
 
 .about-list {
+
   div:last-child,
   a:last-child {
     border: none !important;
@@ -90,4 +91,11 @@
 
 .sidebar-item-accent {
   color: var(--accent-color) !important;
+}
+
+.xp-img {
+  img {
+    max-height: 64px;
+    object-fit: contain;
+  }
 }

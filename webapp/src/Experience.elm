@@ -20,7 +20,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 
-
 module Experience exposing (view)
 
 import Element exposing (..)
@@ -28,7 +27,6 @@ import Element.Font
 import Html.Attributes
 import I18n.I18n exposing (tr, trList)
 import Types exposing (..)
-
 
 view : Model -> Element Msg
 view model =
@@ -41,7 +39,6 @@ view model =
             , educationElements model
             ]
         )
-
 
 experienceElements : Model -> List (Element Msg)
 experienceElements model =
@@ -59,6 +56,7 @@ experienceElements model =
                         (image
                             [ width (px 64)
                             , Html.Attributes.style "margin" "auto" |> htmlAttribute
+                            , Html.Attributes.class "xp-img" |> htmlAttribute
                             ]
                             { src = xp.img, description = "logo" }
                         )
@@ -71,7 +69,6 @@ experienceElements model =
                         ]
                     ]
             )
-
 
 educationElements : Model -> List (Element Msg)
 educationElements model =
@@ -103,30 +100,27 @@ educationElements model =
                     ]
             )
 
-
 experiences : Model -> List Experience
 experiences model =
-    [ Experience "/acal.jpg" "Acal BFi Germany GmbH" "03/2016 - 08/2016" (tr model.lang "intern") (tr model.lang "acal_desc") []
+    [ Experience "/vitibot.png" "Vitibot" "04/2024 - " (tr model.lang "vitibot_pos") (tr model.lang "vitibot_desc") []
+    , Experience "/acal.jpg" "Acal BFi Germany GmbH" "03/2016 - 08/2016" (tr model.lang "intern") (tr model.lang "acal_desc") []
     , Experience "/cbmmg.png" "Corpo de Bombeiros Militar de Minas Gerais" "01/2010 - 12/2013" (tr model.lang "soldier") (tr model.lang "cbmmg_desc") []
     ]
 
-
 education : Model -> List Experience
 education model =
-    [ Experience "/urca.png" "Université de Reims Champagne-Ardenne" "03/2021 -" (tr model.lang "phd_control") (tr model.lang "phd_desc") (trList model.lang "phd_items")
+    [ Experience "/urca.png" "Université de Reims Champagne-Ardenne" "03/2021 - 09/2024" (tr model.lang "phd_control") (tr model.lang "phd_desc") (trList model.lang "phd_items")
     , Experience "/cefet-ufsj.jpg" "Centro Federal de Educação Tecnológica de Minas Gerais / Universidade Federal de São Jõao del-Rei" "08/2019 - 12/2020" (tr model.lang "mes_control") (tr model.lang "cefet_mes_desc") []
     , Experience "/cefet.png" "Centro Federal de Educação Tecnológica de Minas Gerais" "04/2013 - 07/2019" (tr model.lang "eng_meca") (tr model.lang "cefet_desc") (trList model.lang "cefet_items")
     , Experience "/fuas.png" "Frankfurt University Of Applied Sciences" "06/2015 - 08/2016" (tr model.lang "exchange_student") (tr model.lang "fuas_desc") []
     , Experience "/uga.png" "Université Joseph Fourier (now Université Grenoble Alpes)" "01/2015 - 03/2015" (tr model.lang "exchange_student") (tr model.lang "uga_desc") []
     ]
 
-
 bulletList : List String -> Element Msg
 bulletList xs =
     column
         [ width fill, Html.Attributes.class "font07rem" |> htmlAttribute, spacing 8, Element.Font.color (rgba 1 1 1 0.7) ]
         (List.map (\x -> row [ width fill, spacing 8 ] [ el [ alignTop ] (text "•"), paragraph [] [ text x ] ]) xs)
-
 
 type alias Experience =
     { img : String

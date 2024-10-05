@@ -20,12 +20,10 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 
-
 module I18n.Portuguese exposing (translations)
 
 import Dict exposing (Dict)
 import Types exposing (..)
-
 
 translations : Dict String TranslationDictionary
 translations =
@@ -39,7 +37,7 @@ translations =
         , ( "fr", TString "Francês" )
         , ( "de", TString "Alemão" )
         , ( "native", TString "Nativo" )
-        , ( "about_me", TString "Eu sou um doutorando em Automação Industrial com mestrado em Engenharia Elétrica e formação em Engenharia Mecatrônica. Gosto de computadores, tecnologia, programação e idiomas. Eu uso tecnologias como Linux, Nix e Neovim pela liberdade que me dão de modificá-las e automatizar tarefas. Eu também gosto de ensinar/mentorar e ajudar as pessoas a resolver problemas, especialmente problemas relacionados à programação ou à tecnologia." )
+        , ( "about_me", TString "Sou um Engenheiro Mecatrônico desenvolvendo tratores autônomos na Vitibot. Gosto de computadores, tecnologia, programação e idiomas, e uso tecnologias como Linux, Nix e Neovim pela liberdade que me dão para modificá-las e automatizar tarefas. Também gosto de ensinar/orientar e ajudar as pessoas a resolver problemas, especialmente os relacionados à programação ou tecnologia." )
         , ( "languages", TString "Idiomas" )
         , ( "tests_database_desc", TString "Gerencia um banco de questões e facilita a geração e correção de provas." )
         , ( "tb_ss1_desc", TString "Este aplicativo foi desenvolvido para o estado de Minas Gerais, para gerenciar as provas aplicadas aos recrutas bem como provas anuais." )
@@ -83,13 +81,15 @@ translations =
         , ( "cbmmg_desc", TString "Como soldado minhas atribuições eram, principalmente, de primeiros socorros e mergulhador, sendo a primeira resposta em todo tipo de ocorrências, desde incêndios florestais até acidentes automotivos e desastres industriais ou naturais." )
         , ( "eng_meca", TString "Graduação em Engenharia Mecatrônica" )
         , ( "mes_control", TString "Mestrado em Engenharia Elétrica" )
-        , ( "cefet_mes_desc", TString "Mestrando sob orientação do Prof. Dr. Valter Leite e coorientação do Prof. Dr. Walter Lucia, pesquisando controle tolerante a falhas em sistemas chaveados com restrições nos estados." )
+        , ( "cefet_mes_desc", TString "Pesquisei o controle tolerante a falhas em sistemas comutados restritos por estado, desenvolvendo uma técnica para comutação mais rápida com base na região de atração do controlador." )
         , ( "cefet_desc", TString "Como estudante, comecei a participar de atividades no meu segundo ano, como parte do grupo de estudo de robótica, ocupando o terceiro lugar na Competição Latino-Americana de Robótica de 2014. Em seguida ajudei o DA sem me associar, até aceitar me tornar o representante discente no Conselho de Graduação. Desde o primeiro semestre ajudei estudantes de graduação e mestrado com seus projetos, especialmente com programação." )
         , ( "exchange_student", TString "Intercambista" )
         , ( "fuas_desc", TString "Estudei como intercambista pelo programa Ciências Sem Fronteiras fomentado pela CAPES." )
         , ( "uga_desc", TString "Intercambista pela parceria entre UGA e CEFET/MG. Trabalhei no laboratório de robótica ajudando o time que ficou em segundo lugar na competição da National Instruments, em Paris." )
         , ( "phd_control", TString "Doutorado em Automação e Tratamento de Sinal" )
-        , ( "phd_desc", TString "Doutorando sob a orientação do Prof. Dr. Nadhir Messai e do Prof. Dr. Nouredinne Manamanni, com tese entitulada \"Detecção de ataques em sistemas cyber-físicos distribuídos: Aplicação em Fábricas Inteligentes\".)" )
+        , ( "phd_desc", TString "Trabalhei na minha tese intitulada \"Aprimorando a Segurança de Sistemas Ciberfísicos: Estratégias de Detecção e Mitigação\"." )
+        , ( "vitibot_pos", TString "Doutor Engenheiro de Desenvolvimento" )
+        , ( "vitibot_desc", TString "Eu trabalho com a equipe INFO-ROS no desenvolvimento de robôs autônomos para vinhas." )
         , ( "cefet_items"
           , TList
                 [ "GER - Grupo de Estudos em Robótica (2014)"

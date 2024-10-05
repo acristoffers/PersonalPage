@@ -20,12 +20,10 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 
-
 module I18n.English exposing (translations)
 
 import Dict exposing (Dict)
 import Types exposing (..)
-
 
 translations : Dict String TranslationDictionary
 translations =
@@ -39,7 +37,7 @@ translations =
         , ( "fr", TString "French" )
         , ( "de", TString "German" )
         , ( "native", TString "Native" )
-        , ( "about_me", TString "I'm a Ph.D. candidate in Industrial Automation with a master's degree in Electrical Engineering and a background in Mechatronic Engineering. I like computers, technology, programming and languages, and I use technologies such as Linux, Nix and Neovim for the freedom they give me to modify them and to automate tasks. I also enjoy teaching/mentoring and helping people solve problems, particularly programming or technology related ones." )
+        , ( "about_me", TString "I'm a Mechatronic Engineer developing autonomous tractors at Vitibot. I like computers, technology, programming and languages, and I use technologies such as Linux, Nix and Neovim for the freedom they give me to modify them and to automate tasks. I also enjoy teaching/mentoring and helping people solve problems, particularly programming or technology related ones." )
         , ( "languages", TString "Languages" )
         , ( "tests_database_desc", TString "Manage questions and print tests." )
         , ( "tb_ss1_desc", TString "This application was developed for the firefighter corporation of the state of Minas Gerais, Brazil, to manage the tests applied to the newcomers, as well as anual tests." )
@@ -83,13 +81,15 @@ translations =
         , ( "cbmmg_desc", TString "As a firefighter I was entitled to work as a first-aider and diver, being the first response in all sorts of accidents, from fire in the wilds to car accidents and industrial and natural disasters." )
         , ( "eng_meca", TString "Mecatronics Engineering Graduation" )
         , ( "mes_control", TString "Master in Electrical Engineering" )
-        , ( "cefet_mes_desc", TString "A master student under the guidance of Prof. Dr. Valter Leite and Prof. Dr. Walter Lucia, researching fault-tolerant control in state-restricted switched systems." )
+        , ( "cefet_mes_desc", TString "I researched fault-tolerant control in state-restricted switched systems, developing a technique for faster switching based on the controller's region of attraction." )
         , ( "cefet_desc", TString "As a student, I started taking part in activities in my second year, as part of the team that won the 3rd place in the Latin American Robotic Competition. After that, I helped the student representatives in some activities without becoming a member, until accepting to become the student representative in the Graduation Council. Since my first semester, I helped other students from graduation and master with their projects, especially with programming." )
         , ( "exchange_student", TString "Exchange Student" )
         , ( "fuas_desc", TString "I studied as an exchange student through the Brazilian government's program Ciências Sem Fronteiras (Science Without Borders)." )
         , ( "uga_desc", TString "I studied as an exchange student through the partnership between UGA and CEFET-MG. There I worked in the robotics laboratory helping the team who won the second place in the National Instruments MyRIO Paris competition." )
         , ( "phd_control", TString "PhD in Automation and Signal Processing" )
-        , ( "phd_desc", TString "Doctorate student under the guidance of Prof. Dr. Nadhir Messai and Prof. Dr. Nouredinne Manamanni, with thesis titled \"Attack detection on distributed cyber-physical systems: applications on smart factories\".)" )
+        , ( "phd_desc", TString "I worked on my thesis entitled \"Enhancing Cyber-Physical System Security: Detection and Mitigation Strategies\"." )
+        , ( "vitibot_pos", TString "Doctor Engineer of Development" )
+        , ( "vitibot_desc", TString "I work with the INFO-ROS team on the development of autonomous robots for vineyards." )
         , ( "cefet_items"
           , TList
                 [ "Robotics studying group (2014)"

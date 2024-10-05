@@ -20,12 +20,10 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 
-
 module I18n.German exposing (translations)
 
 import Dict exposing (Dict)
 import Types exposing (..)
-
 
 translations : Dict String TranslationDictionary
 translations =
@@ -39,7 +37,7 @@ translations =
         , ( "fr", TString "Französisch" )
         , ( "de", TString "Deutsch" )
         , ( "native", TString "Muttersprache" )
-        , ( "about_me", TString "Ich bin ein Doktorand in der Automatisierungstechnik mit einem Master-Abschluss in Elektrotechnik und einem Hintergrund in Mechatronik. Ich mag Computer, Technologie, Programmierung und Sprachen. Ich verwende Technologien wie Linux, Nix und Neovim wegen der Freiheit, die sie mir geben, sie zu modifizieren und Aufgaben zu automatisieren. Ich genieße es auch, zu unterrichten/zu betreuen und Menschen bei der Lösung von Problemen zu helfen, insbesondere bei Programmier- oder Technologieproblemen." )
+        , ( "about_me", TString "Ich bin ein Mechatronik-Ingenieur, der bei Vitibot autonome Traktoren entwickelt. Ich mag Computer, Technologie, Programmierung und Sprachen und nutze Technologien wie Linux, Nix und Neovim, weil sie mir die Freiheit geben, sie zu modifizieren und Aufgaben zu automatisieren. Ich genieße es auch zu lehren/mentoren und Menschen zu helfen, Probleme zu lösen, insbesondere im Bereich Programmierung oder Technologie.")
         , ( "languages", TString "Sprachen" )
         , ( "tests_database_desc", TString "Fragen verwalten und Prüfungen drucken." )
         , ( "tb_ss1_desc", TString "Diese Anwendung wurde für den Feuerwehrmänner des Bundesstaates Minas Gerais/Brasilien entwickelt, um die Tests der Newcomern und die jährlichen Tests zu verwalten." )
@@ -83,13 +81,15 @@ translations =
         , ( "cbmmg_desc", TString "Als Feuerwehrmann war ich berechtigt, als Ersthelfer und Taucher zu arbeiten. Ich var der Ersthelfer bei allen möglichen Unfällen, vom Feuer in der Wildnis über Autounfälle bis hin zu Industrie- und Naturkatastrophen." )
         , ( "eng_meca", TString "Mecatroniker" )
         , ( "mes_control", TString "Master in Elektrotechnik" )
-        , ( "cefet_mes_desc", TString "Masterstudent unter der Leitung von Prof. Dr. Valter Leite und Prof. Dr. Walter Lucia zur Erforschung der fehlertoleranten Steuerung in zustandsbeschränkten vermittelten Systemen." )
+        , ( "cefet_mes_desc", TString "Ich habe die fehlertolerante Steuerung in zustandsbeschränkten geschalteten Systemen erforscht und eine Technik zur schnelleren Umschaltung basierend auf dem Attraktionsbereich des Reglers entwickelt." )
         , ( "cefet_desc", TString "Als Student habe ich in meinem zweiten Jahr angefangen, an Aktivitäten teilzunehmen, als Teil des Teams, das den 3. Platz im lateinamerikanischen Roboterwettbewerb gewann. Danach half ich den Studentenvertretern bei einigen Aktivitäten, ohne Mitglied zu werden, bis ich Graduierungsrat endlich übergennomen habe. Seit meinem ersten Semester habe ich anderen Graduirung und Meister Studenten mit ihrer Projekte geholfen, besonders mit Programmierung." )
         , ( "exchange_student", TString "Studentaustausch" )
         , ( "fuas_desc", TString "Ich habe als Austauschstudent im Rahmen des Programms Ciências Sem Fronteiras (Wissenschaft ohne Grenzen) der brasilianischen Regierung studiert." )
         , ( "uga_desc", TString "Ich habe als Austauschstudent durch die Partnerschaft zwischen UGA und CEFET-MG studiert. Dort arbeitete ich im Robotiklabor und half dem Team, das den zweiten Platz beim National Instruments MyRIO Paris-Wettbewerb belegte." )
         , ( "phd_control", TString "Doktorat in Automatisierung und Signalverarbeitung" )
-        , ( "phd_desc", TString "Doktorand unter der Leitung von Prof. Dr. Nadhir Messai und Prof. Dr. Nouredinne Manamanni, ich arbeite auf meiner Thesis mit dem Titel \"Angriffserkennung auf verteilten cyber-physischen Systemen: Anwendung auf Smart Factory\".)" )
+        , ( "phd_desc", TString "Ich habe an meiner Arbeit mit dem Titel \"Verbesserung der Sicherheit von Cyber-Physical Systems: Erkennungs- und Abwehrstrategien\" gearbeitet." )
+        , ( "vitibot_pos", TString "Entwicklungsingenieur Doktor" )
+        , ( "vitibot_desc", TString "Ich arbeite mit dem INFO-ROS-Team an der Entwicklung autonomer Roboter für Weinberge." )
         , ( "cefet_items"
           , TList
                 [ "Robotik-Lernengruppe (2014)"
