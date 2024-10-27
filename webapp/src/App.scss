@@ -79,9 +79,11 @@
   z-index: 1;
   height: 2rem;
   font-size: 1rem !important;
+  min-height: 2rem !important;
 
   div {
     height: 2rem;
+    min-height: 2rem !important;
   }
 }
 
