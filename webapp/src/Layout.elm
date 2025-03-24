@@ -183,7 +183,7 @@ desktopLayout model =
                         )
                     ]
                 , row
-                    [ Element.Background.color (rgb 0 0 0)
+                    [ Element.Background.color (rgb255 33 34 44)
                     , Html.Attributes.style "color" "var(--foreground-color)" |> htmlAttribute
                     , Element.Font.alignRight
                     , Html.Attributes.class "font07rem" |> htmlAttribute
@@ -242,7 +242,7 @@ mobileLayout model =
                     ]
                 ]
             , row
-                [ Element.Background.color (rgb 0 0 0)
+                [ Element.Background.color (rgb255 33 34 44)
                 , Html.Attributes.style "color" "var(--foreground-color)" |> htmlAttribute
                 , Element.Font.alignRight
                 , Html.Attributes.class "font07rem" |> htmlAttribute
