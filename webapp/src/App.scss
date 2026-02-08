@@ -26,10 +26,12 @@
 
 :root {
   font-size: calc(15px + 0.390625vw);
-  --background-color: #282a36;
-  --bg-accent-color: #1d1e26;
-  --foreground-color: #f8f8f2;
-  --accent-color: #ff5555;
+  /* Catppuccin Mocha */
+  --background-color: #1e1e2e;
+  --bg-accent-color: #181825;
+  --foreground-color: #cdd6f4;
+  --accent-color: #cba6f7;
+  --accent-secondary-color: #89b4fa;
   background: var(--background-color);
 }
 
@@ -68,6 +70,7 @@
 
 .fullscreen-image {
   flex-basis: auto !important;
+
   img {
     width: 100%;
     height: 100%;
@@ -94,6 +97,10 @@
 
 .sidebar-item-accent {
   color: var(--accent-color) !important;
+}
+
+.sidebar-item-secondary-accent {
+  color: var(--accent-secondary-color) !important;
 }
 
 .xp-img {

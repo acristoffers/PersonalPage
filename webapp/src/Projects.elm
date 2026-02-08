@@ -28,6 +28,7 @@ import Element.Events exposing (onClick)
 import Element.Font
 import Html.Attributes
 import I18n.I18n exposing (tr)
+import ProjectsSidebar
 import Types exposing (..)
 
 
@@ -38,57 +39,21 @@ view model =
         ps =
             projects model
     in
-    column [ width fill, spacing 64 ]
-        (List.concat
-            [ if model.device.class == Desktop then
-                [ row
-                    [ width fill
-                    , spaceEvenly
-                    , Html.Attributes.style "background" "white" |> htmlAttribute
-                    , Html.Attributes.style "border-radius" "10px" |> htmlAttribute
-                    , Html.Attributes.style "padding" "10px" |> htmlAttribute
-                    ]
-                    (List.map projectLink ps)
-                ]
-
-              else
-                [ none ]
-            , List.map (projectElement model) ps
-            ]
-        )
-
-
-projectLink : Proj -> Element Msg
-projectLink proj =
-    link []
-        { url = "/projects/" ++ proj.key
-        , label =
-            column
-                [ spacing 8
-                , centerX
-                , Html.Attributes.class "font07rem" |> htmlAttribute
-                , Html.Attributes.style "text-align" "center" |> htmlAttribute
-                , Html.Attributes.style "color" "black" |> htmlAttribute
-                ]
-                [ image [ centerX, height (px 48) ] { src = proj.icon, description = proj.name }
-                , paragraph [ centerX ] [ text proj.name ]
-                ]
-        }
-
-
-rowOrCol : Model -> List (Attribute msg) -> List (Element msg) -> Element msg
-rowOrCol model =
     if model.device.class == Desktop then
-        row
+        row [ width fill, height fill, spacing 64 ]
+            [ column [ width fill, height fill, spacing 64 ] (List.map (projectElement model) ps)
+            , column [ width (px 300), height fill ] [ ProjectsSidebar.view model ps ]
+            ]
 
     else
-        column
+        column [ width fill, spacing 64 ]
+            (List.map (projectElement model) ps)
 
 
 projectElement : Model -> Proj -> Element Msg
 projectElement model proj =
     if model.route == Projects proj.proj || model.device.class == Phone then
-        rowOrCol model
+        column
             [ width fill, spacing 16 ]
             [ column [ width (fillPortion 4), spacing 16, alignTop ]
                 [ newTabLink []
@@ -145,60 +110,21 @@ projectElement model proj =
 
 projects : Model -> List Proj
 projects model =
-    [ Proj Lachesis
-        "lachesis"
-        "Lachesis"
-        "/lachesis.svg"
-        (tr model.lang "lachesis_desc")
-        "https://github.com/acristoffers/lachesis"
-        ([ 1, 2, 3, 4 ] |> List.map (\i -> ScreenShot ("/screenshots/Lachesis" ++ String.fromInt i ++ ".jpg") ("/screenshots/Lachesis" ++ String.fromInt i ++ ".png") (tr model.lang ("lachesis" ++ String.fromInt i ++ "_desc"))))
+    [ Proj TreeSitterMatlab "tree-sitter-matlab" "Tree-sitter MATLAB" "/tree-sitter.png" (tr model.lang "tree_sitter_matlab_desc") "https://github.com/acristoffers/tree-sitter-matlab" []
+    , Proj Cgen "cgen" "cgen" "/cli.png" (tr model.lang "cgen_desc") "https://github.com/acristoffers/cgen" []
+    , Proj TmuxTui "tmux-tui" "tmux-tui" "/cli.png" (tr model.lang "tmux_tui_desc") "https://github.com/acristoffers/tmux-tui" []
+    , Proj Dbkp "dbkp" "dbkp" "/cli.png" (tr model.lang "dbkp_desc") "https://github.com/acristoffers/dbkp" []
+    , Proj GnomeRectangle "gnome-rectangle" "GNOME Rectangle" "/gnome.svg" (tr model.lang "gnome_rectangle_desc") "https://github.com/acristoffers/gnome-rectangle" []
+    , Proj KwinRectangle "kwin-rectangle" "KWin Rectangle" "/kde.svg" (tr model.lang "kwin_rectangle_desc") "https://github.com/acristoffers/kwin-rectangle" []
+    , Proj LedgerNvim "ledger.nvim" "ledger.nvim" "/neovim.svg" (tr model.lang "ledger_nvim_desc") "https://github.com/acristoffers/ledger.nvim" []
+    , Proj WbprotoBeautifier "wbproto-beautifier" "wbproto-beautifier" "/cli.png" (tr model.lang "wbproto_beautifier_desc") "https://github.com/acristoffers/wbproto-beautifier" []
+    , Proj TreeSitterWbproto "tree-sitter-wbproto" "Tree-sitter Webots PROTO" "/tree-sitter.png" (tr model.lang "tree_sitter_wbproto_desc") "https://github.com/acristoffers/tree-sitter-wbproto" []
+    , Proj Lachesis "lachesis" "Lachesis" "/lachesis.svg" (tr model.lang "lachesis_desc") "https://github.com/acristoffers/lachesis" ([ 1, 2, 3, 4 ] |> List.map (\i -> ScreenShot ("/screenshots/Lachesis" ++ String.fromInt i ++ ".jpg") ("/screenshots/Lachesis" ++ String.fromInt i ++ ".png") (tr model.lang ("lachesis" ++ String.fromInt i ++ "_desc"))))
     , Proj Moirai "moirai" "moirai" "/python.svg" (tr model.lang "moirai_desc") "https://github.com/acristoffers/moirai" []
     , Proj Ahio "ahio" "AHIO" "/python.svg" (tr model.lang "ahio_desc") "https://github.com/acristoffers/ahio" []
-    , Proj Void
-        "void"
-        "Void"
-        "/void.svg"
-        (tr model.lang "void_desc")
-        "https://github.com/acristoffers/void"
-        ([ 1, 2, 3, 4 ] |> List.map (\i -> ScreenShot ("/screenshots/Void" ++ String.fromInt i ++ ".jpg") ("/screenshots/Void" ++ String.fromInt i ++ ".png") (tr model.lang ("void" ++ String.fromInt i ++ "_desc"))))
-    , Proj TestsDatabase
-        "tests-database"
-        "Tests Database"
-        "/tests-database.png"
-        (tr model.lang "tests_database_desc")
-        "https://github.com/acristoffers/testsdatabase"
-        ([ 1, 2, 3 ] |> List.map (\i -> ScreenShot ("/screenshots/TestsDatabase" ++ String.fromInt i ++ ".png") ("/screenshots/TestsDatabase" ++ String.fromInt i ++ ".png") (tr model.lang ("tb_ss" ++ String.fromInt i ++ "_desc"))))
-    , Proj Tracker
-        "tracker"
-        "Tracker"
-        "/tracker.svg"
-        (tr model.lang "tracker_desc")
-        "https://github.com/acristoffers/tracker"
-        ([ 1, 2, 3 ] |> List.map (\i -> ScreenShot ("/screenshots/Tracker" ++ String.fromInt i ++ ".png") ("/screenshots/Tracker" ++ String.fromInt i ++ ".png") ""))
     , Proj CEF "cef" "CEF3 Simple Sample" "/cef_logo.png" (tr model.lang "cefss_desc") "https://github.com/acristoffers/CEF3SimpleSample" []
-    , Proj SIGAA
-        "sigaa:notas"
-        "SIGAA:Notas"
-        "/sigaa_logo.svg"
-        (tr model.lang "sigaa_desc")
-        "https://github.com/acristoffers/SIGAAGrades"
-        ([ 1, 2, 3, 4 ] |> List.map (\i -> ScreenShot ("/screenshots/SIGAA_Notas" ++ String.fromInt i ++ ".png") ("/screenshots/SIGAA_Notas" ++ String.fromInt i ++ ".png") (tr model.lang ("sigaa_notas" ++ String.fromInt i ++ "_desc"))))
+    , Proj Void "void" "Void" "/void.svg" (tr model.lang "void_desc") "https://github.com/acristoffers/void" ([ 1, 2, 3, 4 ] |> List.map (\i -> ScreenShot ("/screenshots/Void" ++ String.fromInt i ++ ".jpg") ("/screenshots/Void" ++ String.fromInt i ++ ".png") (tr model.lang ("void" ++ String.fromInt i ++ "_desc"))))
+    , Proj SIGAA "sigaa:notas" "SIGAA:Notas" "/sigaa_logo.svg" (tr model.lang "sigaa_desc") "https://github.com/acristoffers/SIGAAGrades" ([ 1, 2, 3, 4 ] |> List.map (\i -> ScreenShot ("/screenshots/SIGAA_Notas" ++ String.fromInt i ++ ".png") ("/screenshots/SIGAA_Notas" ++ String.fromInt i ++ ".png") (tr model.lang ("sigaa_notas" ++ String.fromInt i ++ "_desc"))))
+    , Proj Tracker "tracker" "Tracker" "/tracker.svg" (tr model.lang "tracker_desc") "https://github.com/acristoffers/tracker" ([ 1, 2, 3 ] |> List.map (\i -> ScreenShot ("/screenshots/Tracker" ++ String.fromInt i ++ ".png") ("/screenshots/Tracker" ++ String.fromInt i ++ ".png") ""))
+    , Proj TestsDatabase "tests-database" "Tests Database" "/tests-database.png" (tr model.lang "tests_database_desc") "https://github.com/acristoffers/testsdatabase" ([ 1, 2, 3 ] |> List.map (\i -> ScreenShot ("/screenshots/TestsDatabase" ++ String.fromInt i ++ ".png") ("/screenshots/TestsDatabase" ++ String.fromInt i ++ ".png") (tr model.lang ("tb_ss" ++ String.fromInt i ++ "_desc"))))
     ]
-
-
-type alias Proj =
-    { proj : Project
-    , key : String
-    , name : String
-    , icon : String
-    , desc : String
-    , url : String
-    , screenshots : List ScreenShot
-    }
-
-
-type alias ScreenShot =
-    { lowres : String
-    , hires : String
-    , desc : String
-    }

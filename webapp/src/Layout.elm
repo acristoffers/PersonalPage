@@ -82,7 +82,7 @@ fullscreenImage src =
                         [ Html.Attributes.style "cursor" "pointer" |> htmlAttribute
                         , onClick (SetFullscreenImage Nothing)
                         ]
-                        (text "X")
+                        (text "⨯")
                     ]
                 , image
                     [ centerX
@@ -123,14 +123,6 @@ desktopLayout model =
         , Shortcut.simpleShortcut (Shortcut.Regular "s") (linkClicked model "/projects")
         , Shortcut.simpleShortcut (Shortcut.Regular "d") (linkClicked model "/publications")
         , Shortcut.simpleShortcut (Shortcut.Regular "f") (linkClicked model "/experience")
-        , Shortcut.simpleShortcut (Shortcut.Regular "q") (linkClicked model "/projects/lachesis")
-        , Shortcut.simpleShortcut (Shortcut.Regular "w") (linkClicked model "/projects/moirai")
-        , Shortcut.simpleShortcut (Shortcut.Regular "e") (linkClicked model "/projects/ahio")
-        , Shortcut.simpleShortcut (Shortcut.Regular "r") (linkClicked model "/projects/void")
-        , Shortcut.simpleShortcut (Shortcut.Regular "t") (linkClicked model "/projects/tests-database")
-        , Shortcut.simpleShortcut (Shortcut.Regular "y") (linkClicked model "/projects/tracker")
-        , Shortcut.simpleShortcut (Shortcut.Regular "u") (linkClicked model "/projects/cef")
-        , Shortcut.simpleShortcut (Shortcut.Regular "i") (linkClicked model "/projects/sigaa:notas")
         ]
         []
         [ layout

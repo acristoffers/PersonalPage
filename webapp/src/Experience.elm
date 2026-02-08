@@ -20,6 +20,7 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 
+
 module Experience exposing (view)
 
 import Element exposing (..)
@@ -27,6 +28,7 @@ import Element.Font
 import Html.Attributes
 import I18n.I18n exposing (tr, trList)
 import Types exposing (..)
+
 
 view : Model -> Element Msg
 view model =
@@ -39,6 +41,7 @@ view model =
             , educationElements model
             ]
         )
+
 
 experienceElements : Model -> List (Element Msg)
 experienceElements model =
@@ -63,12 +66,13 @@ experienceElements model =
                     , column [ width fill, spacing 8 ]
                         [ paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] [ text xp.title ]
                         , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute ] [ text xp.position ]
-                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.color (rgba 1 1 1 0.7) ] [ text xp.date ]
+                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.color (rgba 0.804 0.839 0.957 0.8) ] [ text xp.date ]
                         , paragraph [ Html.Attributes.class "font07rem" |> htmlAttribute ] [ text xp.description ]
                         , bulletList xp.subItems
                         ]
                     ]
             )
+
 
 educationElements : Model -> List (Element Msg)
 educationElements model =
@@ -92,7 +96,7 @@ educationElements model =
                     , column [ width fill, spacing 8 ]
                         [ paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] [ text xp.title ]
                         , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute ] [ text xp.position ]
-                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.color (rgba 1 1 1 0.7) ] [ text xp.date ]
+                        , paragraph [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.color (rgba 0.804 0.839 0.957 0.8) ] [ text xp.date ]
                         , paragraph [ Html.Attributes.class "font07rem" |> htmlAttribute ] [ text xp.description ]
                         , el [ height (px 8) ] none
                         , bulletList xp.subItems
@@ -100,12 +104,14 @@ educationElements model =
                     ]
             )
 
+
 experiences : Model -> List Experience
 experiences model =
     [ Experience "/vitibot.png" "Vitibot" "04/2024 - " (tr model.lang "vitibot_pos") (tr model.lang "vitibot_desc") []
     , Experience "/acal.jpg" "Acal BFi Germany GmbH" "03/2016 - 08/2016" (tr model.lang "intern") (tr model.lang "acal_desc") []
     , Experience "/cbmmg.png" "Corpo de Bombeiros Militar de Minas Gerais" "01/2010 - 12/2013" (tr model.lang "soldier") (tr model.lang "cbmmg_desc") []
     ]
+
 
 education : Model -> List Experience
 education model =
@@ -116,11 +122,13 @@ education model =
     , Experience "/uga.png" "Université Joseph Fourier (now Université Grenoble Alpes)" "01/2015 - 03/2015" (tr model.lang "exchange_student") (tr model.lang "uga_desc") []
     ]
 
+
 bulletList : List String -> Element Msg
 bulletList xs =
     column
-        [ width fill, Html.Attributes.class "font07rem" |> htmlAttribute, spacing 8, Element.Font.color (rgba 1 1 1 0.7) ]
+        [ width fill, Html.Attributes.class "font07rem" |> htmlAttribute, spacing 8, Element.Font.color (rgba 0.804 0.839 0.957 0.8) ]
         (List.map (\x -> row [ width fill, spacing 8 ] [ el [ alignTop ] (text "•"), paragraph [] [ text x ] ]) xs)
+
 
 type alias Experience =
     { img : String

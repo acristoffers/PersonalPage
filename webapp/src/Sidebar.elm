@@ -26,7 +26,6 @@ module Sidebar exposing (view)
 import Element exposing (..)
 import Element.Events
 import Element.Font
-import Html
 import Html.Attributes
 import Html.Events exposing (onClick)
 import I18n.I18n exposing (tr)
@@ -84,7 +83,7 @@ view model =
         , column
             [ width fill ]
             [ menuItem model About
-            , menuItem model (Projects Lachesis)
+            , menuItem model (Projects TreeSitterMatlab)
             , menuItem model Publications
             , menuItem model Experience
             , bookmark model

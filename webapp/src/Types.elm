@@ -21,7 +21,19 @@
 -- SOFTWARE.
 
 
-module Types exposing (Flags, Language(..), Model, Msg(..), Project(..), Route(..), TranslationDictionary(..), language2String, string2Language)
+module Types exposing
+    ( Flags
+    , Language(..)
+    , Model
+    , Msg(..)
+    , Proj
+    , Project(..)
+    , Route(..)
+    , ScreenShot
+    , TranslationDictionary(..)
+    , language2String
+    , string2Language
+    )
 
 import Browser
 import Browser.Navigation
@@ -40,6 +52,15 @@ type Project
     = Lachesis
     | Moirai
     | Ahio
+    | TreeSitterMatlab
+    | LedgerNvim
+    | Cgen
+    | Dbkp
+    | GnomeRectangle
+    | KwinRectangle
+    | TmuxTui
+    | TreeSitterWbproto
+    | WbprotoBeautifier
     | Void
     | TestsDatabase
     | Tracker
@@ -109,6 +130,24 @@ type alias Model =
     , showAbstract : Bool
     , fullscreenImage : Maybe String
     , flags : Flags
+    }
+
+
+type alias Proj =
+    { proj : Project
+    , key : String
+    , name : String
+    , icon : String
+    , desc : String
+    , url : String
+    , screenshots : List ScreenShot
+    }
+
+
+type alias ScreenShot =
+    { lowres : String
+    , hires : String
+    , desc : String
     }
 
 

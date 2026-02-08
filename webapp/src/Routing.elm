@@ -30,10 +30,19 @@ import Url.Parser exposing ((</>), Parser, s)
 subrouteParser : Parser (Project -> a) a
 subrouteParser =
     Url.Parser.oneOf
-        [ Url.Parser.map Lachesis <| Url.Parser.top
+        [ Url.Parser.map TreeSitterMatlab <| Url.Parser.top
         , Url.Parser.map Lachesis <| s "lachesis"
         , Url.Parser.map Moirai <| s "moirai"
         , Url.Parser.map Ahio <| s "ahio"
+        , Url.Parser.map TreeSitterMatlab <| s "tree-sitter-matlab"
+        , Url.Parser.map LedgerNvim <| s "ledger.nvim"
+        , Url.Parser.map Cgen <| s "cgen"
+        , Url.Parser.map Dbkp <| s "dbkp"
+        , Url.Parser.map GnomeRectangle <| s "gnome-rectangle"
+        , Url.Parser.map KwinRectangle <| s "kwin-rectangle"
+        , Url.Parser.map TmuxTui <| s "tmux-tui"
+        , Url.Parser.map TreeSitterWbproto <| s "tree-sitter-wbproto"
+        , Url.Parser.map WbprotoBeautifier <| s "wbproto-beautifier"
         , Url.Parser.map Void <| s "void"
         , Url.Parser.map TestsDatabase <| s "tests-database"
         , Url.Parser.map Tracker <| s "tracker"
