@@ -2,9 +2,6 @@
 
 fish clean.fish
 
-pushd webapp
-fish build.fish
-cp -r public/* ..
-fish clean.fish
-popd
-
+nix build
+cp -r result/* .
+rm -f result

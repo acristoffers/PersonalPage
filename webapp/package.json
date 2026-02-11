@@ -1,4 +1,5 @@
 {
+  "name": "personal-page",
   "private": true,
   "dependencies": {
     "elm-keyboard-shortcut": "^1.0.1"

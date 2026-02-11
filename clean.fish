@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-for entry in (ls -1 | grep -Ev "404.html|CNAME|README.md|clean.fish|build.fish|webapp")
+for entry in (ls -1 | grep -Ev "404.html|CNAME|README.md|clean.fish|build.fish|webapp|flake")
     rm -rf $entry
 end
 
