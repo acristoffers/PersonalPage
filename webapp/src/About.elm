@@ -88,9 +88,9 @@ languages : Model -> Element Msg
 languages model =
     el [ Html.Attributes.class "font1rem" |> htmlAttribute, Element.Font.bold ] (text (tr model.lang "languages"))
         :: ([ ( tr model.lang "pt", tr model.lang "native" )
-            , ( tr model.lang "en", "C1/C2" )
-            , ( tr model.lang "de", "B2/C1" )
-            , ( tr model.lang "fr", "B2/C1" )
+            , ( tr model.lang "en", "C2" )
+            , ( tr model.lang "de", "C1" )
+            , ( tr model.lang "fr", "C1" )
             ]
                 |> List.map (\( lang, level ) -> underlinedText (lang ++ " (" ++ level ++ ")"))
            )
